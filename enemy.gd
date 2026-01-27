@@ -19,17 +19,22 @@ func _process(delta: float) -> void:
 	if self.shoot:
 		var now: int = Time.get_ticks_msec()
 		if now > self._lastShoot + self.shootCooldownMs:
-			var projectile = self._projectileScene.instantiate()
-			projectile.direction = Vector2(-1.0, 0.0)
-			projectile.set_collision_layer_value(2, false)
-			projectile.set_collision_mask_value(2, false)
-			projectile.set_collision_layer_value(1, true)
-			projectile.set_collision_mask_value(1, true)
-			add_child(projectile)
+			# [SOUND] C'est ici que l'ennemi shoote
+			self._shoot()
 			self._lastShoot = now
-	
 	
 func _physics_process(delta: float) -> void:
 	var collision = self.move_and_collide(self.direction * self.speed)
 	if collision:
+		# [SOUND] C'est ici que l'ennmi décède
 		self.queue_free()
+
+
+func _shoot():
+	var projectile = self._projectileScene.instantiate()
+	projectile.direction = Vector2(-1.0, 0.0)
+	projectile.set_collision_layer_value(2, false)
+	projectile.set_collision_mask_value(2, false)
+	projectile.set_collision_layer_value(1, true)
+	projectile.set_collision_mask_value(1, true)
+	add_child(projectile)

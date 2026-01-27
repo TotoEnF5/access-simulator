@@ -34,24 +34,37 @@ func _process(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	if self.mode == Mode.SHMUP or self.mode == Mode.VROOM:
-		var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-		
-		if self.mode == Mode.PLATFORMER:
-			direction.y = 0.0
-		elif self.mode == Mode.VROOM or self.mode == Mode.SHMUP:
-			direction.x = 0.0
-			
-		if self.mode == Mode.VROOM:
-			self.rotation = deg_to_rad(direction.y * 20.0 + 90.0)
-		
-		self.velocity = direction * self.speed
-		self.move_and_slide()
+		self._vertical_movement()
 	elif self.mode == Mode.PLATFORMER:
-		self.velocity.y += self.gravity
+		self._platformer_movement()
 		
-		if Input.is_action_just_pressed("jump") and self.is_on_floor():
-			self.velocity.y = self.jump_speed
 		
-		var direction = Input.get_axis("move_left", "move_right")
-		self.velocity.x = direction * self.speed
-		self.move_and_slide()
+func _vertical_movement():
+	# [SOUND] C'est ici qu'on bouge le joueur !
+	# Ce qui serait cool ça serait que tu fasses une fonction à part histoire de bien organiser le code
+	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	
+	if self.mode == Mode.PLATFORMER:
+		direction.y = 0.0
+	elif self.mode == Mode.VROOM or self.mode == Mode.SHMUP:
+		direction.x = 0.0
+		
+	if self.mode == Mode.VROOM:
+		self.rotation = deg_to_rad(direction.y * 20.0 + 90.0)
+	
+	self.velocity = direction * self.speed
+	self.move_and_slide()
+	
+	
+func _platformer_movement():
+	# [SOUND] C'est ici qu'on bouge le joueur !
+	# Ce qui serait cool ça serait que tu fasses une fonction à part histoire de bien organiser le code
+	self.velocity.y += self.gravity
+	
+	if Input.is_action_just_pressed("jump") and self.is_on_floor():
+		# [SOUND] C'est ici que le joueur saute
+		self.velocity.y = self.jump_speed
+	
+	var direction = Input.get_axis("move_left", "move_right")
+	self.velocity.x = direction * self.speed
+	self.move_and_slide()
