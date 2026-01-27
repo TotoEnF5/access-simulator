@@ -14,6 +14,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("change_scene"):
+		self.get_tree().change_scene_to_file("res://shmup.tscn")
+		
 	var now: int = Time.get_ticks_msec()
 	if now > self.enemyCooldownMs + self._lastEnemyTime:
 		self._spawn_enemy()
