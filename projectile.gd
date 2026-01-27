@@ -14,4 +14,7 @@ func _process(delta: float) -> void:
 
 
 func _physics_process(delta: float) -> void:
-	self.move_and_collide(self.direction * self.speed)
+	var collision = self.move_and_collide(self.direction * self.speed)
+	if collision:
+		collision.get_collider().free()
+		self.queue_free()
