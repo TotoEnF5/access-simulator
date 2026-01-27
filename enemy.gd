@@ -4,8 +4,10 @@ extends RigidBody2D
 @export var direction: Vector2 = Vector2(-1.0, 0.0)
 @export var shoot: bool = false
 @export var shootCooldownMs: int = 600
+@export var shootMercy: int = 200
 
 var _lastShoot: int = 0
+var _shouldShoot: bool = false
 
 const _projectileScene: PackedScene = preload("res://projectile.tscn")
 
@@ -16,7 +18,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if self.shoot:
+	if self._shouldShoot:
 		var now: int = Time.get_ticks_msec()
 		if now > self._lastShoot + self.shootCooldownMs:
 			# [SOUND] C'est ici que l'ennemi shoote
@@ -28,6 +30,11 @@ func _physics_process(delta: float) -> void:
 	if collision:
 		# [SOUND] C'est ici que l'ennmi décède
 		self.queue_free()
+
+
+func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
+	self._shouldShoot = self.shoot
+	self._lastShoot = Time.get_ticks_msec() + self.shootMercy
 
 
 func _shoot():

@@ -19,3 +19,8 @@ shape = SubResource("RectangleShape2D_4gyqm")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0.5019608, 0.5019608, 1)
 texture = ExtResource("1_7k104")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-64, -65, 128, 130)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
