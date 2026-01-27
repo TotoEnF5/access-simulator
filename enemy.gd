@@ -3,7 +3,7 @@ extends RigidBody2D
 @export var speed: float = 10.0
 @export var direction: Vector2 = Vector2(-1.0, 0.0)
 @export var shoot: bool = false
-@export var shootCooldownMs: int = 300
+@export var shootCooldownMs: int = 600
 
 var _lastShoot: int = 0
 
@@ -33,6 +33,7 @@ func _physics_process(delta: float) -> void:
 func _shoot():
 	var projectile = self._projectileScene.instantiate()
 	projectile.direction = Vector2(-1.0, 0.0)
+	projectile.speed = 30.0
 	projectile.set_collision_layer_value(2, false)
 	projectile.set_collision_mask_value(2, false)
 	projectile.set_collision_layer_value(1, true)

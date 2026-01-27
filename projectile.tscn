@@ -9,8 +9,8 @@ size = Vector2(64, 64)
 [node name="Projectile" type="RigidBody2D"]
 collision_layer = 2
 collision_mask = 2
+gravity_scale = 0.0
 script = ExtResource("1_qxf0c")
-speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qxf0c")

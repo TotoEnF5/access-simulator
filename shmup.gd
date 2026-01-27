@@ -15,7 +15,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("change_scene"):
 		# [SOUND] C'est ici qu'on change de scène
-		self.get_tree().change_scene_to_file("res://platform.tscn")
+		self.get_tree().change_scene_to_file("res://platformer.tscn")
 		
 	var now: int = Time.get_ticks_msec()
 	if now > self.enemyCooldownMs + self._lastEnemyTime:
@@ -30,5 +30,6 @@ func _spawn_enemy() -> void:
 	var enemyPos = Vector2(viewportSize.x + 200, y)
 	var enemy = self._enemyScene.instantiate()
 	enemy.position = enemyPos
+	enemy.shoot = true
 	add_child(enemy)
 	
