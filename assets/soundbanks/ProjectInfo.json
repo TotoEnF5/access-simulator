@@ -1,0 +1,29 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "TP_Toto_Wwise",
+   "GUID": "{A5CDA2D6-2E35-4F47-94D3-D81D01EE95B5}",
+   "Generator": "2025.1.3.9039"
+  },
+  "CacheRoot": "../../../Wwise/TP_Toto_Wwise/.cache",
+  "Platforms": [
+   {
+    "Name": "Windows",
+    "GUID": "{7A2EF477-DDDF-4176-9992-C00053A23A67}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{01C436FE-F65C-4741-933B-5FBD66C5AEA7}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{C385A1C8-7E05-894C-0999-3107F380AA58}"
+ }
+}
