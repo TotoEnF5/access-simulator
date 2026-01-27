@@ -40,6 +40,9 @@ func _physics_process(delta: float) -> void:
 			direction.y = 0.0
 		elif self.mode == Mode.VROOM or self.mode == Mode.SHMUP:
 			direction.x = 0.0
+			
+		if self.mode == Mode.VROOM:
+			self.rotation = deg_to_rad(direction.y * 20.0 + 90.0)
 		
 		self.velocity = direction * self.speed
 		self.move_and_slide()

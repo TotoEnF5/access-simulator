@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cokxwf645t4kn"]
+
+[ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom.gd" id="1_nu8od"]
+[ext_resource type="PackedScene" uid="uid://dp1eoqtgsd22w" path="res://player.tscn" id="1_r148r"]
+[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="2_nu8od"]
+
+[node name="Vroom" type="Node2D"]
+script = ExtResource("1_nu8od")
+
+[node name="Player" parent="." instance=ExtResource("1_r148r")]
+position = Vector2(98, 328)
+rotation = 1.5707964
+mode = 2
+
+[node name="TopLimit" type="Sprite2D" parent="."]
+position = Vector2(578, 17)
+scale = Vector2(9.137, 0.305)
+texture = ExtResource("2_nu8od")
+
+[node name="BottomLimit" type="Sprite2D" parent="."]
+position = Vector2(577.25, 635)
+scale = Vector2(9.136718, 0.3046875)
+texture = ExtResource("2_nu8od")

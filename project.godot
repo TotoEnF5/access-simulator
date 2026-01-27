@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="mourir-simulator"
-run/main_scene="uid://cd2ka03e5c40v"
+run/main_scene="uid://cokxwf645t4kn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
