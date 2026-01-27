@@ -8,7 +8,9 @@ enum Mode {
 }
 
 @export var mode: Mode = Mode.DEBUG
-@export var speed: float = 400
+@export var speed: float = 500
+@export var jump_speed: float = -500.0
+@export var gravity: float = 9.81
 @export var shootCooldownMs: int = 100
 
 var _lastShoot: int = 0
@@ -31,12 +33,22 @@ func _process(delta: float) -> void:
 			
 
 func _physics_process(delta: float) -> void:
-	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	
-	if self.mode == Mode.PLATFORMER:
-		direction.y = 0.0
-	elif self.mode == Mode.VROOM or self.mode == Mode.SHMUP:
-		direction.x = 0.0
-	
-	self.velocity = direction * self.speed
-	self.move_and_slide()
+	if self.mode == Mode.SHMUP or self.mode == Mode.VROOM:
+		var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+		
+		if self.mode == Mode.PLATFORMER:
+			direction.y = 0.0
+		elif self.mode == Mode.VROOM or self.mode == Mode.SHMUP:
+			direction.x = 0.0
+		
+		self.velocity = direction * self.speed
+		self.move_and_slide()
+	elif self.mode == Mode.PLATFORMER:
+		self.velocity.y += self.gravity
+		
+		if Input.is_action_just_pressed("jump") and self.is_on_floor():
+			self.velocity.y = self.jump_speed
+		
+		var direction = Input.get_axis("move_left", "move_right")
+		self.velocity.x = direction * self.speed
+		self.move_and_slide()
