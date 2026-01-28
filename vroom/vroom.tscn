@@ -1,22 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://cokxwf645t4kn"]
 
-[ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom.gd" id="1_nu8od"]
-[ext_resource type="PackedScene" uid="uid://dp1eoqtgsd22w" path="res://player.tscn" id="1_r148r"]
+[ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom/vroom.gd" id="1_nu8od"]
+[ext_resource type="PackedScene" uid="uid://cu8b0b78jb0kh" path="res://vroom/player.tscn" id="2_dnmje"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
-[ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platform.tscn" id="5_1ei36"]
+[ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="5_1ei36"]
 
 [node name="Vroom" type="Node2D"]
 script = ExtResource("1_nu8od")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Player" parent="." node_paths=PackedStringArray("Bankmanager") instance=ExtResource("1_r148r")]
-position = Vector2(98, 328)
-mode = 2
-Bankmanager = NodePath("../AkBank")
-Mode_aveugle = true
+[node name="Player" parent="." instance=ExtResource("2_dnmje")]
+position = Vector2(95, 333)
 
 [node name="AkListener2D" type="AkListener2D" parent="Player"]
+position = Vector2(98, 328)
 rotation = 1.5707964
 
 [node name="Walls" type="Node2D" parent="."]

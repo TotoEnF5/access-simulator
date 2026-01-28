@@ -15,7 +15,7 @@ extends RigidBody2D
 var _lastShoot: int = 0
 var _shouldShoot: bool = false
 
-const _projectileScene: PackedScene = preload("res://projectile.tscn")
+const _projectileScene: PackedScene = preload("res://shmup/projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

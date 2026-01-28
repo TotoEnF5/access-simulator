@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu8b0b78jb0kh"]
+
+[ext_resource type="Script" uid="uid://ra7l0s7ri02j" path="res://vroom/player.gd" id="1_718pu"]
+[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_g87ca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_718pu"]
+size = Vector2(128, 128)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_718pu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_718pu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g87ca")

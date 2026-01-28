@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://buwsflnumlaxh"]
 
-[ext_resource type="Script" uid="uid://tyjsyjb5lrs2" path="res://input_settings.gd" id="1_ww7g3"]
-[ext_resource type="PackedScene" uid="uid://w615x4es6818" path="res://remap_button.tscn" id="2_dyv2g"]
+[ext_resource type="Script" uid="uid://tyjsyjb5lrs2" path="res://ui/input_settings.gd" id="1_ww7g3"]
+[ext_resource type="PackedScene" uid="uid://w615x4es6818" path="res://ui/remap_button.tscn" id="2_dyv2g"]
 
 [node name="InputSettings" type="Control"]
 layout_mode = 3

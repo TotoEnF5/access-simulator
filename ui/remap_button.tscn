@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://w615x4es6818"]
 
-[ext_resource type="Script" uid="uid://gyxru24vdjas" path="res://remap_button.gd" id="1_ral0r"]
+[ext_resource type="Script" uid="uid://gyxru24vdjas" path="res://ui/remap_button.gd" id="1_ral0r"]
 
 [node name="RemapButton" type="Button"]
 offset_right = 8.0

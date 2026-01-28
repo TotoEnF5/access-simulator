@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://74nogr1b67s0"]
 
 [ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://buwsflnumlaxh" path="res://input_settings.tscn" id="2_7mycd"]
-[ext_resource type="PackedScene" uid="uid://bkb0r2elj7ynl" path="res://transition.tscn" id="2_h2yge"]
-[ext_resource type="PackedScene" uid="uid://cokxwf645t4kn" path="res://vroom.tscn" id="3_lquwl"]
-[ext_resource type="PackedScene" uid="uid://bcusfrsm1ye7h" path="res://shmup.tscn" id="4_7mycd"]
-[ext_resource type="PackedScene" uid="uid://cd2ka03e5c40v" path="res://platformer.tscn" id="5_272bh"]
+[ext_resource type="PackedScene" uid="uid://buwsflnumlaxh" path="res://ui/input_settings.tscn" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bkb0r2elj7ynl" path="res://ui/transition.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cokxwf645t4kn" path="res://vroom/vroom.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bcusfrsm1ye7h" path="res://shmup/shmup.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cd2ka03e5c40v" path="res://platformer/platformer.tscn" id="5_272bh"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
