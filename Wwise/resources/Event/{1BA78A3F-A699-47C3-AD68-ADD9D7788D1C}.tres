@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://6w28sd76qlo4"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Ennemy_Shot"
+id = 365677268
+guid = "{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}"
+dummy = true

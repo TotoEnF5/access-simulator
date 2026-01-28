@@ -1,9 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
 	268529915	Engine			\Default Work Unit\Act1 Course\Engine	
+	365677268	Ennemy_Shot			\Default Work Unit\Act2 Shmup\Ennemy_Shot	
+	871813740	Player_Hit			\Default Work Unit\Act2 Shmup\Player_Hit	
+	1116398592	Hit			\Default Work Unit\Act1 Course\Hit	
 	1418105328	Down_Start			\Default Work Unit\Act1 Course\Down_Start	
 	1654232327	Up_Start			\Default Work Unit\Act1 Course\Up_Start	
 	1841569453	Up_Stop			\Default Work Unit\Act1 Course\Up_Stop	
+	2988140266	Ennemy_Destroy			\Default Work Unit\Act2 Shmup\Ennemy_Destroy	
 	3009887656	Ennemi_Incoming			\Default Work Unit\Act1 Course\Ennemi_Incoming	
+	3359302305	Player_Shot			\Default Work Unit\Act2 Shmup\Player_Shot	
 	3868270940	Down_Stop			\Default Work Unit\Act1 Course\Down_Stop	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -11,6 +16,16 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	83552029	Vehicle1_EngineStartUp1_long	.cache\41\{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem		\Containers\Default Work Unit\Vroom\Moove\Up\Vehicle1_EngineStartUp1_long		953144
+	197692389	AirPoweredMachinegun_Burst_02	.cache\A7\{A766DE8D-22B7-9DF8-5819-5737C6DDB174}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_02		16588
+	242359649	DigitalBullets_Burst_02	.cache\63\{63E408F0-43B9-8256-CF73-66D62077B3D9}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_02		29940
+	333596638	DigitalBullets_Burst_05	.cache\F9\{F91B7E0E-BBD5-9AB2-8814-E0565C0ECD38}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_05		27880
 	352311725	Fire Burning - Fire Crackles	.cache\93\{936E654D-4CCE-566F-A3AB-35A03B67CD52}.wem		\Containers\Default Work Unit\Vroom\Ennemi_Incoming\Fire Burning - Fire Crackles		5673300
+	430378591	DigitalBullets_Burst_01	.cache\96\{96F43021-08F3-9489-4D3A-BB5732C7A3F5}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_01		30328
+	572396881	AirPoweredMachinegun_Burst_01	.cache\FB\{FB03A6DD-A3C1-31D0-63CC-3B43BD850315}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_01		16772
 	630331129	Archived, Test Tone, Pink Noise SND3536	.cache\34\{346DEDCE-000E-F825-F931-901649CF3C44}.wem		\Containers\Default Work Unit\Vroom\Engine\Archived, Test Tone, Pink Noise SND3536		11750496
+	717596717	AirPoweredMachinegun_Burst_04	.cache\5B\{5B29B8F0-38CC-C821-1855-C096940062E5}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_04		19096
+	757159595	AirPoweredMachinegun_Burst_05	.cache\F5\{F5E4D0F4-51D5-2059-C75B-68B090ED532F}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_05		16228
+	819286881	DigitalBullets_Burst_03	.cache\8B\{8B52E6B9-99BC-37FF-7AAB-B311793CCAD2}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_03		27732
+	851320877	DigitalBullets_Burst_04	.cache\C3\{C32CDF91-DBC5-1523-E73D-9A76A3EEB563}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_04		28696
+	1007816732	AirPoweredMachinegun_Burst_03	.cache\74\{74491E35-C289-E3F7-AE58-F6B58BC72B5B}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_03		16604
 

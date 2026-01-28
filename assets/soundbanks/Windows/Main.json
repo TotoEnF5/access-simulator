@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{6908EDD6-9B94-761F-56F3-D702F736FE77}",
+    "Hash": "{1F06B9E7-2A2F-8444-63C7-0F49AB5132B9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,6 +24,30 @@
       "CachePath": "41/{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem"
      },
      {
+      "Id": "197692389",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
+      "CachePath": "A7/{A766DE8D-22B7-9DF8-5819-5737C6DDB174}.wem"
+     },
+     {
+      "Id": "242359649",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DigitalBullets_Burst_02.wav",
+      "CachePath": "63/{63E408F0-43B9-8256-CF73-66D62077B3D9}.wem"
+     },
+     {
+      "Id": "333596638",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DigitalBullets_Burst_02.wav",
+      "CachePath": "F9/{F91B7E0E-BBD5-9AB2-8814-E0565C0ECD38}.wem"
+     },
+     {
       "Id": "352311725",
       "Language": "SFX",
       "Streaming": "false",
@@ -32,12 +56,68 @@
       "CachePath": "93/{936E654D-4CCE-566F-A3AB-35A03B67CD52}.wem"
      },
      {
+      "Id": "430378591",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DigitalBullets_Burst_02.wav",
+      "CachePath": "96/{96F43021-08F3-9489-4D3A-BB5732C7A3F5}.wem"
+     },
+     {
+      "Id": "572396881",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
+      "CachePath": "FB/{FB03A6DD-A3C1-31D0-63CC-3B43BD850315}.wem"
+     },
+     {
       "Id": "630331129",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Archived, Test Tone, Pink Noise SND3536.wav",
       "CachePath": "34/{346DEDCE-000E-F825-F931-901649CF3C44}.wem"
+     },
+     {
+      "Id": "717596717",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
+      "CachePath": "5B/{5B29B8F0-38CC-C821-1855-C096940062E5}.wem"
+     },
+     {
+      "Id": "757159595",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
+      "CachePath": "F5/{F5E4D0F4-51D5-2059-C75B-68B090ED532F}.wem"
+     },
+     {
+      "Id": "819286881",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DigitalBullets_Burst_02.wav",
+      "CachePath": "8B/{8B52E6B9-99BC-37FF-7AAB-B311793CCAD2}.wem"
+     },
+     {
+      "Id": "851320877",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DigitalBullets_Burst_02.wav",
+      "CachePath": "C3/{C32CDF91-DBC5-1523-E73D-9A76A3EEB563}.wem"
+     },
+     {
+      "Id": "1007816732",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
+      "CachePath": "74/{74491E35-C289-E3F7-AE58-F6B58BC72B5B}.wem"
      }
     ],
     "Events": [
@@ -89,6 +169,88 @@
       ]
      },
      {
+      "Id": "2988140266",
+      "Name": "Ennemy_Destroy",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy",
+      "GUID": "{8E4ED9E8-7A92-4686-9BBF-EB8E1958E0E7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "365677268",
+      "Name": "Ennemy_Shot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Shot",
+      "GUID": "{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.07065564",
+      "DurationMax": "0.11769386",
+      "MediaRefs": [
+       {
+        "Id": "197692389"
+       },
+       {
+        "Id": "572396881"
+       },
+       {
+        "Id": "717596717"
+       },
+       {
+        "Id": "757159595"
+       },
+       {
+        "Id": "1007816732"
+       }
+      ]
+     },
+     {
+      "Id": "1116398592",
+      "Name": "Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Hit",
+      "GUID": "{52773B89-F612-40CA-B527-1885288501F5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "871813740",
+      "Name": "Player_Hit",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit",
+      "GUID": "{C9B7E285-A98E-4A7C-A478-3290DC32DAEB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3359302305",
+      "Name": "Player_Shot",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Shot",
+      "GUID": "{9370BBED-850A-418D-B115-59792E247674}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.121048145",
+      "DurationMax": "0.1872637",
+      "MediaRefs": [
+       {
+        "Id": "242359649"
+       },
+       {
+        "Id": "333596638"
+       },
+       {
+        "Id": "430378591"
+       },
+       {
+        "Id": "819286881"
+       },
+       {
+        "Id": "851320877"
+       }
+      ]
+     },
+     {
       "Id": "1654232327",
       "Name": "Up_Start",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Start",
@@ -121,6 +283,6 @@
     ]
    }
   ],
-  "FileHash": "{CCCB98AB-6F27-651D-07F4-8765EC00F88D}"
+  "FileHash": "{838D804A-E2AE-6805-2628-6AD3AFF3A110}"
  }
 }

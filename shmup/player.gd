@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 			var projectile = self._projectile_scene.instantiate()
 			add_child(projectile)
 			self._last_shoot = now
+			$AkEvent2D_Shoot.post_event()
 
 
 func _physics_process(delta: float):
@@ -22,16 +23,3 @@ func _physics_process(delta: float):
 	var direction = Input.get_axis("move_up", "move_down")
 	self.velocity.y = direction * self.speed
 	self.move_and_slide()
-	
-	## Partie son
-	var hauteur = 648 ### Variable à changer qui défini la hauteur en pixel
-	Wwise.set_rtpc_value("Hauteur", clamp(100*(hauteur-self.position[1])/hauteur, 0, 100), self)
-	if self.velocity[1] < 0:
-		SoundbankManager.event_up_start.post(self)
-		SoundbankManager.event_down_stop.post(self)
-	elif self.velocity[1] > 0:
-		SoundbankManager.event_down_start.post(self)
-		SoundbankManager.event_up_stop.post(self)
-	else:
-		SoundbankManager.event_up_stop.post(self)
-		SoundbankManager.event_down_stop.post(self)

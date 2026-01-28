@@ -17,6 +17,11 @@ namespace AK
         static const AkUniqueID DOWN_STOP = 3868270940U;
         static const AkUniqueID ENGINE = 268529915U;
         static const AkUniqueID ENNEMI_INCOMING = 3009887656U;
+        static const AkUniqueID ENNEMY_DESTROY = 2988140266U;
+        static const AkUniqueID ENNEMY_SHOT = 365677268U;
+        static const AkUniqueID HIT = 1116398592U;
+        static const AkUniqueID PLAYER_HIT = 871813740U;
+        static const AkUniqueID PLAYER_SHOT = 3359302305U;
         static const AkUniqueID UP_START = 1654232327U;
         static const AkUniqueID UP_STOP = 1841569453U;
     } // namespace EVENTS
