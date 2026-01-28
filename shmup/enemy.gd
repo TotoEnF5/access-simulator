@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+signal killed
+
 @export var speed: float = 10.0
 @export var direction: Vector2 = Vector2(-1.0, 0.0)
 @export var shoot: bool = false
@@ -35,6 +37,7 @@ func _physics_process(delta: float) -> void:
 	var collision = self.move_and_collide(self.direction * self.speed)
 	if collision:
 		# [SOUND] C'est ici que l'ennmi décède
+		self.killed.emit()
 		self.queue_free()
 
 

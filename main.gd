@@ -41,6 +41,11 @@ func _process(delta: float) -> void:
 			self._play_current_level()
 			$InputSettings.visible = false
 			self.paused = false
+
+
+func _on_shmup_player_won() -> void:
+	$Transition.visible = true
+	$Transition.start_animation()
 	
 
 func _on_transition_curtains_closed() -> void:

@@ -28,3 +28,4 @@ visible = false
 
 [connection signal="curtains_closed" from="Transition" to="." method="_on_transition_curtains_closed"]
 [connection signal="curtains_opened" from="Transition" to="." method="_on_transition_curtains_opened"]
+[connection signal="player_won" from="Shmup" to="." method="_on_shmup_player_won"]
