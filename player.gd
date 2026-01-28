@@ -10,6 +10,7 @@ enum Mode {
 @export var mode: Mode = Mode.DEBUG
 @export var speed: float = 500
 @export var jump_speed: float = -500.0
+@export var rotation_speed: float = 5.0
 @export var gravity: float = 9.81
 @export var shootCooldownMs: int = 100
 
@@ -38,13 +39,27 @@ func _process(delta: float) -> void:
 			
 
 func _physics_process(delta: float) -> void:
-	if self.mode == Mode.SHMUP or self.mode == Mode.VROOM:
-		self._vertical_movement()
+	if self.mode == Mode.VROOM:
+		self._vroom_movement(delta)
+	elif self.mode == Mode.SHMUP:
+		self._shmup_movement()
 	elif self.mode == Mode.PLATFORMER:
 		self._platformer_movement()
 		
 		
-func _vertical_movement():
+func _vroom_movement(delta: float):
+	if Input.is_action_pressed("move_left"):
+		self.rotation -= self.rotation_speed * delta
+	elif Input.is_action_pressed("move_right"):
+		self.rotation += self.rotation_speed * delta
+	
+	if Input.is_action_pressed("move_up"):
+		var direction = Vector2(cos(self.rotation), sin(self.rotation))
+		self.velocity = direction * self.speed
+		self.move_and_slide()
+
+		
+func _shmup_movement():
 	# [SOUND] C'est ici qu'on bouge le joueur !
 	# Ce qui serait cool ça serait que tu fasses une fonction à part histoire de bien organiser le code
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")

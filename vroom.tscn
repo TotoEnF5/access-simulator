@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom.gd" id="1_nu8od"]
 [ext_resource type="PackedScene" uid="uid://dp1eoqtgsd22w" path="res://player.tscn" id="1_r148r"]
-[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="2_nu8od"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
+[ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platform.tscn" id="5_1ei36"]
 
 [node name="Vroom" type="Node2D"]
 script = ExtResource("1_nu8od")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+
 [node name="Player" parent="." node_paths=PackedStringArray("Bankmanager") instance=ExtResource("1_r148r")]
 position = Vector2(98, 328)
-rotation = 1.5707964
 mode = 2
 Bankmanager = NodePath("../AkBank")
 Mode_aveugle = true
@@ -18,17 +19,24 @@ Mode_aveugle = true
 [node name="AkListener2D" type="AkListener2D" parent="Player"]
 rotation = 1.5707964
 
-[node name="TopLimit" type="Sprite2D" parent="."]
-position = Vector2(578, 17)
-scale = Vector2(9.137, 0.305)
-texture = ExtResource("2_nu8od")
+[node name="Walls" type="Node2D" parent="."]
 
-[node name="BottomLimit" type="Sprite2D" parent="."]
-position = Vector2(577.25, 635)
-scale = Vector2(9.136718, 0.3046875)
-texture = ExtResource("2_nu8od")
+[node name="Platform" parent="Walls" instance=ExtResource("5_1ei36")]
+position = Vector2(258, 183)
+scale = Vector2(4.969175, 0.83385134)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
+[node name="Platform2" parent="Walls" instance=ExtResource("5_1ei36")]
+position = Vector2(241, 501)
+scale = Vector2(5.2048044, 1)
+
+[node name="Platform3" parent="Walls" instance=ExtResource("5_1ei36")]
+position = Vector2(711, 246.99997)
+rotation = 0.40115976
+scale = Vector2(3.4705775, 0.8468485)
+
+[node name="Platform4" parent="Walls" instance=ExtResource("5_1ei36")]
+position = Vector2(720, 571)
+rotation = 0.3919673
+scale = Vector2(3.8880146, 0.92424154)
 
 [node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]

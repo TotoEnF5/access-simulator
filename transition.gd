@@ -14,8 +14,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
+	var canvas_pos = self.get_canvas_transform().origin
+	self.global_position = -canvas_pos
+	
 
 func _on_timer_timeout() -> void:
 	self._open_curtains()

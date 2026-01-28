@@ -15,6 +15,7 @@ var paused: bool = false
 func _ready() -> void:
 	$Vroom.process_mode = Node.PROCESS_MODE_DISABLED
 	$Vroom.visible = false
+	$Vroom/Camera2D.enabled = false
 	
 	$Shmup.process_mode = Node.PROCESS_MODE_DISABLED
 	$Shmup.visible = false
@@ -29,6 +30,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("change_scene"):
+		$Transition.visible = true
 		$Transition.start_animation()
 	if Input.is_action_just_pressed("settings"):
 		if not self.paused:
@@ -55,6 +57,8 @@ func _on_transition_curtains_opened() -> void:
 	elif self.current_level == Level.PLATFORMER:
 		$Platformer.process_mode = Node.PROCESS_MODE_INHERIT
 		
+	$Transition.visible = false
+		
 		
 func _pause_current_level() -> void:
 	if self.current_level == Level.VROOM:
@@ -77,6 +81,7 @@ func _play_current_level() -> void:
 func _change_level() -> void:
 	if self.current_level == Level.VROOM:
 		$Vroom.visible = false
+		$Vroom/Camera2D.enabled = false
 		self.current_level = Level.SHMUP
 	elif self.current_level == Level.SHMUP:
 		$Shmup.visible = false
@@ -90,6 +95,7 @@ func _change_level() -> void:
 func _show_level() -> void:
 	if self.current_level == Level.VROOM:
 		$Vroom.visible = true
+		$Vroom/Camera2D.enabled = true
 	elif self.current_level == Level.SHMUP:
 		$Shmup.visible = true
 	elif self.current_level == Level.PLATFORMER:
