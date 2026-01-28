@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkb0r2elj7ynl"]
+
+[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_2gi1b"]
+[ext_resource type="Script" uid="uid://d2lh71qxoca33" path="res://transition.gd" id="1_pj2mc"]
+
+[node name="Transition" type="Node2D"]
+script = ExtResource("1_pj2mc")
+
+[node name="Left" type="Sprite2D" parent="."]
+position = Vector2(-1000, 255)
+rotation = 0.34906584
+scale = Vector2(10, 10)
+texture = ExtResource("1_2gi1b")
+
+[node name="Right" type="Sprite2D" parent="."]
+position = Vector2(2152, 255)
+rotation = -0.34906584
+scale = Vector2(10, 10)
+texture = ExtResource("1_2gi1b")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

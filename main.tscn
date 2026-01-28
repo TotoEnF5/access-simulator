@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://74nogr1b67s0"]
+
+[ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bkb0r2elj7ynl" path="res://transition.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cokxwf645t4kn" path="res://vroom.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bcusfrsm1ye7h" path="res://shmup.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cd2ka03e5c40v" path="res://platformer.tscn" id="5_272bh"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="Transition" parent="." instance=ExtResource("2_h2yge")]
+z_index = 1
+
+[node name="Vroom" parent="." instance=ExtResource("3_lquwl")]
+visible = false
+
+[node name="Shmup" parent="." instance=ExtResource("4_7mycd")]
+visible = false
+
+[node name="Platformer" parent="." instance=ExtResource("5_272bh")]
+visible = false
+
+[connection signal="curtains_closed" from="Transition" to="." method="_on_transition_curtains_closed"]
+[connection signal="curtains_opened" from="Transition" to="." method="_on_transition_curtains_opened"]
