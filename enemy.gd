@@ -18,7 +18,7 @@ const _projectileScene: PackedScene = preload("res://projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	vroom_aveugle_mode(1)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -51,5 +51,5 @@ func _shoot():
 	projectile.set_collision_mask_value(1, true)
 	add_child(projectile)
 
-func vroom_aveugle_mode(player:CharacterBody2D):
+func vroom_aveugle_mode(player):
 	event_vroom_audio.post_event()

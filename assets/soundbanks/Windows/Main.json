@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{CAC7BB67-5F10-7047-0FBE-1A36429FB13D}",
+    "Hash": "{302D3C56-97ED-F056-155B-A7380E1FA86C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -80,6 +80,7 @@
       "Name": "Ennemi_Incoming",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Ennemi_Incoming",
       "GUID": "{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}",
+      "MaxAttenuation": "800",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -120,6 +121,6 @@
     ]
    }
   ],
-  "FileHash": "{925F6650-9A22-C5FA-CF18-A6C6251D7783}"
+  "FileHash": "{8F198693-D100-C014-0605-1BC36C8BD954}"
  }
 }

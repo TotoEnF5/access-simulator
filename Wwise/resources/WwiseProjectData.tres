@@ -160,6 +160,7 @@ guid = "{7A49E8B2-7DBC-4157-9D58-1B0EDE317226}"
 id = 268529915
 
 [sub_resource type="WwiseTreeObjectEvent" id="WwiseTreeObjectEvent_lrto0"]
+max_attenuation = 800.0
 max_duration = 0.0
 min_duration = 0.0
 path = "\\Events\\Default Work Unit\\Act1 Course\\Ennemi_Incoming"
