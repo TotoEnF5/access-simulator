@@ -22,7 +22,8 @@ const _projectileScene: PackedScene = preload("res://projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	if 1: ## Bool si la feature pour aveugle pour le vroom est on
+		SoundbankManager.event_engine.post(self)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -59,6 +60,8 @@ func _vertical_movement():
 	self.move_and_slide()
 	
 	## Partie son
+	var hauteur = 648 ### Variable à changer qui défini la hauteur en pixel
+	Wwise.set_rtpc_value("Hauteur", clamp(100*(hauteur-self.position[1])/hauteur, 0, 100), self)
 	if self.velocity[1] < 0:
 		SoundbankManager.event_up_start.post(self)
 		SoundbankManager.event_down_stop.post(self)

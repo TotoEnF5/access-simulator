@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{C4D7E157-9ED3-7BD3-9DD6-40B0FFA60F10}",
+    "Hash": "{648381A9-F59D-ACEA-61AC-BCF3C8FD6427}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "Vehicle1_EngineStartUp1_long.wav",
       "CachePath": "41/{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem"
+     },
+     {
+      "Id": "630331129",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Archived, Test Tone, Pink Noise SND3536.wav",
+      "CachePath": "A9/{A9714EFD-E9E5-9BC9-4B7B-F9998C3010BA}.wem"
      }
     ],
     "Events": [
@@ -48,6 +56,18 @@
       "DurationMax": "0"
      },
      {
+      "Id": "268529915",
+      "Name": "Engine",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Engine",
+      "GUID": "{7A49E8B2-7DBC-4157-9D58-1B0EDE317226}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "630331129"
+       }
+      ]
+     },
+     {
       "Id": "1654232327",
       "Name": "Up_Start",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Start",
@@ -69,9 +89,17 @@
       "DurationMin": "0",
       "DurationMax": "0"
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3320209893",
+      "Name": "Hauteur",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Vroom\\Hauteur",
+      "GUID": "{016DEA19-54C2-4503-9EFA-F88CB614C646}"
+     }
     ]
    }
   ],
-  "FileHash": "{ACF424DB-39EA-4DEB-E2AE-59D0FE224DFE}"
+  "FileHash": "{58D8CE62-DC33-A00F-AD7C-F035A51C3022}"
  }
 }
