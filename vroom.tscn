@@ -13,6 +13,10 @@ position = Vector2(98, 328)
 rotation = 1.5707964
 mode = 2
 Bankmanager = NodePath("../AkBank")
+Mode_aveugle = true
+
+[node name="AkListener2D" type="AkListener2D" parent="Player"]
+rotation = 1.5707964
 
 [node name="TopLimit" type="Sprite2D" parent="."]
 position = Vector2(578, 17)
@@ -26,9 +30,5 @@ texture = ExtResource("2_nu8od")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
-
-[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
-position = Vector2(200, 324)
-rotation = 3.1415927
 
 [node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]

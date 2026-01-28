@@ -27,5 +27,6 @@ rect = Rect2(-64, -65, 128, 130)
 [node name="AkEvent2D_Vroom_Audiomode" type="AkEvent2D" parent="."]
 event = ExtResource("3_qi2p4")
 stop_on = 3
+skew = 0.7853982
 
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]

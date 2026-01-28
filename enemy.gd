@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var speed: float = 10.0
+@export var speed: float = 0.1
 @export var direction: Vector2 = Vector2(-1.0, 0.0)
 @export var shoot: bool = false
 @export var shootCooldownMs: int = 600
