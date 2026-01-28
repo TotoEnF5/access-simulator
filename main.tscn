@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://74nogr1b67s0"]
+[gd_scene load_steps=7 format=3 uid="uid://74nogr1b67s0"]
 
 [ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://buwsflnumlaxh" path="res://input_settings.tscn" id="2_7mycd"]
 [ext_resource type="PackedScene" uid="uid://bkb0r2elj7ynl" path="res://transition.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cokxwf645t4kn" path="res://vroom.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://bcusfrsm1ye7h" path="res://shmup.tscn" id="4_7mycd"]
@@ -8,6 +9,10 @@
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
+
+[node name="InputSettings" parent="." instance=ExtResource("2_7mycd")]
+visible = false
+z_index = 2
 
 [node name="Transition" parent="." instance=ExtResource("2_h2yge")]
 z_index = 1

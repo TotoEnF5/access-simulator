@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://buwsflnumlaxh"]
+
+[ext_resource type="Script" uid="uid://tyjsyjb5lrs2" path="res://input_settings.gd" id="1_ww7g3"]
+[ext_resource type="PackedScene" uid="uid://w615x4es6818" path="res://remap_button.tscn" id="2_dyv2g"]
+
+[node name="InputSettings" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ww7g3")
+action_items = Array[String](["dummy", "move_up", "move_down"])
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 71.0
+columns = 2
+
+[node name="MoveUp" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Move up"
+
+[node name="MoveUpButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "move_up"
+
+[node name="MoveDown" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Move down"
+
+[node name="MoveDownButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "move_down"
+
+[node name="MoveLeft" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Move left"
+
+[node name="MoveLeftButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "move_left"
+
+[node name="MoveRight" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Move right"
+
+[node name="MoveRightButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "move_right"
+
+[node name="Shoot" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Shoot"
+
+[node name="ShootButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "shoot"
+
+[node name="Jump" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Jump"
+
+[node name="JumpButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "jump"
+
+[node name="Settings" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Open / close settings"
+
+[node name="SettingsButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
+layout_mode = 2
+action = "settings"

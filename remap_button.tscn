@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://w615x4es6818"]
+
+[ext_resource type="Script" uid="uid://gyxru24vdjas" path="res://remap_button.gd" id="1_ral0r"]
+
+[node name="RemapButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+toggle_mode = true
+script = ExtResource("1_ral0r")
+action = "shoot"
+
+[connection signal="toggled" from="." to="." method="_on_toggled"]
