@@ -15,6 +15,7 @@ enum Mode {
 
 @export_group("Sound")
 @export var Bankmanager: AkBank
+@export var Mode_aveugle: bool
 
 var _lastShoot: int = 0
 
@@ -22,7 +23,7 @@ const _projectileScene: PackedScene = preload("res://projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if 1: ## Bool si la feature pour aveugle pour le vroom est on
+	if Mode_aveugle: ## Bool si la feature pour aveugle pour le vroom est on
 		SoundbankManager.event_engine.post(self)
 
 

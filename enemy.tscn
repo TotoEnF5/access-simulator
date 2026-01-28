@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cdcvyl53qhibe"]
+[gd_scene load_steps=5 format=3 uid="uid://cdcvyl53qhibe"]
 
 [ext_resource type="Script" uid="uid://d0s2a2dggcomb" path="res://enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_7k104"]
+[ext_resource type="WwiseEvent" uid="uid://cl8t6xbvutimu" path="res://Wwise/resources/Event/{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}.tres" id="3_qi2p4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
 size = Vector2(127, 128)
@@ -22,6 +23,11 @@ texture = ExtResource("1_7k104")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 rect = Rect2(-64, -65, 128, 130)
+
+[node name="AkEvent2D_Vroom_Audiomode" type="AkEvent2D" parent="."]
+event = ExtResource("3_qi2p4")
+stop_on = 3
+skew = 0.7853982
 
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

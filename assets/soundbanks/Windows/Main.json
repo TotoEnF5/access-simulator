@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{648381A9-F59D-ACEA-61AC-BCF3C8FD6427}",
+    "Hash": "{6908EDD6-9B94-761F-56F3-D702F736FE77}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,12 +24,20 @@
       "CachePath": "41/{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem"
      },
      {
+      "Id": "352311725",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire Burning - Fire Crackles.wav",
+      "CachePath": "93/{936E654D-4CCE-566F-A3AB-35A03B67CD52}.wem"
+     },
+     {
       "Id": "630331129",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Archived, Test Tone, Pink Noise SND3536.wav",
-      "CachePath": "A9/{A9714EFD-E9E5-9BC9-4B7B-F9998C3010BA}.wem"
+      "CachePath": "34/{346DEDCE-000E-F825-F931-901649CF3C44}.wem"
      }
     ],
     "Events": [
@@ -68,6 +76,19 @@
       ]
      },
      {
+      "Id": "3009887656",
+      "Name": "Ennemi_Incoming",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Ennemi_Incoming",
+      "GUID": "{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}",
+      "MaxAttenuation": "1000",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "352311725"
+       }
+      ]
+     },
+     {
       "Id": "1654232327",
       "Name": "Up_Start",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Start",
@@ -100,6 +121,6 @@
     ]
    }
   ],
-  "FileHash": "{58D8CE62-DC33-A00F-AD7C-F035A51C3022}"
+  "FileHash": "{CCCB98AB-6F27-651D-07F4-8765EC00F88D}"
  }
 }
