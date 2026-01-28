@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://c1m43wnullp"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Up_Stop"
+id = 1841569453
+guid = "{5468C449-7268-4273-8145-7845BE721BDE}"
+dummy = true

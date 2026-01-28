@@ -1,3 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3157003241	TEST			\Default Work Unit\TEST	
+	268529915	Engine			\Default Work Unit\Act1 Course\Engine	
+	1418105328	Down_Start			\Default Work Unit\Act1 Course\Down_Start	
+	1654232327	Up_Start			\Default Work Unit\Act1 Course\Up_Start	
+	1841569453	Up_Stop			\Default Work Unit\Act1 Course\Up_Stop	
+	3868270940	Down_Stop			\Default Work Unit\Act1 Course\Down_Stop	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3320209893	Hauteur			\Default Work Unit\Vroom\Hauteur	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	83552029	Vehicle1_EngineStartUp1_long	.cache\41\{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem		\Containers\Default Work Unit\Vroom\Moove\Up\Vehicle1_EngineStartUp1_long		953144
+	630331129	Archived, Test Tone, Pink Noise SND3536	.cache\A9\{A9714EFD-E9E5-9BC9-4B7B-F9998C3010BA}.wem		\Containers\Default Work Unit\Vroom\Engine\Archived, Test Tone, Pink Noise SND3536		11750496
 

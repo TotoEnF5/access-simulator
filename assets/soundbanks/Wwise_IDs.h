@@ -13,11 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID DOWN_START = 1418105328U;
+        static const AkUniqueID DOWN_STOP = 3868270940U;
+        static const AkUniqueID ENGINE = 268529915U;
+        static const AkUniqueID UP_START = 1654232327U;
+        static const AkUniqueID UP_STOP = 1841569453U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID HAUTEUR = 3320209893U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;

@@ -1,0 +1,19 @@
+[gd_scene load_steps=8 format=3 uid="uid://bin2q0q4ie6gc"]
+
+[ext_resource type="WwiseBank" uid="uid://1fo3uobacriy" path="res://Wwise/resources/SoundBank/{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}.tres" id="1_jtjrv"]
+[ext_resource type="Script" uid="uid://c16wwbd1cu73c" path="res://Audio/Scripts/soundbank_manager.gd" id="2_oc7my"]
+[ext_resource type="WwiseEvent" uid="uid://crjxiyo7p8df4" path="res://Wwise/resources/Event/{0C1769D1-0238-40CA-B2F6-EE0FE44A1B33}.tres" id="3_s6vuw"]
+[ext_resource type="WwiseEvent" uid="uid://c1m43wnullp" path="res://Wwise/resources/Event/{5468C449-7268-4273-8145-7845BE721BDE}.tres" id="4_cykfb"]
+[ext_resource type="WwiseEvent" uid="uid://by6o6ovllm3oi" path="res://Wwise/resources/Event/{077F7B3B-8923-4B80-BEF3-8D367557290F}.tres" id="5_ppn40"]
+[ext_resource type="WwiseEvent" uid="uid://od0ndhq33sjb" path="res://Wwise/resources/Event/{A739C5A2-AA98-457D-98C9-AC8F8BC93945}.tres" id="6_lga30"]
+[ext_resource type="WwiseEvent" uid="uid://c0vm1gcourrm7" path="res://Wwise/resources/Event/{7A49E8B2-7DBC-4157-9D58-1B0EDE317226}.tres" id="7_cykfb"]
+
+[node name="AkBank" type="AkBank"]
+bank = ExtResource("1_jtjrv")
+load_on = 2
+script = ExtResource("2_oc7my")
+event_up_start = ExtResource("3_s6vuw")
+event_up_stop = ExtResource("4_cykfb")
+event_down_start = ExtResource("5_ppn40")
+event_down_stop = ExtResource("6_lga30")
+event_engine = ExtResource("7_cykfb")
