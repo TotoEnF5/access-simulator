@@ -1,6 +1,10 @@
 extends Node2D
 
 @export var enemyCooldownMs: int = 1000
+@export var enemySpeed: float = 10
+@export var enemyShootCooldown: int = 600
+@export var enemyShoot: bool = true
+@export var enemyProjectileSpeed: float = 100.0
 
 var _lastEnemyTime: int = 0
 
@@ -26,6 +30,9 @@ func _spawn_enemy() -> void:
 	var enemyPos = Vector2(viewportSize.x + 200, y)
 	var enemy = self._enemyScene.instantiate()
 	enemy.position = enemyPos
-	enemy.shoot = true
+	enemy.speed = self.enemySpeed
+	enemy.shootCooldown = self.enemyShootCooldownMs
+	enemy.shoot = self.enemyShoot
+	enemy.projectileSpeed = self.enemyProjectileSpeed
 	add_child(enemy)
 	

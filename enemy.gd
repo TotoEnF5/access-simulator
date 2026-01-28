@@ -5,6 +5,7 @@ extends RigidBody2D
 @export var shoot: bool = false
 @export var shootCooldownMs: int = 600
 @export var shootMercy: int = 200
+@export var projectileSpeed: float = 30.0
 
 @export var Mode_aveugle: bool = 1
 
@@ -49,12 +50,13 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 func _shoot():
 	var projectile = self._projectileScene.instantiate()
 	projectile.direction = Vector2(-1.0, 0.0)
-	projectile.speed = 30.0
+	projectile.speed = self.projectileSpeed
 	projectile.set_collision_layer_value(2, false)
 	projectile.set_collision_mask_value(2, false)
 	projectile.set_collision_layer_value(1, true)
 	projectile.set_collision_mask_value(1, true)
 	add_child(projectile)
+	
 
 func vroom_aveugle_mode(player):
 	event_vroom_audio.post_event()
