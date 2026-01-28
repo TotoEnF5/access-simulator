@@ -19,3 +19,7 @@ func _physics_process(delta: float) -> void:
 		# [SOUND] C'est ici que le projectile meurt
 		collision.get_collider().free()
 		self.queue_free()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	self.queue_free()

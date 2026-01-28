@@ -37,6 +37,9 @@ func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 	self._lastShoot = Time.get_ticks_msec() + self.shootMercy
 
 
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	self.queue_free()
+
 func _shoot():
 	var projectile = self._projectileScene.instantiate()
 	projectile.direction = Vector2(-1.0, 0.0)
