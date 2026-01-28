@@ -1,3 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3157003241	TEST			\Default Work Unit\TEST	
+	1418105328	Down_Start			\Default Work Unit\Act1 Course\Down_Start	
+	1654232327	Up_Start			\Default Work Unit\Act1 Course\Up_Start	
+	1841569453	Up_Stop			\Default Work Unit\Act1 Course\Up_Stop	
+	3868270940	Down_Stop			\Default Work Unit\Act1 Course\Down_Stop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	83552029	Vehicle1_EngineStartUp1_long	.cache\41\{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem		\Containers\Default Work Unit\Vroom\Moove\Up\Vehicle1_EngineStartUp1_long		953144
 

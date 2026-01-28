@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://crjxiyo7p8df4"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Up_Start"
+id = 1654232327
+guid = "{0C1769D1-0238-40CA-B2F6-EE0FE44A1B33}"
+dummy = true

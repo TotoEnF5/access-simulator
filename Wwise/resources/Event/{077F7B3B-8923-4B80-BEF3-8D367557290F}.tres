@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://by6o6ovllm3oi"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Down_Start"
+id = 1418105328
+guid = "{077F7B3B-8923-4B80-BEF3-8D367557290F}"
+dummy = true

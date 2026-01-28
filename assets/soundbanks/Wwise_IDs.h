@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID DOWN_START = 1418105328U;
+        static const AkUniqueID DOWN_STOP = 3868270940U;
+        static const AkUniqueID UP_START = 1654232327U;
+        static const AkUniqueID UP_STOP = 1841569453U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

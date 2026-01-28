@@ -13,6 +13,9 @@ enum Mode {
 @export var gravity: float = 9.81
 @export var shootCooldownMs: int = 100
 
+@export_group("Sound")
+@export var Bankmanager: AkBank
+
 var _lastShoot: int = 0
 
 const _projectileScene: PackedScene = preload("res://projectile.tscn")
@@ -54,6 +57,17 @@ func _vertical_movement():
 	
 	self.velocity = direction * self.speed
 	self.move_and_slide()
+	
+	## Partie son
+	if self.velocity[1] < 0:
+		SoundbankManager.event_up_start.post(self)
+		SoundbankManager.event_down_stop.post(self)
+	elif self.velocity[1] > 0:
+		SoundbankManager.event_down_start.post(self)
+		SoundbankManager.event_up_stop.post(self)
+	else:
+		SoundbankManager.event_up_stop.post(self)
+		SoundbankManager.event_down_stop.post(self)
 	
 	
 func _platformer_movement():

@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://od0ndhq33sjb"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Down_Stop"
+id = 3868270940
+guid = "{A739C5A2-AA98-457D-98C9-AC8F8BC93945}"
+dummy = true
