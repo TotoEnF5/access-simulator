@@ -6,7 +6,7 @@ enum Level {
 	PLATFORMER,
 }
 
-@export var start_level_minus_one: Level = Level.PLATFORMER
+@export var start_level_minus_one: Level = Level.VROOM
 
 var current_level: Level = self.start_level_minus_one
 var paused: bool = false

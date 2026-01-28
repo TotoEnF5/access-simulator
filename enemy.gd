@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var speed: float = 0.1
+@export var speed: float = 10.0
 @export var direction: Vector2 = Vector2(-1.0, 0.0)
 @export var shoot: bool = false
 @export var shootCooldownMs: int = 600
@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 			self._shoot()
 			self._lastShoot = now
 	
+	
 func _physics_process(delta: float) -> void:
 	var collision = self.move_and_collide(self.direction * self.speed)
 	if collision:
@@ -43,6 +44,7 @@ func _on_visible_on_screen_notifier_2d_screen_entered() -> void:
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	self.queue_free()
+	
 
 func _shoot():
 	var projectile = self._projectileScene.instantiate()
