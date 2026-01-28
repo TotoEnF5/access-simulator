@@ -28,5 +28,7 @@ texture = ExtResource("2_nu8od")
 anchor_mode = 0
 
 [node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
+position = Vector2(100, 324)
+rotation = 3.1415927
 
 [node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]

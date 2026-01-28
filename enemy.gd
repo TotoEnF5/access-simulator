@@ -6,6 +6,11 @@ extends RigidBody2D
 @export var shootCooldownMs: int = 600
 @export var shootMercy: int = 200
 
+@export var Mode_aveugle: bool = 1
+
+## Event a call pour le mode aveugle
+@onready var event_vroom_audio = $AkEvent2D_Vroom_Audiomode
+
 var _lastShoot: int = 0
 var _shouldShoot: bool = false
 
@@ -13,8 +18,7 @@ const _projectileScene: PackedScene = preload("res://projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -46,3 +50,6 @@ func _shoot():
 	projectile.set_collision_layer_value(1, true)
 	projectile.set_collision_mask_value(1, true)
 	add_child(projectile)
+
+func vroom_aveugle_mode(player:CharacterBody2D):
+	event_vroom_audio.post_event()

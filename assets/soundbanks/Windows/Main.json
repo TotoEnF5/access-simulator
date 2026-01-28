@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{648381A9-F59D-ACEA-61AC-BCF3C8FD6427}",
+    "Hash": "{CAC7BB67-5F10-7047-0FBE-1A36429FB13D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "Vehicle1_EngineStartUp1_long.wav",
       "CachePath": "41/{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem"
+     },
+     {
+      "Id": "352311725",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fire Burning - Fire Crackles.wav",
+      "CachePath": "74/{74AA699D-4140-87A4-35EC-5DA27F028EB6}.wem"
      },
      {
       "Id": "630331129",
@@ -68,6 +76,18 @@
       ]
      },
      {
+      "Id": "3009887656",
+      "Name": "Ennemi_Incoming",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Ennemi_Incoming",
+      "GUID": "{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "352311725"
+       }
+      ]
+     },
+     {
       "Id": "1654232327",
       "Name": "Up_Start",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Start",
@@ -100,6 +120,6 @@
     ]
    }
   ],
-  "FileHash": "{58D8CE62-DC33-A00F-AD7C-F035A51C3022}"
+  "FileHash": "{925F6650-9A22-C5FA-CF18-A6C6251D7783}"
  }
 }

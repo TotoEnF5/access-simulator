@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://cl8t6xbvutimu"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Ennemi_Incoming"
+id = 3009887656
+guid = "{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}"
+dummy = true

@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1418105328	Down_Start			\Default Work Unit\Act1 Course\Down_Start	
 	1654232327	Up_Start			\Default Work Unit\Act1 Course\Up_Start	
 	1841569453	Up_Stop			\Default Work Unit\Act1 Course\Up_Stop	
+	3009887656	Ennemi_Incoming			\Default Work Unit\Act1 Course\Ennemi_Incoming	
 	3868270940	Down_Stop			\Default Work Unit\Act1 Course\Down_Stop	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -10,5 +11,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	83552029	Vehicle1_EngineStartUp1_long	.cache\41\{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem		\Containers\Default Work Unit\Vroom\Moove\Up\Vehicle1_EngineStartUp1_long		953144
+	352311725	Fire Burning - Fire Crackles	.cache\74\{74AA699D-4140-87A4-35EC-5DA27F028EB6}.wem		\Containers\Default Work Unit\Vroom\Ennemi_Incoming\Fire Burning - Fire Crackles		5673300
 	630331129	Archived, Test Tone, Pink Noise SND3536	.cache\A9\{A9714EFD-E9E5-9BC9-4B7B-F9998C3010BA}.wem		\Containers\Default Work Unit\Vroom\Engine\Archived, Test Tone, Pink Noise SND3536		11750496
 
