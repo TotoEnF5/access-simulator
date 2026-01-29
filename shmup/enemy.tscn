@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d0s2a2dggcomb" path="res://shmup/enemy.gd" id="1_4gyqm"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_7k104"]
-[ext_resource type="WwiseEvent" uid="uid://cl8t6xbvutimu" path="res://Wwise/resources/Event/{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}.tres" id="3_qi2p4"]
+[ext_resource type="WwiseEvent" uid="uid://6w28sd76qlo4" path="res://Wwise/resources/Event/{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}.tres" id="3_md117"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
 size = Vector2(127, 128)
@@ -24,8 +24,8 @@ texture = ExtResource("1_7k104")
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 rect = Rect2(-64, -65, 128, 130)
 
-[node name="AkEvent2D_Vroom_Audiomode" type="AkEvent2D" parent="."]
-event = ExtResource("3_qi2p4")
+[node name="AkEvent2D_Shoot" type="AkEvent2D" parent="."]
+event = ExtResource("3_md117")
 stop_on = 3
 skew = 0.7853982
 

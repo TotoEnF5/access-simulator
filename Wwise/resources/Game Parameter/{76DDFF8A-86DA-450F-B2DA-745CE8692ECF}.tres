@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://r3bxaa7los8u"]
+
+[resource]
+name = "Player_Movement"
+id = 541470702
+guid = "{76DDFF8A-86DA-450F-B2DA-745CE8692ECF}"
+dummy = true

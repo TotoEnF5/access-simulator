@@ -9,7 +9,6 @@
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
-start_level_minus_one = 2
 
 [node name="InputSettings" parent="." instance=ExtResource("2_7mycd")]
 visible = false

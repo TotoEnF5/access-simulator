@@ -1,5 +1,22 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Mixage\SFX	
+	541470702	Player_Movement			\Default Work Unit\Mixage\Player_Movement	
+	662417162	NPC			\Default Work Unit\Mixage\NPC	
+	1069431850	Player			\Default Work Unit\Mixage\Player	
+	1551306167	UI			\Default Work Unit\Mixage\UI	
+	2981377429	Ambiance			\Default Work Unit\Mixage\Ambiance	
+	4004702906	Player_Shoot			\Default Work Unit\Mixage\Player_Shoot	
+	4056684167	Master			\Default Work Unit\Mixage\Master	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	662417162	NPC			\Default Work Unit\Main Audio Bus\SFX\NPC	
+	1069431850	Player			\Default Work Unit\Main Audio Bus\SFX\Player	
+	1551306167	UI			\Default Work Unit\Main Audio Bus\UI	
+	2129636626	Movement			\Default Work Unit\Main Audio Bus\SFX\Player\Movement	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2981377429	Ambiance			\Default Work Unit\Main Audio Bus\Ambiance	
+	3038207054	Shoot			\Default Work Unit\Main Audio Bus\SFX\Player\Shoot	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

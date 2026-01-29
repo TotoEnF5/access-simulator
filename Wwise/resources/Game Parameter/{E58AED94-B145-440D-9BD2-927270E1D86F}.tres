@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://cjra4bft51k5u"]
+
+[resource]
+name = "NPC"
+id = 662417162
+guid = "{E58AED94-B145-440D-9BD2-927270E1D86F}"
+dummy = true

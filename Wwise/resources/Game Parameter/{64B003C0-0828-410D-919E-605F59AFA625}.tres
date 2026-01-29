@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://dswsvmvu7q64k"]
+
+[resource]
+name = "Player"
+id = 1069431850
+guid = "{64B003C0-0828-410D-919E-605F59AFA625}"
+dummy = true
