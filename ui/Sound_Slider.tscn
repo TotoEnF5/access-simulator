@@ -1,11 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://r05qq2qne0ov"]
+[gd_scene load_steps=4 format=3 uid="uid://r05qq2qne0ov"]
 
 [ext_resource type="Script" uid="uid://it272qwvh2s3" path="res://ui/sound_slider.gd" id="1_te0al"]
+[ext_resource type="WwiseEvent" uid="uid://bu1c7okud5axc" path="res://Wwise/resources/Event/{8A145C3D-A58A-4766-834B-41865CD07071}.tres" id="2_1lgkc"]
+[ext_resource type="WwiseRTPC" uid="uid://dbmgt8cj7x6dd" path="res://Wwise/resources/Game Parameter/{40BF6023-C4BA-4ADB-A970-1E265B58C144}.tres" id="3_r3378"]
 
 [node name="HSlider" type="HSlider"]
 offset_right = 524.0
 offset_bottom = 16.0
 script = ExtResource("1_te0al")
+rtpc_feedback = ExtResource("3_r3378")
+event_feedback = ExtResource("2_1lgkc")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 custom_minimum_size = Vector2(10, 10)

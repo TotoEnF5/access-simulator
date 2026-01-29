@@ -1,10 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://bv7uamh0wlsfa"]
+[gd_scene load_steps=11 format=3 uid="uid://bv7uamh0wlsfa"]
 
 [ext_resource type="Script" uid="uid://dk0g8a66m1vlp" path="res://ui/setting.gd" id="1_qt3sj"]
 [ext_resource type="PackedScene" uid="uid://r05qq2qne0ov" path="res://ui/Sound_Slider.tscn" id="2_2w7xm"]
-[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="2_psj1b"]
 [ext_resource type="WwiseRTPC" uid="uid://b7rdpmj7jjjdx" path="res://Wwise/resources/Game Parameter/{AD47CEEB-959B-4CC1-AF33-800B48E4D0C3}.tres" id="3_g8yqh"]
-[ext_resource type="WwiseEvent" uid="uid://b8y5kjxcvtvj0" path="res://Wwise/resources/Event/{7982BB74-C78E-4C05-BACB-150010CE9C0F}.tres" id="4_v5474"]
 [ext_resource type="WwiseRTPC" uid="uid://bt87s10gtsuv2" path="res://Wwise/resources/Game Parameter/{8CDC3B3F-AB0D-4E5A-8D33-49FE41C0BF57}.tres" id="5_3dew3"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="6_8btxk"]
 [ext_resource type="WwiseRTPC" uid="uid://ccfv2477iha0j" path="res://Wwise/resources/Game Parameter/{66DF077D-268E-4878-AE1E-A70F7B0760C6}.tres" id="7_aujig"]
@@ -22,10 +20,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qt3sj")
 
-[node name="AkBank" parent="." instance=ExtResource("2_psj1b")]
-
-[node name="AkListener2D" type="AkListener2D" parent="."]
-
 [node name="Master" parent="." instance=ExtResource("2_2w7xm")]
 layout_mode = 0
 offset_left = 300.0
@@ -35,7 +29,6 @@ offset_bottom = 81.0
 scale = Vector2(1.5, 1.5)
 rtpc = ExtResource("3_g8yqh")
 rtpc_name = "Master"
-event_feedback = ExtResource("4_v5474")
 
 [node name="Sprite2D" type="Sprite2D" parent="Master"]
 position = Vector2(29.2, 206)
@@ -51,7 +44,6 @@ offset_bottom = 86.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("5_3dew3")
 rtpc_name = "SFX"
-event_feedback = ExtResource("4_v5474")
 
 [node name="Sprite2D" type="Sprite2D" parent="Master/SFX"]
 position = Vector2(22.340734, 176.96298)
@@ -67,7 +59,6 @@ offset_bottom = 86.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("7_q3x5k")
 rtpc_name = "NPC"
-event_feedback = ExtResource("4_v5474")
 
 [node name="Player" parent="Master/SFX" instance=ExtResource("2_2w7xm")]
 layout_mode = 0
@@ -78,7 +69,6 @@ offset_bottom = 156.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("8_j52qw")
 rtpc_name = "Player"
-event_feedback = ExtResource("4_v5474")
 
 [node name="Sprite2D" type="Sprite2D" parent="Master/SFX/Player"]
 position = Vector2(21.618097, 114.13125)
@@ -94,7 +84,6 @@ offset_bottom = 86.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("8_hjt1l")
 rtpc_name = "Movement"
-event_feedback = ExtResource("4_v5474")
 
 [node name="Shoot" parent="Master/SFX/Player" instance=ExtResource("2_2w7xm")]
 layout_mode = 0
@@ -105,7 +94,6 @@ offset_bottom = 156.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("9_j52qw")
 rtpc_name = "Shoot"
-event_feedback = ExtResource("4_v5474")
 
 [node name="UI" parent="Master" instance=ExtResource("2_2w7xm")]
 layout_mode = 0
@@ -116,4 +104,5 @@ offset_bottom = 386.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("7_aujig")
 rtpc_name = "UI"
-event_feedback = ExtResource("4_v5474")
+
+[node name="AkListener2D" type="AkListener2D" parent="."]

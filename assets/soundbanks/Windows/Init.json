@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4F47BA0F-0608-A9C2-56B7-7E339192294D}",
+    "Hash": "{B0F66116-47E3-1A07-702D-C8AC81BA6B31}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -38,31 +38,31 @@
      {
       "Id": "393239870",
       "Name": "SFX",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX",
       "GUID": "{95429670-6F21-46D2-8972-9300A1BD6E7F}"
      },
      {
       "Id": "662417162",
       "Name": "NPC",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\NPC",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\NPC",
       "GUID": "{B88E0A3F-4D0E-4B4A-B9AF-105AB789A86E}"
      },
      {
       "Id": "1069431850",
       "Name": "Player",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player",
       "GUID": "{6FFE9FCF-DBAC-45A7-9B50-5CA82BD42D9C}"
      },
      {
       "Id": "1551306167",
       "Name": "UI",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\UI",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\UI",
       "GUID": "{B914B6AE-B74C-4F6B-B998-0AB2AC246C56}"
      },
      {
       "Id": "2129636626",
       "Name": "Movement",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player\\Movement",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Movement",
       "GUID": "{E397A3D4-4E15-4501-B7A4-87BA391C210D}"
      },
      {
@@ -72,16 +72,28 @@
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      },
      {
+      "Id": "2543661333",
+      "Name": "Sound_Test",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Sound_Test",
+      "GUID": "{162FEC03-E670-401C-922A-D33AFD0D6D57}"
+     },
+     {
       "Id": "2981377429",
       "Name": "Ambiance",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambiance",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\Ambiance",
       "GUID": "{88CB39C7-CA3B-45EB-89D6-9988E0828CBC}"
      },
      {
       "Id": "3038207054",
       "Name": "Shoot",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player\\Shoot",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Shoot",
       "GUID": "{A95A5751-5C6E-4A88-8015-5B5B69078CCE}"
+     },
+     {
+      "Id": "4056684167",
+      "Name": "Master",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master",
+      "GUID": "{85ED1DB7-B0D7-4AE6-A082-17FD3DD075BC}"
      }
     ],
     "GameParameters": [
@@ -132,6 +144,12 @@
       "Name": "UI",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\UI",
       "GUID": "{66DF077D-268E-4878-AE1E-A70F7B0760C6}"
+     },
+     {
+      "Id": "2543661333",
+      "Name": "Sound_Test",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Sound_Test",
+      "GUID": "{40BF6023-C4BA-4ADB-A970-1E265B58C144}"
      },
      {
       "Id": "2648548617",
@@ -679,6 +697,6 @@
     ]
    }
   ],
-  "FileHash": "{67CC323F-2E03-52C7-9CE0-071725F56324}"
+  "FileHash": "{C633FD6B-04B0-8078-F999-E9EBE189CCDA}"
  }
 }

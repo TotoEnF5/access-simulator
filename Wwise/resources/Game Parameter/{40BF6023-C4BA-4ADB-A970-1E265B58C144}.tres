@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://dbmgt8cj7x6dd"]
+
+[resource]
+name = "Sound_Test"
+id = 2543661333
+guid = "{40BF6023-C4BA-4ADB-A970-1E265B58C144}"
+dummy = true

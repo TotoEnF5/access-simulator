@@ -24,6 +24,7 @@ namespace AK
         static const AkUniqueID PLAYER_HIT = 871813740U;
         static const AkUniqueID PLAYER_SHOT = 3359302305U;
         static const AkUniqueID ROTATE = 1302771492U;
+        static const AkUniqueID SOUND_TEST = 2543661333U;
         static const AkUniqueID WALK = 2108779966U;
         static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
@@ -38,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAYER_MOVEMENT = 541470702U;
         static const AkUniqueID PLAYER_SHOOT = 4004702906U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SOUND_TEST = 2543661333U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -61,11 +63,13 @@ namespace AK
     {
         static const AkUniqueID AMBIANCE = 2981377429U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MOVEMENT = 2129636626U;
         static const AkUniqueID NPC = 662417162U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID SHOOT = 3038207054U;
+        static const AkUniqueID SOUND_TEST = 2543661333U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
