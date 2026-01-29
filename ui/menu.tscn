@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2wqpmbyskm55"]
+
+[ext_resource type="Script" uid="uid://btvwexbp7561t" path="res://ui/menu.gd" id="1_bwjgb"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bwjgb")
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 124.0
+offset_right = 270.0
+offset_bottom = 155.0
+scale = Vector2(3, 3)
+text = "Resume"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 524.0
+offset_right = 292.0
+offset_bottom = 555.0
+scale = Vector2(3, 3)
+text = "Quit Game"
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 324.0
+offset_right = 270.0
+offset_bottom = 355.0
+scale = Vector2(3, 3)
+text = "Settings"
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]

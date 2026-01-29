@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://cqvt2yyji1ufj"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Rotate"
+id = 1302771492
+guid = "{5A78B004-8C4F-4063-86D5-7C77F58B852D}"
+dummy = true

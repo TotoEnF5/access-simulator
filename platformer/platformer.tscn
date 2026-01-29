@@ -1,6 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cd2ka03e5c40v"]
 
 [ext_resource type="Script" uid="uid://d0narlnj0sq2b" path="res://platformer/platformer.gd" id="1_k1ntv"]
+[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="2_nl76y"]
 [ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="2_or1io"]
 [ext_resource type="PackedScene" uid="uid://bu10mcafd4qcd" path="res://platformer/player.tscn" id="2_w1qb0"]
 [ext_resource type="PackedScene" uid="uid://byt4xk4pw2v7s" path="res://platformer/goal.tscn" id="3_g7gp6"]
@@ -9,12 +10,19 @@
 [node name="Platformer" type="Node2D"]
 script = ExtResource("1_k1ntv")
 
+[node name="AkBank" parent="." instance=ExtResource("2_nl76y")]
+
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="PlaceholderPlateformerBackground" type="Sprite2D" parent="."]
 position = Vector2(8720.76, 1207.75)
 scale = Vector2(9.322393, 9.322393)
 texture = ExtResource("4_nl76y")
+
+[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
+position = Vector2(574, 324)
+rotation = 3.1415927
+
 
 [node name="Player" parent="." instance=ExtResource("2_w1qb0")]
 position = Vector2(147, 1061)
@@ -152,4 +160,5 @@ scale = Vector2(2, 0.5)
 position = Vector2(1537, 1231.0001)
 scale = Vector2(3.465, 0.225)
 
+[connection signal="player_won" from="." to="AkBank" method="_on_platformer_player_won"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]

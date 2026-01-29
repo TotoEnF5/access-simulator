@@ -13,14 +13,14 @@ script = ExtResource("1_nu8od")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
-position = Vector2(576, 324)
-rotation = 3.1415927
-
 [node name="Player" parent="." instance=ExtResource("2_dnmje")]
 position = Vector2(95, 333)
 event_moove = ExtResource("3_nkxsn")
 event_rotate = ExtResource("4_g5qmm")
+
+[node name="AkListener2D" type="AkListener2D" parent="Player"]
+position = Vector2(98, 328)
+rotation = 1.5707964
 
 [node name="Goal" parent="." instance=ExtResource("3_le7v8")]
 position = Vector2(879, 458.99997)

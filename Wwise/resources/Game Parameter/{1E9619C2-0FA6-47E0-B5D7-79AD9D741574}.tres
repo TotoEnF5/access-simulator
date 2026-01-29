@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://dkhlehaokoeb4"]
+
+[resource]
+name = "Player_Shoot"
+id = 4004702906
+guid = "{1E9619C2-0FA6-47E0-B5D7-79AD9D741574}"
+dummy = true
