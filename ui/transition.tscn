@@ -1,24 +1,71 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkb0r2elj7ynl"]
+[gd_scene load_steps=12 format=3 uid="uid://bkb0r2elj7ynl"]
 
-[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_2gi1b"]
 [ext_resource type="Script" uid="uid://d2lh71qxoca33" path="res://ui/transition.gd" id="1_pj2mc"]
+[ext_resource type="Texture2D" uid="uid://cjcbmfivkoyms" path="res://assets/sprites/transition/layer 1 - bg sky.png" id="2_1ggup"]
+[ext_resource type="Texture2D" uid="uid://cfa5p38yaad5c" path="res://assets/sprites/transition/layer 6 - stage.png" id="3_0mkhm"]
+[ext_resource type="Texture2D" uid="uid://cxgy3s7gg2cwc" path="res://assets/sprites/transition/layer 3 - clouds.png" id="3_46dv1"]
+[ext_resource type="Texture2D" uid="uid://ydiy2ekcene2" path="res://assets/sprites/transition/layer 5 - curtain left.png" id="4_46dv1"]
+[ext_resource type="Texture2D" uid="uid://bllia6slmeann" path="res://assets/sprites/transition/layer 5 - curtain right.png" id="5_8imo4"]
+[ext_resource type="Texture2D" uid="uid://cdq7eobg5gs4h" path="res://assets/sprites/transition/layer 4 - act 1.png" id="5_lvdyl"]
+[ext_resource type="Texture2D" uid="uid://bep6rodbpokf7" path="res://assets/sprites/transition/layer 7 - curtain up.png" id="6_lvdyl"]
+[ext_resource type="Texture2D" uid="uid://bf22s1bf0w44y" path="res://assets/sprites/transition/layer 4 - act 2.png" id="6_rql6b"]
+[ext_resource type="Texture2D" uid="uid://cqeujiimc7cd" path="res://assets/sprites/transition/layer 4 - act 3.png" id="7_kcjt8"]
+[ext_resource type="Texture2D" uid="uid://bkj20iouckn04" path="res://assets/sprites/transition/layer 2 - stars_.png" id="7_rql6b"]
 
 [node name="Transition" type="Node2D"]
 script = ExtResource("1_pj2mc")
 
-[node name="Left" type="Sprite2D" parent="."]
-position = Vector2(-1000, 255)
-rotation = 0.34906584
-scale = Vector2(10, 10)
-texture = ExtResource("1_2gi1b")
-
-[node name="Right" type="Sprite2D" parent="."]
-position = Vector2(2152, 255)
-rotation = -0.34906584
-scale = Vector2(10, 10)
-texture = ExtResource("1_2gi1b")
-
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Layer1BgSky" type="Sprite2D" parent="."]
+position = Vector2(575.5, -371.00003)
+scale = Vector2(0.59947914, 0.600926)
+texture = ExtResource("2_1ggup")
+
+[node name="Layer2Stars" type="Sprite2D" parent="."]
+position = Vector2(576.24994, -404.00003)
+scale = Vector2(0.7469295, 0.74692965)
+texture = ExtResource("7_rql6b")
+
+[node name="Layer3Clouds" type="Sprite2D" parent="."]
+position = Vector2(576, 777)
+scale = Vector2(0.5989583, 0.5989583)
+texture = ExtResource("3_46dv1")
+
+[node name="Layer4Act1" type="Sprite2D" parent="."]
+position = Vector2(565, -491.00003)
+scale = Vector2(0.5904797, 0.59047955)
+texture = ExtResource("5_lvdyl")
+
+[node name="Layer4Act2" type="Sprite2D" parent="."]
+position = Vector2(565, -491)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("6_rql6b")
+
+[node name="Layer4Act3" type="Sprite2D" parent="."]
+position = Vector2(565, -491)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("7_kcjt8")
+
+[node name="Layer5CurtainLeft" type="Sprite2D" parent="."]
+position = Vector2(-155, 298.8216)
+scale = Vector2(0.6056338, 0.6056338)
+texture = ExtResource("4_46dv1")
+
+[node name="Layer5CurtainRight" type="Sprite2D" parent="."]
+position = Vector2(1314.0001, 298.25)
+scale = Vector2(0.60090816, 0.60090816)
+texture = ExtResource("5_8imo4")
+
+[node name="Layer6Stage" type="Sprite2D" parent="."]
+position = Vector2(577, 704)
+scale = Vector2(0.60052085, 0.60052085)
+texture = ExtResource("3_0mkhm")
+
+[node name="Layer7CurtainUp" type="Sprite2D" parent="."]
+position = Vector2(576, -71)
+scale = Vector2(0.5989583, 0.5989583)
+texture = ExtResource("6_lvdyl")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

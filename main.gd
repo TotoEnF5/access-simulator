@@ -1,14 +1,12 @@
 extends Node2D
 
 enum Level {
-	VROOM,
-	SHMUP,
-	PLATFORMER,
+	VROOM = 1,
+	SHMUP = 2,
+	PLATFORMER = 3,
 }
 
-@export var start_level_minus_one: Level = Level.VROOM
-
-var current_level: Level = self.start_level_minus_one
+var current_level: Level = Level.PLATFORMER
 var paused: bool = false
 
 # Called when the node enters the scene tree for the first time.
@@ -24,14 +22,14 @@ func _ready() -> void:
 	$Platformer.visible = false
 	$Platformer/Camera2D.enabled = false
 	
-	$Transition.start_animation()
+	self._go_to_next_level()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("change_scene"):
-		$Transition.visible = true
-		$Transition.start_animation()
+		self._go_to_next_level()
+		
 	if Input.is_action_just_pressed("settings"):
 		if not self.paused:
 			self._pause_current_level()
@@ -57,8 +55,14 @@ func _on_platformer_player_won() -> void:
 
 func _on_transition_curtains_closed() -> void:
 	self._pause_current_level()
+	self._hide_level()
 	self._change_level()
 	self._show_level()
+		
+		
+func _go_to_next_level() -> void:
+	$Transition.visible = true
+	$Transition.start_animation(((self.current_level) % 3) + 1)
 
 
 func _on_transition_curtains_opened() -> void:
@@ -70,11 +74,6 @@ func _on_transition_curtains_opened() -> void:
 		$Platformer.process_mode = Node.PROCESS_MODE_INHERIT
 		
 	$Transition.visible = false
-		
-		
-func _go_to_next_level() -> void:
-	$Transition.visible = true
-	$Transition.start_animation()
 		
 		
 func _pause_current_level() -> void:
@@ -97,16 +96,22 @@ func _play_current_level() -> void:
 		
 func _change_level() -> void:
 	if self.current_level == Level.VROOM:
-		$Vroom.visible = false
-		$Vroom/Camera2D.enabled = false
 		self.current_level = Level.SHMUP
 	elif self.current_level == Level.SHMUP:
-		$Shmup.visible = false
 		self.current_level = Level.PLATFORMER
+	elif self.current_level == Level.PLATFORMER:
+		self.current_level = Level.VROOM
+		
+		
+func _hide_level() -> void:
+	if self.current_level == Level.VROOM:
+		$Vroom.visible = false
+		$Vroom/Camera2D.enabled = false
+	elif self.current_level == Level.SHMUP:
+		$Shmup.visible = false
 	elif self.current_level == Level.PLATFORMER:
 		$Platformer.visible = false
 		$Platformer/Camera2D.enabled = false
-		self.current_level = Level.VROOM
 		
 		
 func _show_level() -> void:
