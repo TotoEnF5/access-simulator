@@ -10,19 +10,11 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{8A32713E-0E7B-96A0-1B1D-25F23D107C7D}",
+    "Hash": "{199B4638-44ED-45A5-7928-3BA0B145F51B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
-     {
-      "Id": "83552029",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Vehicle1_EngineStartUp1_long.wav",
-      "CachePath": "75/{7575822B-4123-9EE0-4580-639AEEB3DD2E}.wem"
-     },
      {
       "Id": "197692389",
       "Language": "SFX",
@@ -48,6 +40,14 @@
       "CachePath": "23/{230200D0-EA8B-DBE5-E124-8EC5E85310BF}.wem"
      },
      {
+      "Id": "229950963",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_5.wav",
+      "CachePath": "75/{75BF3CCE-2BD2-FEEB-EF7B-333536105C91}.wem"
+     },
+     {
       "Id": "242359649",
       "Language": "SFX",
       "Streaming": "false",
@@ -64,12 +64,12 @@
       "CachePath": "E2/{E237A95B-4362-17B2-4916-B7C10E43291C}.wem"
      },
      {
-      "Id": "352311725",
+      "Id": "427627507",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Fire Burning - Fire Crackles.wav",
-      "CachePath": "57/{57272B5F-FB58-C03B-D784-9E55C18C5588}.wem"
+      "ShortName": "Water Pouring-016.wav",
+      "CachePath": "E3/{E3E24A95-1174-1A9D-9F77-9A3AF07618E1}.wem"
      },
      {
       "Id": "430378591",
@@ -104,20 +104,20 @@
       "CachePath": "9A/{9AC7C291-FD5A-0334-8FB1-21051DFEA836}.wem"
      },
      {
-      "Id": "630331129",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Archived, Test Tone, Pink Noise SND3536.wav",
-      "CachePath": "34/{346DEDCE-000E-F825-F931-901649CF3C44}.wem"
-     },
-     {
       "Id": "717596717",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
       "CachePath": "1C/{1CDAF2FA-FDAE-86E1-EF66-D6D8B0436807}.wem"
+     },
+     {
+      "Id": "724587790",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_6.wav",
+      "CachePath": "CC/{CC105002-267B-EA6E-066E-86FE4F9542C9}.wem"
      },
      {
       "Id": "757159595",
@@ -144,12 +144,44 @@
       "CachePath": "CD/{CD35066E-D6A4-8F86-BD86-DE65BD8ADE8B}.wem"
      },
      {
+      "Id": "854922456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_1.wav",
+      "CachePath": "C0/{C0930DA6-F15F-C9C1-4A3A-AF818709D2EF}.wem"
+     },
+     {
+      "Id": "872283841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_2.wav",
+      "CachePath": "8F/{8FE0FE66-A86A-5D88-5C4F-A5A9115DDB5D}.wem"
+     },
+     {
       "Id": "944689952",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Whoosh Basic Airy Whistle-001.wav",
       "CachePath": "85/{8574D3ED-E74F-7355-1815-89795C0A7DCE}.wem"
+     },
+     {
+      "Id": "989709376",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_3.wav",
+      "CachePath": "FA/{FA2640E6-93D1-B24E-1973-C37FDEDF1F70}.wem"
+     },
+     {
+      "Id": "1007535337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Bubbles_4.wav",
+      "CachePath": "65/{65D705A4-F211-C3D8-AE7F-A7F9F19578C4}.wem"
      },
      {
       "Id": "1007816732",
@@ -161,53 +193,6 @@
      }
     ],
     "Events": [
-     {
-      "Id": "1418105328",
-      "Name": "Down_Start",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Down_Start",
-      "GUID": "{077F7B3B-8923-4B80-BEF3-8D367557290F}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "83552029"
-       }
-      ]
-     },
-     {
-      "Id": "3868270940",
-      "Name": "Down_Stop",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Down_Stop",
-      "GUID": "{A739C5A2-AA98-457D-98C9-AC8F8BC93945}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "268529915",
-      "Name": "Engine",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Engine",
-      "GUID": "{7A49E8B2-7DBC-4157-9D58-1B0EDE317226}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "630331129"
-       }
-      ]
-     },
-     {
-      "Id": "3009887656",
-      "Name": "Ennemi_Incoming",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Ennemi_Incoming",
-      "GUID": "{3D93D19C-572D-493E-9BEB-76A50CCCE7E7}",
-      "MaxAttenuation": "1000",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "352311725"
-       }
-      ]
-     },
      {
       "Id": "2988140266",
       "Name": "Ennemy_Destroy",
@@ -262,16 +247,6 @@
       ]
      },
      {
-      "Id": "1116398592",
-      "Name": "Hit",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Hit",
-      "GUID": "{52773B89-F612-40CA-B527-1885288501F5}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "3833651337",
       "Name": "Jump",
       "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Jump",
@@ -285,6 +260,18 @@
        },
        {
         "Id": "944689952"
+       }
+      ]
+     },
+     {
+      "Id": "976825339",
+      "Name": "Moove",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Moove",
+      "GUID": "{7982BB74-C78E-4C05-BACB-150010CE9C0F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "427627507"
        }
       ]
      },
@@ -325,26 +312,31 @@
       ]
      },
      {
-      "Id": "1654232327",
-      "Name": "Up_Start",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Start",
-      "GUID": "{0C1769D1-0238-40CA-B2F6-EE0FE44A1B33}",
+      "Id": "1302771492",
+      "Name": "Rotate",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Rotate",
+      "GUID": "{5A78B004-8C4F-4063-86D5-7C77F58B852D}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "83552029"
+        "Id": "229950963"
+       },
+       {
+        "Id": "724587790"
+       },
+       {
+        "Id": "854922456"
+       },
+       {
+        "Id": "872283841"
+       },
+       {
+        "Id": "989709376"
+       },
+       {
+        "Id": "1007535337"
        }
       ]
-     },
-     {
-      "Id": "1841569453",
-      "Name": "Up_Stop",
-      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Up_Stop",
-      "GUID": "{5468C449-7268-4273-8145-7845BE721BDE}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      },
      {
       "Id": "2108779966",
@@ -374,17 +366,9 @@
        }
       ]
      }
-    ],
-    "GameParameters": [
-     {
-      "Id": "3320209893",
-      "Name": "Hauteur",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Vroom\\Hauteur",
-      "GUID": "{016DEA19-54C2-4503-9EFA-F88CB614C646}"
-     }
     ]
    }
   ],
-  "FileHash": "{5790EE33-707B-1804-8D30-213F814ACDD3}"
+  "FileHash": "{B8666D55-16C5-CAC4-CF38-9080330C646D}"
  }
 }
