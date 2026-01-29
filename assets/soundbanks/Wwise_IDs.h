@@ -13,6 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_PLATEFORMER = 3263329277U;
+        static const AkUniqueID AMB_SHMUP = 1018476863U;
+        static const AkUniqueID COURSE_AMB = 2860608887U;
         static const AkUniqueID ENNEMY_DESTROY = 2988140266U;
         static const AkUniqueID ENNEMY_SHOT = 365677268U;
         static const AkUniqueID FLOOR_IMPACT = 471840786U;

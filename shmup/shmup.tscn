@@ -12,4 +12,11 @@ position = Vector2(126, 326)
 
 [node name="AkBank" parent="." instance=ExtResource("3_26epq")]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
+position = Vector2(574, 324)
+rotation = 3.1415927
+
 [connection signal="player_won" from="." to="AkBank" method="_on_shmup_player_won"]

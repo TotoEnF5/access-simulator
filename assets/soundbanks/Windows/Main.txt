@@ -4,9 +4,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	871813740	Player_Hit			\Default Work Unit\Act2 Shmup\Player_Hit	
 	976825339	Moove			\Default Work Unit\Act1 Course\Moove	
 	979765101	Win			\Default Work Unit\UI\Win	
+	1018476863	Amb_Shmup			\Default Work Unit\Act2 Shmup\Amb_Shmup	
 	1302771492	Rotate			\Default Work Unit\Act1 Course\Rotate	
 	2108779966	Walk			\Default Work Unit\Act3 Plateformer\Walk	
+	2860608887	Course_Amb			\Default Work Unit\Act1 Course\Course_Amb	
 	2988140266	Ennemy_Destroy			\Default Work Unit\Act2 Shmup\Ennemy_Destroy	
+	3263329277	Amb_Plateformer			\Default Work Unit\Act3 Plateformer\Amb_Plateformer	
 	3359302305	Player_Shot			\Default Work Unit\Act2 Shmup\Player_Shot	
 	3833651337	Jump			\Default Work Unit\Act3 Plateformer\Jump	
 

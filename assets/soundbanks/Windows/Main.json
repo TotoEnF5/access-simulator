@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{199B4638-44ED-45A5-7928-3BA0B145F51B}",
+    "Hash": "{3EFBA3A2-78D4-C34B-5D8D-525B27A91468}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -194,6 +194,36 @@
     ],
     "Events": [
      {
+      "Id": "3263329277",
+      "Name": "Amb_Plateformer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Amb_Plateformer",
+      "GUID": "{CE8DBFA5-C2A4-4F21-A1EE-EDC0F4514091}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1018476863",
+      "Name": "Amb_Shmup",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Amb_Shmup",
+      "GUID": "{848D77B8-13CB-47C1-80F3-121DFB5B5480}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2860608887",
+      "Name": "Course_Amb",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Course_Amb",
+      "GUID": "{A659CA55-7495-4CF4-A033-63620F5F8BF0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "2988140266",
       "Name": "Ennemy_Destroy",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy",
@@ -209,8 +239,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Shot",
       "GUID": "{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}",
       "DurationType": "OneShot",
-      "DurationMin": "0.07065564",
-      "DurationMax": "0.11769386",
+      "DurationMin": "0.036363002",
+      "DurationMax": "0.06057128",
       "MediaRefs": [
        {
         "Id": "197692389"
@@ -291,8 +321,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Shot",
       "GUID": "{9370BBED-850A-418D-B115-59792E247674}",
       "DurationType": "OneShot",
-      "DurationMin": "0.121048145",
-      "DurationMax": "0.1872637",
+      "DurationMin": "0.09719232",
+      "DurationMax": "0.15035832",
       "MediaRefs": [
        {
         "Id": "242359649"
@@ -369,6 +399,6 @@
     ]
    }
   ],
-  "FileHash": "{B8666D55-16C5-CAC4-CF38-9080330C646D}"
+  "FileHash": "{E56CE955-541C-8ED6-3769-B7EB13CBBB69}"
  }
 }
