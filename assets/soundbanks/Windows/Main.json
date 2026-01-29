@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{82E7CD1F-D7BA-DC6F-F8C3-7542A4DBAF39}",
+    "Hash": "{8A32713E-0E7B-96A0-1B1D-25F23D107C7D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
       "CachePath": "DE/{DE427221-B37C-5809-05C0-06BBB4452F17}.wem"
+     },
+     {
+      "Id": "203960188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "8bit_CoinPickUp01.wav",
+      "CachePath": "59/{5917A05C-4A4F-07D1-12F4-B6C36762506A}.wem"
      },
      {
       "Id": "221620851",
@@ -351,6 +359,20 @@
         "Id": "561188402"
        }
       ]
+     },
+     {
+      "Id": "979765101",
+      "Name": "Win",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Win",
+      "GUID": "{39BEB5FF-86DF-47FB-A917-8D37A45DC0C9}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.1221875",
+      "DurationMax": "1.1221875",
+      "MediaRefs": [
+       {
+        "Id": "203960188"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -363,6 +385,6 @@
     ]
    }
   ],
-  "FileHash": "{F97262B7-9443-03A1-B9F8-5AEFE2EC68EC}"
+  "FileHash": "{5790EE33-707B-1804-8D30-213F814ACDD3}"
  }
 }

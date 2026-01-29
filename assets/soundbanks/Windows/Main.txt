@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	365677268	Ennemy_Shot			\Default Work Unit\Act2 Shmup\Ennemy_Shot	
 	471840786	Floor_Impact			\Default Work Unit\Act3 Plateformer\Floor_Impact	
 	871813740	Player_Hit			\Default Work Unit\Act2 Shmup\Player_Hit	
+	979765101	Win			\Default Work Unit\UI\Win	
 	1116398592	Hit			\Default Work Unit\Act1 Course\Hit	
 	1418105328	Down_Start			\Default Work Unit\Act1 Course\Down_Start	
 	1654232327	Up_Start			\Default Work Unit\Act1 Course\Up_Start	
@@ -20,6 +21,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	83552029	Vehicle1_EngineStartUp1_long	.cache\75\{7575822B-4123-9EE0-4580-639AEEB3DD2E}.wem		\Containers\Default Work Unit\Vroom\Moove\Up\Vehicle1_EngineStartUp1_long		953144
 	197692389	AirPoweredMachinegun_Burst_02	.cache\DE\{DE427221-B37C-5809-05C0-06BBB4452F17}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_02		16588
+	203960188	8bit_CoinPickUp01	.cache\59\{5917A05C-4A4F-07D1-12F4-B6C36762506A}.wem		\Containers\Default Work Unit\UI\8bit_CoinPickUp01		215556
 	221620851	Grass_LeatherShoes_FullStep_02	.cache\23\{230200D0-EA8B-DBE5-E124-8EC5E85310BF}.wem		\Containers\Default Work Unit\Plateformer\Jump\Foot\Grass_LeatherShoes_FullStep_02		67180
 	242359649	DigitalBullets_Burst_02	.cache\BB\{BB8D65A0-7AD8-8793-C372-0D2E0F676F8E}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_02		29940
 	333596638	DigitalBullets_Burst_05	.cache\E2\{E237A95B-4362-17B2-4916-B7C10E43291C}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_05		27880

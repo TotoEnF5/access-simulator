@@ -35,4 +35,5 @@ scale = Vector2(9.280001, 0.45)
 position = Vector2(276, 291)
 scale = Vector2(3.465, 0.225)
 
+[connection signal="player_won" from="." to="AkBank" method="_on_platformer_player_won"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]

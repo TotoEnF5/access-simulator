@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://wctmm7qt55e3"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Win"
+id = 979765101
+guid = "{39BEB5FF-86DF-47FB-A917-8D37A45DC0C9}"
+dummy = true

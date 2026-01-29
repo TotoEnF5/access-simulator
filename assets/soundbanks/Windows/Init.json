@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{1D6735BB-1791-7425-1BBB-A5D42FC19F2D}",
+    "Hash": "{BA41157F-14D2-EC44-FADF-EC90FA8EC9B4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -36,13 +36,73 @@
     },
     "Busses": [
      {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{95429670-6F21-46D2-8972-9300A1BD6E7F}"
+     },
+     {
+      "Id": "662417162",
+      "Name": "NPC",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\NPC",
+      "GUID": "{B88E0A3F-4D0E-4B4A-B9AF-105AB789A86E}"
+     },
+     {
+      "Id": "1069431850",
+      "Name": "Player",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player",
+      "GUID": "{6FFE9FCF-DBAC-45A7-9B50-5CA82BD42D9C}"
+     },
+     {
+      "Id": "1551306167",
+      "Name": "UI",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\UI",
+      "GUID": "{B914B6AE-B74C-4F6B-B998-0AB2AC246C56}"
+     },
+     {
+      "Id": "2129636626",
+      "Name": "Movement",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player\\Movement",
+      "GUID": "{E397A3D4-4E15-4501-B7A4-87BA391C210D}"
+     },
+     {
       "Id": "2246998526",
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Ambiance",
+      "GUID": "{88CB39C7-CA3B-45EB-89D6-9988E0828CBC}"
+     },
+     {
+      "Id": "3038207054",
+      "Name": "Shoot",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Player\\Shoot",
+      "GUID": "{A95A5751-5C6E-4A88-8015-5B5B69078CCE}"
      }
     ],
     "GameParameters": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\SFX",
+      "GUID": "{8CDC3B3F-AB0D-4E5A-8D33-49FE41C0BF57}"
+     },
+     {
+      "Id": "541470702",
+      "Name": "Player_Movement",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Player_Movement",
+      "GUID": "{76DDFF8A-86DA-450F-B2DA-745CE8692ECF}"
+     },
+     {
+      "Id": "662417162",
+      "Name": "NPC",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\NPC",
+      "GUID": "{E58AED94-B145-440D-9BD2-927270E1D86F}"
+     },
      {
       "Id": "822163944",
       "Name": "SS_Air_RPM",
@@ -56,16 +116,34 @@
       "GUID": "{A2AE79DC-CA3A-46BA-9652-9986C322A87B}"
      },
      {
+      "Id": "1069431850",
+      "Name": "Player",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Player",
+      "GUID": "{64B003C0-0828-410D-919E-605F59AFA625}"
+     },
+     {
       "Id": "1351367891",
       "Name": "SS_Air_Fear",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Fear",
       "GUID": "{F72E0659-4346-4E1C-A1B1-DAB46A05101E}"
      },
      {
+      "Id": "1551306167",
+      "Name": "UI",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\UI",
+      "GUID": "{66DF077D-268E-4878-AE1E-A70F7B0760C6}"
+     },
+     {
       "Id": "2648548617",
       "Name": "SS_Air_Month",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Month",
       "GUID": "{09E2B445-C4A3-447F-B3CA-818A1D925EF7}"
+     },
+     {
+      "Id": "2981377429",
+      "Name": "Ambiance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Ambiance",
+      "GUID": "{0BA9DEED-7DE5-41E9-A5E0-F849635054B3}"
      },
      {
       "Id": "3002758120",
@@ -102,6 +180,18 @@
       "Name": "SS_Air_Presence",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Presence",
       "GUID": "{E3B7811A-7B2F-490F-B44F-5FE51B468041}"
+     },
+     {
+      "Id": "4004702906",
+      "Name": "Player_Shoot",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Player_Shoot",
+      "GUID": "{1E9619C2-0FA6-47E0-B5D7-79AD9D741574}"
+     },
+     {
+      "Id": "4056684167",
+      "Name": "Master",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Master",
+      "GUID": "{AD47CEEB-959B-4CC1-AF33-800B48E4D0C3}"
      },
      {
       "Id": "4160247818",
@@ -589,6 +679,6 @@
     ]
    }
   ],
-  "FileHash": "{0DF6091E-FCFA-4881-3147-1214D0C7B74B}"
+  "FileHash": "{5E2091C9-2C58-2241-CBC5-438E7B844CE7}"
  }
 }

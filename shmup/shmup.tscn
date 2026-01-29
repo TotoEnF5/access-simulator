@@ -11,3 +11,5 @@ script = ExtResource("1_otwqh")
 position = Vector2(126, 326)
 
 [node name="AkBank" parent="." instance=ExtResource("3_26epq")]
+
+[connection signal="player_won" from="." to="AkBank" method="_on_shmup_player_won"]
