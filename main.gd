@@ -49,6 +49,10 @@ func _on_shmup_player_won() -> void:
 
 func _on_vroom_player_won() -> void:
 	self._go_to_next_level()
+
+
+func _on_platformer_player_won() -> void:
+	self._go_to_next_level()
 	
 
 func _on_transition_curtains_closed() -> void:

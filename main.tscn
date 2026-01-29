@@ -31,3 +31,4 @@ visible = false
 [connection signal="curtains_opened" from="Transition" to="." method="_on_transition_curtains_opened"]
 [connection signal="player_won" from="Vroom" to="." method="_on_vroom_player_won"]
 [connection signal="player_won" from="Shmup" to="." method="_on_shmup_player_won"]
+[connection signal="player_won" from="Platformer" to="." method="_on_platformer_player_won"]
