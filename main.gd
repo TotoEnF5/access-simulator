@@ -44,8 +44,11 @@ func _process(delta: float) -> void:
 
 
 func _on_shmup_player_won() -> void:
-	$Transition.visible = true
-	$Transition.start_animation()
+	self._go_to_next_level()
+
+
+func _on_vroom_player_won() -> void:
+	self._go_to_next_level()
 	
 
 func _on_transition_curtains_closed() -> void:
@@ -63,6 +66,11 @@ func _on_transition_curtains_opened() -> void:
 		$Platformer.process_mode = Node.PROCESS_MODE_INHERIT
 		
 	$Transition.visible = false
+		
+		
+func _go_to_next_level() -> void:
+	$Transition.visible = true
+	$Transition.start_animation()
 		
 		
 func _pause_current_level() -> void:

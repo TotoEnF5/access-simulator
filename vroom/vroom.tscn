@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cokxwf645t4kn"]
+[gd_scene load_steps=6 format=3 uid="uid://cokxwf645t4kn"]
 
 [ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom/vroom.gd" id="1_nu8od"]
 [ext_resource type="PackedScene" uid="uid://cu8b0b78jb0kh" path="res://vroom/player.tscn" id="2_dnmje"]
+[ext_resource type="PackedScene" uid="uid://l2f85mo40g2b" path="res://vroom/goal.tscn" id="3_le7v8"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
 [ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="5_1ei36"]
 
@@ -16,6 +17,10 @@ position = Vector2(95, 333)
 [node name="AkListener2D" type="AkListener2D" parent="Player"]
 position = Vector2(98, 328)
 rotation = 1.5707964
+
+[node name="Goal" parent="." instance=ExtResource("3_le7v8")]
+position = Vector2(879, 458.99997)
+scale = Vector2(1.6120982, 4.3554873)
 
 [node name="Walls" type="Node2D" parent="."]
 
@@ -38,3 +43,5 @@ rotation = 0.3919673
 scale = Vector2(3.8880146, 0.92424154)
 
 [node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]
+
+[connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
