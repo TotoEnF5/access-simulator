@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://r05qq2qne0ov"]
+
+[ext_resource type="Script" uid="uid://it272qwvh2s3" path="res://ui/sound_slider.gd" id="1_te0al"]
+
+[node name="HSlider" type="HSlider"]
+offset_right = 524.0
+offset_bottom = 16.0
+script = ExtResource("1_te0al")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 0
+offset_top = -40.0
+offset_right = 524.0
+text = "None
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="value_changed" from="." to="." method="_on_value_changed"]

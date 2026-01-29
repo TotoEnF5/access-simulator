@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv7uamh0wlsfa"]
+
+[ext_resource type="Script" uid="uid://dk0g8a66m1vlp" path="res://ui/setting.gd" id="1_qt3sj"]
+[ext_resource type="PackedScene" uid="uid://r05qq2qne0ov" path="res://ui/Sound_Slider.tscn" id="2_2w7xm"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qt3sj")
+
+[node name="HSlider2" parent="." instance=ExtResource("2_2w7xm")]
+layout_mode = 0
+offset_left = 574.0
+offset_top = 199.0
+offset_right = 1098.0
+offset_bottom = 215.0
+
+[node name="Master" parent="." instance=ExtResource("2_2w7xm")]
+layout_mode = 0
+offset_left = 565.0
+offset_top = 65.0
+offset_right = 1089.0
+offset_bottom = 81.0
+rtpc_name = "Master"
+
+[node name="HSlider3" parent="." instance=ExtResource("2_2w7xm")]
+layout_mode = 0
+offset_left = 581.0
+offset_top = 269.0
+offset_right = 1105.0
+offset_bottom = 285.0
+
+[node name="Ambiance" parent="." instance=ExtResource("2_2w7xm")]
+layout_mode = 0
+offset_left = 573.0
+offset_top = 134.0
+offset_right = 1097.0
+offset_bottom = 150.0
+rtpc_name = "Ambiance"
