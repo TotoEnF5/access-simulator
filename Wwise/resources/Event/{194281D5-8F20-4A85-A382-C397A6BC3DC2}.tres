@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://bmkfehv3r33p0"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Jump"
+id = 3833651337
+guid = "{194281D5-8F20-4A85-A382-C397A6BC3DC2}"
+dummy = true

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{1F06B9E7-2A2F-8444-63C7-0F49AB5132B9}",
+    "Hash": "{6DF93CED-90BF-2AEF-CBDD-08363BC97395}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vehicle1_EngineStartUp1_long.wav",
-      "CachePath": "41/{41CC3D1F-BF04-46D8-F33E-1809E8492CA9}.wem"
+      "CachePath": "75/{7575822B-4123-9EE0-4580-639AEEB3DD2E}.wem"
      },
      {
       "Id": "197692389",
@@ -29,7 +29,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "A7/{A766DE8D-22B7-9DF8-5819-5737C6DDB174}.wem"
+      "CachePath": "DE/{DE427221-B37C-5809-05C0-06BBB4452F17}.wem"
+     },
+     {
+      "Id": "221620851",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Grass_LeatherShoes_FullStep_02.wav",
+      "CachePath": "23/{230200D0-EA8B-DBE5-E124-8EC5E85310BF}.wem"
      },
      {
       "Id": "242359649",
@@ -37,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "63/{63E408F0-43B9-8256-CF73-66D62077B3D9}.wem"
+      "CachePath": "BB/{BB8D65A0-7AD8-8793-C372-0D2E0F676F8E}.wem"
      },
      {
       "Id": "333596638",
@@ -45,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "F9/{F91B7E0E-BBD5-9AB2-8814-E0565C0ECD38}.wem"
+      "CachePath": "E2/{E237A95B-4362-17B2-4916-B7C10E43291C}.wem"
      },
      {
       "Id": "352311725",
@@ -53,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Fire Burning - Fire Crackles.wav",
-      "CachePath": "93/{936E654D-4CCE-566F-A3AB-35A03B67CD52}.wem"
+      "CachePath": "57/{57272B5F-FB58-C03B-D784-9E55C18C5588}.wem"
      },
      {
       "Id": "430378591",
@@ -61,7 +69,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "96/{96F43021-08F3-9489-4D3A-BB5732C7A3F5}.wem"
+      "CachePath": "75/{751AD1B7-6643-2112-ACAA-5C4EAC95FBF5}.wem"
+     },
+     {
+      "Id": "561188402",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Grass_Boots_FullStep_01.wav",
+      "CachePath": "16/{1616EEF4-EE00-5F8B-065B-9E96AF69DB86}.wem"
      },
      {
       "Id": "572396881",
@@ -69,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "FB/{FB03A6DD-A3C1-31D0-63CC-3B43BD850315}.wem"
+      "CachePath": "BA/{BA769B67-2D17-8BD5-A7D5-19F7E4684E3E}.wem"
      },
      {
       "Id": "630331129",
@@ -85,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "5B/{5B29B8F0-38CC-C821-1855-C096940062E5}.wem"
+      "CachePath": "1C/{1CDAF2FA-FDAE-86E1-EF66-D6D8B0436807}.wem"
      },
      {
       "Id": "757159595",
@@ -93,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "F5/{F5E4D0F4-51D5-2059-C75B-68B090ED532F}.wem"
+      "CachePath": "6D/{6D162F50-CF9F-80C3-987D-BCCE972E3101}.wem"
      },
      {
       "Id": "819286881",
@@ -101,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "8B/{8B52E6B9-99BC-37FF-7AAB-B311793CCAD2}.wem"
+      "CachePath": "BE/{BECE3503-2218-0AD7-28D0-8569F3EB987A}.wem"
      },
      {
       "Id": "851320877",
@@ -109,7 +125,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "C3/{C32CDF91-DBC5-1523-E73D-9A76A3EEB563}.wem"
+      "CachePath": "CD/{CD35066E-D6A4-8F86-BD86-DE65BD8ADE8B}.wem"
+     },
+     {
+      "Id": "944689952",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Whoosh Basic Airy Whistle-001.wav",
+      "CachePath": "85/{8574D3ED-E74F-7355-1815-89795C0A7DCE}.wem"
      },
      {
       "Id": "1007816732",
@@ -117,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "74/{74491E35-C289-E3F7-AE58-F6B58BC72B5B}.wem"
+      "CachePath": "2C/{2CCE628C-30F5-732A-695F-E338609E8232}.wem"
      }
     ],
     "Events": [
@@ -215,6 +239,23 @@
       "DurationMax": "0"
      },
      {
+      "Id": "3833651337",
+      "Name": "Jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Jump",
+      "GUID": "{194281D5-8F20-4A85-A382-C397A6BC3DC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.39408103",
+      "DurationMax": "0.39408103",
+      "MediaRefs": [
+       {
+        "Id": "221620851"
+       },
+       {
+        "Id": "944689952"
+       }
+      ]
+     },
+     {
       "Id": "871813740",
       "Name": "Player_Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit",
@@ -271,6 +312,20 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "2108779966",
+      "Name": "Walk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Walk",
+      "GUID": "{C7E15541-11C9-4A05-B0A0-92210A2BF4E0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3723454",
+      "DurationMax": "0.3723454",
+      "MediaRefs": [
+       {
+        "Id": "561188402"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -283,6 +338,6 @@
     ]
    }
   ],
-  "FileHash": "{838D804A-E2AE-6805-2628-6AD3AFF3A110}"
+  "FileHash": "{AF9B09CC-23AE-5DA3-8756-459943F448A2}"
  }
 }

@@ -20,10 +20,12 @@ namespace AK
         static const AkUniqueID ENNEMY_DESTROY = 2988140266U;
         static const AkUniqueID ENNEMY_SHOT = 365677268U;
         static const AkUniqueID HIT = 1116398592U;
+        static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID PLAYER_HIT = 871813740U;
         static const AkUniqueID PLAYER_SHOT = 3359302305U;
         static const AkUniqueID UP_START = 1654232327U;
         static const AkUniqueID UP_STOP = 1841569453U;
+        static const AkUniqueID WALK = 2108779966U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

@@ -1,13 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bu10mcafd4qcd"]
+[gd_scene load_steps=6 format=3 uid="uid://bu10mcafd4qcd"]
 
 [ext_resource type="Script" uid="uid://dmxy0l1ge5j1q" path="res://platformer/player.gd" id="1_dsss6"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="2_ni0jc"]
+[ext_resource type="WwiseEvent" uid="uid://dhesvecxhhcfx" path="res://Wwise/resources/Event/{C7E15541-11C9-4A05-B0A0-92210A2BF4E0}.tres" id="2_onxs0"]
+[ext_resource type="WwiseEvent" uid="uid://bmkfehv3r33p0" path="res://Wwise/resources/Event/{194281D5-8F20-4A85-A382-C397A6BC3DC2}.tres" id="3_7hary"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onxs0"]
 size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dsss6")
+event_walk = ExtResource("2_onxs0")
+event_jump = ExtResource("3_7hary")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
