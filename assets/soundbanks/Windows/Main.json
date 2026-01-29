@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{6DF93CED-90BF-2AEF-CBDD-08363BC97395}",
+    "Hash": "{82E7CD1F-D7BA-DC6F-F8C3-7542A4DBAF39}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -86,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
       "CachePath": "BA/{BA769B67-2D17-8BD5-A7D5-19F7E4684E3E}.wem"
+     },
+     {
+      "Id": "596604982",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Punch Clean Boxing Impact-007.wav",
+      "CachePath": "9A/{9AC7C291-FD5A-0334-8FB1-21051DFEA836}.wem"
      },
      {
       "Id": "630331129",
@@ -229,6 +237,23 @@
       ]
      },
      {
+      "Id": "471840786",
+      "Name": "Floor_Impact",
+      "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Floor_Impact",
+      "GUID": "{1D11BAE1-F71C-49FA-A169-3257D3D10E00}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9284209",
+      "DurationMax": "1.9284209",
+      "MediaRefs": [
+       {
+        "Id": "221620851"
+       },
+       {
+        "Id": "596604982"
+       }
+      ]
+     },
+     {
       "Id": "1116398592",
       "Name": "Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Act1 Course\\Hit",
@@ -338,6 +363,6 @@
     ]
    }
   ],
-  "FileHash": "{AF9B09CC-23AE-5DA3-8756-459943F448A2}"
+  "FileHash": "{F97262B7-9443-03A1-B9F8-5AEFE2EC68EC}"
  }
 }

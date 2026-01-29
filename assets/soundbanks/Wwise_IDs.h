@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID ENNEMI_INCOMING = 3009887656U;
         static const AkUniqueID ENNEMY_DESTROY = 2988140266U;
         static const AkUniqueID ENNEMY_SHOT = 365677268U;
+        static const AkUniqueID FLOOR_IMPACT = 471840786U;
         static const AkUniqueID HIT = 1116398592U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID PLAYER_HIT = 871813740U;

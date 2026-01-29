@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cd2ka03e5c40v"]
+[gd_scene load_steps=6 format=3 uid="uid://cd2ka03e5c40v"]
 
 [ext_resource type="Script" uid="uid://d0narlnj0sq2b" path="res://platformer/platformer.gd" id="1_k1ntv"]
+[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="2_nl76y"]
 [ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="2_or1io"]
 [ext_resource type="PackedScene" uid="uid://bu10mcafd4qcd" path="res://platformer/player.tscn" id="2_w1qb0"]
 [ext_resource type="PackedScene" uid="uid://byt4xk4pw2v7s" path="res://platformer/goal.tscn" id="3_g7gp6"]
@@ -8,7 +9,11 @@
 [node name="Platformer" type="Node2D"]
 script = ExtResource("1_k1ntv")
 
+[node name="AkBank" parent="." instance=ExtResource("2_nl76y")]
+
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_w1qb0")]
 position = Vector2(347, 547)
