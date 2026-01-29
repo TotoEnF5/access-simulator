@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://b7rdpmj7jjjdx"]
+
+[resource]
+name = "Master"
+id = 4056684167
+guid = "{AD47CEEB-959B-4CC1-AF33-800B48E4D0C3}"
+dummy = true
