@@ -35,8 +35,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var canvas_pos = self.get_canvas_transform().origin
-	self.global_position = -canvas_pos
+	#var canvas_pos = self.get_canvas_transform().origin
+	#self.global_position = -canvas_pos
+	#self.global_scale.x = 1.0 / self.get_canvas_transform().get_scale().x
+	#self.global_scale.y = 1.0 / self.get_canvas_transform().get_scale().y
+	pass
 	
 
 func _on_timer_timeout() -> void:

@@ -44,6 +44,5 @@ func _spawn_enemy() -> void:
 	
 func _increment_score() -> void:
 	self._score += 1
-	print(self._score)
 	if self._score >= self.max_score:
 		self.player_won.emit()

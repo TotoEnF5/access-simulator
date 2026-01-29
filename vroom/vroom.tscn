@@ -1,52 +1,95 @@
-[gd_scene load_steps=8 format=3 uid="uid://cokxwf645t4kn"]
+[gd_scene load_steps=9 format=3 uid="uid://cokxwf645t4kn"]
 
 [ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom/vroom.gd" id="1_nu8od"]
 [ext_resource type="PackedScene" uid="uid://cu8b0b78jb0kh" path="res://vroom/player.tscn" id="2_dnmje"]
+[ext_resource type="Texture2D" uid="uid://m57jql11ex71" path="res://assets/sprites/vroom/map game 1.png" id="2_g5qmm"]
 [ext_resource type="PackedScene" uid="uid://l2f85mo40g2b" path="res://vroom/goal.tscn" id="3_le7v8"]
 [ext_resource type="WwiseEvent" uid="uid://b8y5kjxcvtvj0" path="res://Wwise/resources/Event/{7982BB74-C78E-4C05-BACB-150010CE9C0F}.tres" id="3_nkxsn"]
 [ext_resource type="WwiseEvent" uid="uid://cqvt2yyji1ufj" path="res://Wwise/resources/Event/{5A78B004-8C4F-4063-86D5-7C77F58B852D}.tres" id="4_g5qmm"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
-[ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="5_1ei36"]
+[ext_resource type="PackedScene" uid="uid://dkmlvk7mwooad" path="res://vroom/wall.tscn" id="7_g5qmm"]
 
 [node name="Vroom" type="Node2D"]
 script = ExtResource("1_nu8od")
 
+[node name="MapGame1" type="Sprite2D" parent="."]
+texture = ExtResource("2_g5qmm")
+
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.2, 0.2)
+limit_left = -2880
+limit_top = -1620
+limit_right = 2880
+limit_bottom = 1620
 
 [node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
 position = Vector2(576, 324)
 rotation = 3.1415927
 
 [node name="Player" parent="." instance=ExtResource("2_dnmje")]
-position = Vector2(95, 333)
+position = Vector2(-2545, -1069)
 event_moove = ExtResource("3_nkxsn")
 event_rotate = ExtResource("4_g5qmm")
 
 [node name="Goal" parent="." instance=ExtResource("3_le7v8")]
-position = Vector2(879, 458.99997)
+position = Vector2(2562, -476.0001)
 scale = Vector2(1.6120982, 4.3554873)
 
 [node name="Walls" type="Node2D" parent="."]
 
-[node name="Platform" parent="Walls" instance=ExtResource("5_1ei36")]
-position = Vector2(258, 183)
-scale = Vector2(4.969175, 0.83385134)
+[node name="Wall" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2576, -872.00006)
+rotation = -0.62571806
+scale = Vector2(2.4808958, 0.5527385)
 
-[node name="Platform2" parent="Walls" instance=ExtResource("5_1ei36")]
-position = Vector2(241, 501)
-scale = Vector2(5.2048044, 1)
+[node name="Wall2" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2327, -1008.99994)
+rotation = -0.3210363
+scale = Vector2(2.373023, 0.549558)
 
-[node name="Platform3" parent="Walls" instance=ExtResource("5_1ei36")]
-position = Vector2(711, 246.99997)
-rotation = 0.40115976
-scale = Vector2(3.4705775, 0.8468485)
+[node name="Wall3" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2134.0002, -1049)
+rotation = -0.036605503
+scale = Vector2(0.9476088, 0.53996956)
 
-[node name="Platform4" parent="Walls" instance=ExtResource("5_1ei36")]
-position = Vector2(720, 571)
-rotation = 0.3919673
-scale = Vector2(3.8880146, 0.92424154)
+[node name="Wall4" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2024, -1013)
+rotation = 0.17137131
+
+[node name="Wall5" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-1930.0002, -978.0001)
+rotation = 0.5498307
+
+[node name="Wall6" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-1840, -911.0002)
+rotation = -0.51427424
+scale = Vector2(0.637163, 1.2562782)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-1794, -755)
+scale = Vector2(0.45454547, 1.7)
+
+[node name="Wall8" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-1917.0001, -494.00006)
+rotation = 0.49479562
+scale = Vector2(0.92107636, 3.2867613)
+
+[node name="Wall9" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2152, -72.00008)
+rotation = 0.4559257
+scale = Vector2(0.9281095, 4.287161)
+
+[node name="Wall10" parent="Walls" instance=ExtResource("7_g5qmm")]
+position = Vector2(-2280.9998, 293)
+rotation = 0.09636893
+scale = Vector2(0.798242, 1.7148793)
 
 [node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="player_won" from="." to="AkBank" method="_on_vroom_player_won"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

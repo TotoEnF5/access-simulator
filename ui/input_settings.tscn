@@ -1,13 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://buwsflnumlaxh"]
+[gd_scene load_steps=2 format=3 uid="uid://buwsflnumlaxh"]
 
-[ext_resource type="Script" uid="uid://tyjsyjb5lrs2" path="res://ui/input_settings.gd" id="1_ww7g3"]
 [ext_resource type="PackedScene" uid="uid://w615x4es6818" path="res://ui/remap_button.tscn" id="2_dyv2g"]
 
 [node name="InputSettings" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_ww7g3")
-action_items = Array[String](["dummy", "move_up", "move_down"])
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
@@ -53,7 +50,6 @@ text = "Shoot"
 
 [node name="ShootButton" parent="GridContainer" instance=ExtResource("2_dyv2g")]
 layout_mode = 2
-action = "shoot"
 
 [node name="Jump" type="Label" parent="GridContainer"]
 layout_mode = 2
