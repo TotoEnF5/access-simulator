@@ -7,11 +7,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	1018476863	Amb_Shmup			\Default Work Unit\Act2 Shmup\Amb_Shmup	
 	1302771492	Rotate			\Default Work Unit\Act1 Course\Rotate	
 	2108779966	Walk			\Default Work Unit\Act3 Plateformer\Walk	
+	2543661333	Sound_Test			\Default Work Unit\UI\Sound_Test	
 	2860608887	Course_Amb			\Default Work Unit\Act1 Course\Course_Amb	
 	2988140266	Ennemy_Destroy			\Default Work Unit\Act2 Shmup\Ennemy_Destroy	
 	3263329277	Amb_Plateformer			\Default Work Unit\Act3 Plateformer\Amb_Plateformer	
 	3359302305	Player_Shot			\Default Work Unit\Act2 Shmup\Player_Shot	
 	3833651337	Jump			\Default Work Unit\Act3 Plateformer\Jump	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2543661333	Sound_Test			\Default Work Unit\Sound_Test	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	197692389	AirPoweredMachinegun_Burst_02	.cache\DE\{DE427221-B37C-5809-05C0-06BBB4452F17}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_02		16588
@@ -20,9 +24,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	229950963	SFX_Bubbles_5	.cache\75\{75BF3CCE-2BD2-FEEB-EF7B-333536105C91}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_5		34584
 	242359649	DigitalBullets_Burst_02	.cache\BB\{BB8D65A0-7AD8-8793-C372-0D2E0F676F8E}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_02		29940
 	333596638	DigitalBullets_Burst_05	.cache\E2\{E237A95B-4362-17B2-4916-B7C10E43291C}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_05		27880
+	427179110	PHILIPE	.cache\4D\{4D5F826C-3F9D-792F-BB7E-64E234D0ECBD}.wem		\Containers\Default Work Unit\UI\Sound_Test\PHILIPE		565772
 	427627507	Water Pouring-016	.cache\E3\{E3E24A95-1174-1A9D-9F77-9A3AF07618E1}.wem		\Containers\Default Work Unit\Boat\Moove\Water Pouring-016		773048
 	430378591	DigitalBullets_Burst_01	.cache\75\{751AD1B7-6643-2112-ACAA-5C4EAC95FBF5}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\DigitalBullets_Burst_01		30328
+	545109682	RENDEZ LA COUROOONNNE	.cache\29\{292864C0-B735-585E-67E7-3CD8585C1847}.wem		\Containers\Default Work Unit\UI\Sound_Test\RENDEZ LA COUROOONNNE		768096
 	561188402	Grass_Boots_FullStep_01	.cache\16\{1616EEF4-EE00-5F8B-065B-9E96AF69DB86}.wem		\Containers\Default Work Unit\Plateformer\Walk\Grass_Boots_FullStep_01		71584
+	563047189	Metal Pipe	.cache\39\{39200D7C-5F8E-8FC3-8E88-0DBA0D3FF161}.wem		\Containers\Default Work Unit\UI\Sound_Test\Metal Pipe		640096
 	572396881	AirPoweredMachinegun_Burst_01	.cache\BA\{BA769B67-2D17-8BD5-A7D5-19F7E4684E3E}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_01		16772
 	596604982	Punch Clean Boxing Impact-007	.cache\9A\{9AC7C291-FD5A-0334-8FB1-21051DFEA836}.wem		\Containers\Default Work Unit\Plateformer\Floor_Impact\Impact\Punch Clean Boxing Impact-007		272708
 	717596717	AirPoweredMachinegun_Burst_04	.cache\1C\{1CDAF2FA-FDAE-86E1-EF66-D6D8B0436807}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_04		19096
@@ -36,4 +43,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	989709376	SFX_Bubbles_3	.cache\FA\{FA2640E6-93D1-B24E-1973-C37FDEDF1F70}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_3		29884
 	1007535337	SFX_Bubbles_4	.cache\65\{65D705A4-F211-C3D8-AE7F-A7F9F19578C4}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_4		30712
 	1007816732	AirPoweredMachinegun_Burst_03	.cache\2C\{2CCE628C-30F5-732A-695F-E338609E8232}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\AirPoweredMachinegun_Burst_03		16604
+	1025425004	Je vous ait compris	.cache\1D\{1DD2824E-4F20-932D-1E49-E5D8E6EFB8F2}.wem		\Containers\Default Work Unit\UI\Sound_Test\Je vous ait compris		768096
 

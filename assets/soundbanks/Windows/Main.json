@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{3EFBA3A2-78D4-C34B-5D8D-525B27A91468}",
+    "Hash": "{BD7ABD49-A208-F683-A910-3AA6C7CD7172}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -64,6 +64,14 @@
       "CachePath": "E2/{E237A95B-4362-17B2-4916-B7C10E43291C}.wem"
      },
      {
+      "Id": "427179110",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PHILIPE.wav",
+      "CachePath": "4D/{4D5F826C-3F9D-792F-BB7E-64E234D0ECBD}.wem"
+     },
+     {
       "Id": "427627507",
       "Language": "SFX",
       "Streaming": "false",
@@ -80,12 +88,28 @@
       "CachePath": "75/{751AD1B7-6643-2112-ACAA-5C4EAC95FBF5}.wem"
      },
      {
+      "Id": "545109682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RENDEZ LA COUROOONNNE.wav",
+      "CachePath": "29/{292864C0-B735-585E-67E7-3CD8585C1847}.wem"
+     },
+     {
       "Id": "561188402",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Grass_Boots_FullStep_01.wav",
       "CachePath": "16/{1616EEF4-EE00-5F8B-065B-9E96AF69DB86}.wem"
+     },
+     {
+      "Id": "563047189",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Metal Pipe.wav",
+      "CachePath": "39/{39200D7C-5F8E-8FC3-8E88-0DBA0D3FF161}.wem"
      },
      {
       "Id": "572396881",
@@ -190,6 +214,14 @@
       "Location": "Memory",
       "ShortName": "AirPoweredMachinegun_Burst_01.wav",
       "CachePath": "2C/{2CCE628C-30F5-732A-695F-E338609E8232}.wem"
+     },
+     {
+      "Id": "1025425004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Je vous ait compris.wav",
+      "CachePath": "1D/{1DD2824E-4F20-932D-1E49-E5D8E6EFB8F2}.wem"
      }
     ],
     "Events": [
@@ -369,6 +401,30 @@
       ]
      },
      {
+      "Id": "2543661333",
+      "Name": "Sound_Test",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Sound_Test",
+      "GUID": "{8A145C3D-A58A-4766-834B-41865CD07071}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "427179110"
+       },
+       {
+        "Id": "427627507"
+       },
+       {
+        "Id": "545109682"
+       },
+       {
+        "Id": "563047189"
+       },
+       {
+        "Id": "1025425004"
+       }
+      ]
+     },
+     {
       "Id": "2108779966",
       "Name": "Walk",
       "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Walk",
@@ -396,9 +452,17 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2543661333",
+      "Name": "Sound_Test",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Sound_Test",
+      "GUID": "{40BF6023-C4BA-4ADB-A970-1E265B58C144}"
+     }
     ]
    }
   ],
-  "FileHash": "{E56CE955-541C-8ED6-3769-B7EB13CBBB69}"
+  "FileHash": "{81944585-665F-A038-CFAF-137CBA604E0B}"
  }
 }
