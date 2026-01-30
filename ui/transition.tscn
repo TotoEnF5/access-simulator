@@ -1,11 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://dhb1fvm22wy81"]
+[gd_scene load_steps=14 format=3 uid="uid://dhb1fvm22wy81"]
 
 [ext_resource type="Script" uid="uid://d2lh71qxoca33" path="res://ui/transition.gd" id="1_pj2mc"]
 [ext_resource type="Texture2D" uid="uid://cjcbmfivkoyms" path="res://assets/sprites/transition/layer 1 - bg sky.png" id="2_1ggup"]
 [ext_resource type="WwiseEvent" uid="uid://ckqmk745bjbkb" path="res://Wwise/resources/Event/{6C8F7B17-08EF-4B63-9DDF-8E50C7B66662}.tres" id="2_mv7ma"]
 [ext_resource type="Texture2D" uid="uid://cfa5p38yaad5c" path="res://assets/sprites/transition/layer 6 - stage.png" id="3_0mkhm"]
 [ext_resource type="Texture2D" uid="uid://cxgy3s7gg2cwc" path="res://assets/sprites/transition/layer 3 - clouds.png" id="3_46dv1"]
-[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="3_dky4j"]
 [ext_resource type="WwiseEvent" uid="uid://c3xkk67xqwdsb" path="res://Wwise/resources/Event/{FAE7C3ED-E8A7-420F-B7C0-1F719AF4780A}.tres" id="3_j5jva"]
 [ext_resource type="Texture2D" uid="uid://ydiy2ekcene2" path="res://assets/sprites/transition/layer 5 - curtain left.png" id="4_46dv1"]
 [ext_resource type="Texture2D" uid="uid://bllia6slmeann" path="res://assets/sprites/transition/layer 5 - curtain right.png" id="5_8imo4"]
@@ -72,7 +71,5 @@ texture = ExtResource("3_0mkhm")
 position = Vector2(576, -71)
 scale = Vector2(0.5989583, 0.5989583)
 texture = ExtResource("6_lvdyl")
-
-[node name="AkBank" parent="." instance=ExtResource("3_dky4j")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

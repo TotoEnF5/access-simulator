@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3729966089",
+    "Type": "Bus",
+    "GUID": "{83BB2F3C-D8F3-4F76-8867-E3B848B4435C}",
+    "Language": "SFX",
+    "Hash": "{D7D966C3-DBDE-6F76-FD31-A0511FCC14AA}",
+    "ObjectPath": "Stereo",
+    "ShortName": "Stereo",
+    "Path": "Bus/Stereo.bnk",
+    "AuxBusses": [
+     {
+      "Id": "3729966089",
+      "Name": "Stereo",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Stereo",
+      "GUID": "{83BB2F3C-D8F3-4F76-8867-E3B848B4435C}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4A027D61-9CAA-3DC4-DB83-97536B385827}"
+ }
+}

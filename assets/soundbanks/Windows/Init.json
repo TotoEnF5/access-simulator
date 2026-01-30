@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{74D7033A-74B3-F4A9-9624-C7E8A486E3ED}",
+    "Hash": "{A80B20EB-767F-4DA1-728F-7A5E2DE585E8}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -99,7 +99,35 @@
       "Id": "4056684167",
       "Name": "Master",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master",
-      "GUID": "{85ED1DB7-B0D7-4AE6-A082-17FD3DD075BC}"
+      "GUID": "{85ED1DB7-B0D7-4AE6-A082-17FD3DD075BC}",
+      "AuxBusRefs": [
+       {
+        "Id": "3145425408",
+        "Name": "Mono",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Mono",
+        "GUID": "{B0C2D782-599C-4136-948F-B12E9D897618}"
+       },
+       {
+        "Id": "3729966089",
+        "Name": "Stereo",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Stereo",
+        "GUID": "{83BB2F3C-D8F3-4F76-8867-E3B848B4435C}"
+       }
+      ]
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "3145425408",
+      "Name": "Mono",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Mono",
+      "GUID": "{B0C2D782-599C-4136-948F-B12E9D897618}"
+     },
+     {
+      "Id": "3729966089",
+      "Name": "Stereo",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Stereo",
+      "GUID": "{83BB2F3C-D8F3-4F76-8867-E3B848B4435C}"
      }
     ],
     "GameParameters": [
@@ -108,6 +136,12 @@
       "Name": "SFX",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\SFX",
       "GUID": "{8CDC3B3F-AB0D-4E5A-8D33-49FE41C0BF57}"
+     },
+     {
+      "Id": "531115601",
+      "Name": "Stereo_Mono",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Stereo_Mono",
+      "GUID": "{BC8335A5-9CF4-4DDD-8862-ED93309E36E4}"
      },
      {
       "Id": "541470702",
@@ -228,22 +262,6 @@
       "Name": "SS_Air_Turbulence",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Turbulence",
       "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
-     }
-    ],
-    "StateGroups": [
-     {
-      "Id": "2826916681",
-      "Name": "Channel_Type",
-      "ObjectPath": "\\States\\Default Work Unit\\Channel_Type",
-      "GUID": "{84295F2A-36CE-4FC5-A755-5C010B745C7B}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\Channel_Type\\None",
-        "GUID": "{FA36982C-56DE-4718-8000-F4B9B0C5A908}"
-       }
-      ]
      }
     ],
     "AcousticTextures": [
@@ -725,6 +743,6 @@
     ]
    }
   ],
-  "FileHash": "{877CFA1C-E4E2-7084-EF57-BDCFCB78F95B}"
+  "FileHash": "{A2C064D4-212B-2471-8B8F-02BCE5DEE399}"
  }
 }

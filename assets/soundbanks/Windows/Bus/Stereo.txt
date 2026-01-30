@@ -1,0 +1,3 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3729966089	Stereo			\Default Work Unit\Main Audio Bus\Stereo	
+

@@ -311,7 +311,10 @@ max_value = 20.0
 step = 0.01
 value = 9.81
 
+[connection signal="tab_changed" from="TabContainer" to="." method="_on_tab_container_tab_changed"]
 [connection signal="toggled" from="TabContainer/Colorblindness/VBoxContainer/HighContrast" to="." method="_on_high_contrast_toggled"]
+[connection signal="pressed" from="TabContainer/Gameplay/VBoxContainer/CheckButton" to="." method="_on_check_button_pressed"]
+[connection signal="tab_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer" to="." method="_on_tab_container_tab_changed"]
 [connection signal="value_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer/Act one/PlayerSpeedSlider" to="." method="_on_player_speed_slider_value_changed"]
 [connection signal="value_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer/Act one/PlayerRotationSpeedSlider" to="." method="_on_player_rotation_speed_slider_value_changed"]
 [connection signal="value_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer/Act two/PlayerSpeedSlider" to="." method="_on_shmup_player_speed_slider_value_changed"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://74nogr1b67s0"]
+[gd_scene load_steps=5 format=3 uid="uid://74nogr1b67s0"]
 
 [ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bw6wr4q21wgbt" path="res://ui/settings.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dhb1fvm22wy81" path="res://ui/transition.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
@@ -14,6 +15,8 @@ z_index = 1
 
 [node name="Settings" parent="CanvasLayer" instance=ExtResource("2_1bvp3")]
 visible = false
+
+[node name="AkBank" parent="." instance=ExtResource("4_1bvp3")]
 
 [connection signal="curtains_closed" from="CanvasLayer/Transition" to="." method="_on_transition_curtains_closed"]
 [connection signal="curtains_opened" from="CanvasLayer/Transition" to="." method="_on_transition_curtains_opened"]

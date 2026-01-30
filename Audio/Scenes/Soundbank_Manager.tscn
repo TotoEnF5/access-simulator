@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bin2q0q4ie6gc"]
+[gd_scene load_steps=6 format=3 uid="uid://bin2q0q4ie6gc"]
 
 [ext_resource type="WwiseBank" uid="uid://1fo3uobacriy" path="res://Wwise/resources/SoundBank/{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}.tres" id="1_jtjrv"]
 [ext_resource type="Script" uid="uid://c16wwbd1cu73c" path="res://Audio/Scripts/soundbank_manager.gd" id="2_oc7my"]
+[ext_resource type="WwiseEvent" uid="uid://dg0w5euo8urwx" path="res://Wwise/resources/Event/{8CAA72F7-0338-4AC8-8061-006E71B6AD7E}.tres" id="3_cv143"]
 [ext_resource type="WwiseEvent" uid="uid://d0drgsi0u8wvg" path="res://Wwise/resources/Event/{F6A90912-A955-4360-ADC2-FCEAD1B42EED}.tres" id="4_2co6e"]
 [ext_resource type="WwiseEvent" uid="uid://wctmm7qt55e3" path="res://Wwise/resources/Event/{39BEB5FF-86DF-47FB-A917-8D37A45DC0C9}.tres" id="8_ppn40"]
 
@@ -9,9 +10,9 @@
 bank = ExtResource("1_jtjrv")
 load_on = 2
 script = ExtResource("2_oc7my")
+event_UI = ExtResource("3_cv143")
 event_win = ExtResource("8_ppn40")
 
-[node name="AkEvent2D" type="AkEvent2D" parent="."]
+[node name="AkEvent2D_Music" type="AkEvent2D" parent="."]
 event = ExtResource("4_2co6e")
-trigger_on = 1
-stop_on = 3
+trigger_on = 2

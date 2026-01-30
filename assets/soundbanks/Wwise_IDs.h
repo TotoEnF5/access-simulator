@@ -28,23 +28,10 @@ namespace AK
         static const AkUniqueID PLAYER_SHOT = 3359302305U;
         static const AkUniqueID ROTATE = 1302771492U;
         static const AkUniqueID SOUND_TEST = 2543661333U;
+        static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID WALK = 2108779966U;
         static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
-
-    namespace STATES
-    {
-        namespace CHANNEL_TYPE
-        {
-            static const AkUniqueID GROUP = 2826916681U;
-
-            namespace STATE
-            {
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace CHANNEL_TYPE
-
-    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
@@ -68,6 +55,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID STEREO_MONO = 531115601U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace GAME_PARAMETERS
 
@@ -91,6 +79,12 @@ namespace AK
         static const AkUniqueID SOUND_TEST = 2543661333U;
         static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID MONO = 3145425408U;
+        static const AkUniqueID STEREO = 3729966089U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
