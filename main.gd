@@ -51,7 +51,11 @@ func _on_transition_curtains_opened() -> void:
 	
 	
 func _on_player_won() -> void:
-	$CanvasLayer/Transition.start_animation(self.current_level % 3 + 1)
+	if self.current_level == Level.PLATFORMER:
+		$CanvasLayer/EndScene.visible = true
+		$CanvasLayer/EndScene.start_animaiton()
+	else:
+		$CanvasLayer/Transition.start_animation(self.current_level % 3 + 1)
 	
 
 func _go_to_next_level():

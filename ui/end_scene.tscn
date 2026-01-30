@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyja1gro6hdp6"]
+
+[ext_resource type="Script" uid="uid://cs4ju3dydtnbn" path="res://ui/end_scene.gd" id="1_l4gwj"]
+[ext_resource type="Texture2D" uid="uid://dysrev2yjmnmc" path="res://assets/sprites/and/layer 1 - end scene.png" id="1_u8qic"]
+[ext_resource type="Texture2D" uid="uid://di1gfk2u5vjd2" path="res://assets/sprites/and/layer 2 - end scene.png" id="2_l4gwj"]
+[ext_resource type="Texture2D" uid="uid://cfkk1051nb3ak" path="res://assets/sprites/and/layer 3 - end scene.png" id="3_mruqe"]
+[ext_resource type="Texture2D" uid="uid://c02m7x121ajbw" path="res://assets/sprites/and/layer 4 - end scene.png" id="4_8phtd"]
+[ext_resource type="Texture2D" uid="uid://cwkkwohmxdkfp" path="res://assets/sprites/and/layer 5 - end scene.png" id="5_jeayq"]
+
+[node name="EndScene" type="Node2D"]
+script = ExtResource("1_l4gwj")
+
+[node name="Layer1EndScene" type="Sprite2D" parent="."]
+position = Vector2(575.9823, -357)
+scale = Vector2(0.60046303, 0.600463)
+texture = ExtResource("1_u8qic")
+
+[node name="Layer2EndScene" type="Sprite2D" parent="."]
+position = Vector2(589.6489, -241)
+scale = Vector2(0.599, 0.599)
+texture = ExtResource("2_l4gwj")
+
+[node name="Layer3EndScene" type="Sprite2D" parent="."]
+position = Vector2(1351, 375.5)
+scale = Vector2(0.599, 0.599)
+texture = ExtResource("3_mruqe")
+
+[node name="Layer4EndScene" type="Sprite2D" parent="."]
+position = Vector2(-198, 382.5)
+scale = Vector2(0.599, 0.599)
+texture = ExtResource("4_8phtd")
+
+[node name="Layer5EndScene" type="Sprite2D" parent="."]
+position = Vector2(574.32446, 746)
+scale = Vector2(0.6049679, 0.6049679)
+texture = ExtResource("5_jeayq")

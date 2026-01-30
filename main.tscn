@@ -1,18 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://74nogr1b67s0"]
+[gd_scene load_steps=6 format=3 uid="uid://74nogr1b67s0"]
 
 [ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bw6wr4q21wgbt" path="res://ui/settings.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dhb1fvm22wy81" path="res://ui/transition.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cyja1gro6hdp6" path="res://ui/end_scene.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
-current_level = 3
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Transition" parent="CanvasLayer" instance=ExtResource("2_h2yge")]
 z_index = 1
+
+[node name="EndScene" parent="CanvasLayer" instance=ExtResource("3_lquwl")]
+visible = false
 
 [node name="Settings" parent="CanvasLayer" instance=ExtResource("2_1bvp3")]
 visible = false
