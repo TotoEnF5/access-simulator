@@ -25,6 +25,9 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("shoot"):
 		var now: int = Time.get_ticks_msec()
 		if now > self._last_shoot + self.shoot_colldown_ms:
+			if not SubtitleManager.has_subtitle("Projectile shot"):
+				SubtitleManager.add_subtitle("Projectile shot")
+		
 			var projectile = self._projectile_scene.instantiate()
 			projectile.speed = self.projectile_speed
 			add_child(projectile)

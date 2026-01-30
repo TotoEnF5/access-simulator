@@ -20,10 +20,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 0
+current_tab = 3
 clip_tabs = false
 
 [node name="Controls" type="Button" parent="TabContainer"]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -56,22 +57,31 @@ layout_mode = 2
 text = "High contrast"
 
 [node name="Texts" type="Button" parent="TabContainer"]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
+[node name="CheckButton" type="CheckButton" parent="TabContainer/Texts"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 188.0
+offset_bottom = 43.0
+text = "Subtitles enabled"
+
 [node name="Label" type="Label" parent="TabContainer/Texts"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 7.0
+offset_top = 44.0
+offset_right = 107.0
+offset_bottom = 67.0
 text = "Subtitle time"
 
 [node name="HSlider" type="HSlider" parent="TabContainer/Texts"]
 layout_mode = 0
-offset_left = 112.0
-offset_top = 6.0
-offset_right = 1125.0
-offset_bottom = 22.0
+offset_left = 119.0
+offset_top = 50.0
+offset_right = 1132.0
+offset_bottom = 66.0
 min_value = 1.0
 max_value = 20.0
 step = 0.1
@@ -330,6 +340,7 @@ value = 9.81
 
 [connection signal="tab_changed" from="TabContainer" to="." method="_on_tab_container_tab_changed"]
 [connection signal="toggled" from="TabContainer/Colorblindness/VBoxContainer/HighContrast" to="." method="_on_high_contrast_toggled"]
+[connection signal="toggled" from="TabContainer/Texts/CheckButton" to="." method="_on_subtitle_check_button_toggled"]
 [connection signal="value_changed" from="TabContainer/Texts/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="TabContainer/Gameplay/VBoxContainer/CheckButton" to="." method="_on_check_button_pressed"]
 [connection signal="tab_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer" to="." method="_on_tab_container_tab_changed"]

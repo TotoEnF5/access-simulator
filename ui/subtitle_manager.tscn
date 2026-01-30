@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://1jsvlmd74r2x" path="res://ui/subtitle_manager.gd" id="1_r0b2c"]
 
 [node name="SubtitleManager" type="CanvasLayer"]
+visible = false
 script = ExtResource("1_r0b2c")
 
 [node name="Control" type="Control" parent="."]

@@ -57,6 +57,8 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	
 
 func _shoot():
+	SubtitleManager.add_subtitle("Enemy projectile shot")
+
 	var projectile = self._projectileScene.instantiate()
 	projectile.direction = Vector2(-1.0, 0.0)
 	projectile.speed = self.projectileSpeed

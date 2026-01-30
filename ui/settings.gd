@@ -76,3 +76,7 @@ func _on_check_button_pressed() -> void:
 
 func _on_h_slider_value_changed(value: float) -> void:
 	access_settings.set_subtitle_time(value)
+
+
+func _on_subtitle_check_button_toggled(toggled_on: bool) -> void:
+	access_settings.set_subtitles_enabled(toggled_on)

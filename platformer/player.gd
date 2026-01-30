@@ -31,6 +31,7 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("jump") and self.is_on_floor():
 		# [SOUND] C'est ici que le joueur saute
+		SubtitleManager.add_subtitle("Jumping sound")
 		event_jump.post(self)
 		self.velocity.y = self.jump_speed	
 	
@@ -43,9 +44,12 @@ func _physics_process(delta: float) -> void:
 	
 	# [SOUND] Son de walk si joueur bouge et touche le sol
 	if abs(direction) != 0.0 and self.is_on_floor():
+		if not SubtitleManager.has_subtitle("Footstep sound"):
+			SubtitleManager.add_subtitle("Footstep sound")
 		event_walk.post(self)
 	# [SOUND] Son d'impact si le joueur touche le sol avec une vitesse supérieure à un seuil
 	if stored_velocity_y - self.velocity.y >= 100.0 :
+		SubtitleManager.add_subtitle("Landing sound")
 		event_floor_impact.post(self)
 		
 		

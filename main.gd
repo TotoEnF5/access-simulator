@@ -17,6 +17,7 @@ const _platformer_scene: PackedScene = preload("res://platformer/platformer.tscn
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	access_settings.subtitles_toggled.connect(self._on_subtitles_toggled)
 	$CanvasLayer/Transition.start_animation(1)
 
 
@@ -48,6 +49,11 @@ func _on_transition_curtains_closed() -> void:
 func _on_transition_curtains_opened() -> void:
 	# self.current_level_node.process_mode = Node.PROCESS_MODE_INHERIT
 	pass
+	
+
+func _on_subtitles_toggled(toggled: bool):
+	print(toggled)
+	SubtitleManager.visible = toggled
 	
 	
 func _on_player_won() -> void:

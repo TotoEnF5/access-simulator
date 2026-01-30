@@ -1,5 +1,6 @@
 extends Node
 
+signal subtitles_toggled
 signal high_contrast_toggled
 signal vroom_player_speed_changed
 signal vroom_player_rotation_speed_changed
@@ -14,6 +15,7 @@ signal platformer_player_speed_changed
 signal platformer_player_jump_changed
 signal platformer_player_gravity_changed
 
+var subtitles_enabled: bool = false
 var subtitle_time: float = 5.0
 var high_contrast: bool = false
 var vroom_player_speed: float = 500.0
@@ -28,6 +30,12 @@ var shmup_enemy_cooldown: int = 1000
 var platformer_player_speed: float = 500.0
 var platformer_player_jump: float = 800.0
 var platformer_player_gravity: float = 17
+
+
+func set_subtitles_enabled(enabled: bool):
+	self.subtitles_enabled = enabled
+	self.subtitles_toggled.emit(enabled)
+
 
 func set_subtitle_time(value: float):
 	self.subtitle_time = value
