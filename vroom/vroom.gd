@@ -7,6 +7,7 @@ var _do_camera_lerp: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Player.process_mode = Node.PROCESS_MODE_DISABLED
+	$Player/AnimatedSprite2D.play("default")
 	$Walls.visible = false
 	$Timer.start()
 
