@@ -1,4 +1,4 @@
-[gd_resource type="WwiseRTPC" format=3 uid="uid://be6d0auat4ws7"]
+[gd_resource type="WwiseRTPC" load_steps=0 format=3 uid="uid://be6d0auat4ws7"]
 
 [resource]
 name = "Stereo_Mono"

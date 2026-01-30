@@ -14,6 +14,7 @@ signal platformer_player_speed_changed
 signal platformer_player_jump_changed
 signal platformer_player_gravity_changed
 
+var subtitle_time: float = 5.0
 var high_contrast: bool = false
 var vroom_player_speed: float = 500.0
 var vroom_player_rotation_speed: float = 5.0
@@ -25,8 +26,12 @@ var shmup_enemy_projectile_speed: float = 30.0
 var shmup_enemy_projectile_cooldown: int = 600
 var shmup_enemy_cooldown: int = 1000
 var platformer_player_speed: float = 500.0
-var platformer_player_jump: float = 500.0
-var platformer_player_gravity: float = 9.81
+var platformer_player_jump: float = 800.0
+var platformer_player_gravity: float = 17
+
+func set_subtitle_time(value: float):
+	self.subtitle_time = value
+
 
 func set_high_contrast(toggled: bool) -> void:
 	self.high_contrast = toggled

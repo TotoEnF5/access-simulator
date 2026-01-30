@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
 SoundbankManager="*res://Audio/Scenes/Soundbank_Manager.tscn"
 access_settings="*res://access_settings.gd"
+SubtitleManager="*res://ui/subtitle_manager.tscn"
 
 [input]
 

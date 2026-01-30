@@ -1,13 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd2ka03e5c40v"]
+[gd_scene load_steps=7 format=3 uid="uid://cd2ka03e5c40v"]
 
 [ext_resource type="Script" uid="uid://d0narlnj0sq2b" path="res://platformer/platformer.gd" id="1_k1ntv"]
 [ext_resource type="PackedScene" uid="uid://ccsof7qvs62hs" path="res://platformer/platform.tscn" id="2_or1io"]
 [ext_resource type="PackedScene" uid="uid://bu10mcafd4qcd" path="res://platformer/player.tscn" id="2_w1qb0"]
 [ext_resource type="PackedScene" uid="uid://byt4xk4pw2v7s" path="res://platformer/goal.tscn" id="3_g7gp6"]
-[ext_resource type="Texture2D" uid="uid://jpbsvfqt5h0s" path="res://assets/sprites/plateformer/Placeholder_Plateformer_Background.webp" id="4_nl76y"]
+[ext_resource type="Texture2D" uid="uid://vcn5gybixjif" path="res://assets/sprites/plateformer/game 3 - bg layer 1.png" id="3_wmrb2"]
+[ext_resource type="Texture2D" uid="uid://drurcfqdoqxgb" path="res://assets/sprites/plateformer/game 3 - bg layer 2.png" id="6_je3qg"]
 
 [node name="Platformer" type="Node2D"]
 script = ExtResource("1_k1ntv")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Game3BgLayer1" type="Sprite2D" parent="Node2D"]
+position = Vector2(8722, 1223)
+scale = Vector2(2.2417867, 2.2417867)
+texture = ExtResource("3_wmrb2")
+
+[node name="Game3BgLayer2" type="Sprite2D" parent="Node2D"]
+position = Vector2(8729.783, 1020)
+scale = Vector2(2.239532, 2.2395318)
+texture = ExtResource("6_je3qg")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -15,145 +28,134 @@ script = ExtResource("1_k1ntv")
 position = Vector2(574, 324)
 rotation = 3.1415927
 
-[node name="PlaceholderPlateformerBackground" type="Sprite2D" parent="."]
-position = Vector2(8720.76, 1207.75)
-scale = Vector2(9.322393, 9.322393)
-texture = ExtResource("4_nl76y")
-
 [node name="Player" parent="." instance=ExtResource("2_w1qb0")]
 position = Vector2(147, 1061)
 gravity = 17.0
+jump_speed = -2000.0
 
 [node name="Goal" parent="." instance=ExtResource("3_g7gp6")]
-position = Vector2(59, 60)
+position = Vector2(17195, 888.99994)
+scale = Vector2(3.653157, 8.439751)
 
 [node name="Platforms" type="Node2D" parent="."]
 
-[node name="Box" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(146, 1214)
-scale = Vector2(1.34, 1.34)
-
 [node name="Floor" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(594.00006, 1330.0001)
-scale = Vector2(9.280001, 0.45)
+position = Vector2(586, 1338)
+scale = Vector2(9.068578, 0.74314684)
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(2226, 1141)
-scale = Vector2(5, 0.5)
-
-[node name="Platform3" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(2350, 1050)
-scale = Vector2(0.8, 0.8)
+position = Vector2(2224, 1104)
+scale = Vector2(4.8475485, 0.6561675)
 
 [node name="Platform4" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(2952, 972)
-scale = Vector2(5, 0.5)
+position = Vector2(3042.0002, 854.99994)
+scale = Vector2(5.161297, 0.8175871)
 
 [node name="Platform5" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(3937, 1074)
-scale = Vector2(5, 0.5)
+position = Vector2(4005, 1018.00006)
+scale = Vector2(4.8028555, 0.67701876)
 
 [node name="Platform6" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(4929, 1177)
-scale = Vector2(5, 0.5)
+position = Vector2(4989, 1183)
+scale = Vector2(4.6671624, 0.69877225)
 
 [node name="Platform7" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(5712, 1070)
-scale = Vector2(5, 0.5)
+position = Vector2(5688, 1051)
+scale = Vector2(4.702277, 0.82)
 
 [node name="Platform8" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(6261, 1299)
-scale = Vector2(4, 0.5)
+position = Vector2(6259, 1301.0001)
+scale = Vector2(4, 0.6846319)
 
 [node name="Platform9" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(6835.0005, 1187)
-scale = Vector2(3.5, 0.5)
+position = Vector2(6862.0005, 1191)
+scale = Vector2(3.5, 0.66000247)
 
 [node name="Platform10" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(7366.0005, 1082)
-scale = Vector2(3, 0.5)
+position = Vector2(7347, 1086)
+scale = Vector2(3, 0.7)
 
 [node name="Platform11" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(7853, 991)
-scale = Vector2(2.5, 0.5)
+position = Vector2(7845, 987)
+scale = Vector2(2.82, 0.6599976)
 
 [node name="Platform12" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(8324, 1153)
-scale = Vector2(3, 0.5)
+position = Vector2(8355, 1159)
+scale = Vector2(3, 0.7)
 
 [node name="Platform13" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(8767, 1271)
-scale = Vector2(1.5, 0.5)
+position = Vector2(8753, 1273)
+scale = Vector2(1.74, 0.74)
 
 [node name="Platform14" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(9111, 1274)
-scale = Vector2(1.5, 0.5)
+position = Vector2(9125, 1284)
+scale = Vector2(1.5, 0.7383978)
 
 [node name="Platform15" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(9457, 1275)
-scale = Vector2(1.5, 0.5)
+position = Vector2(9447, 1273)
+scale = Vector2(1.5, 0.78)
 
 [node name="Platform16" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(9927, 1412)
-scale = Vector2(3, 0.5)
+position = Vector2(9908, 1416)
+scale = Vector2(3, 0.7799976)
 
 [node name="Platform17" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(10711.001, 1575)
-scale = Vector2(5, 0.5)
+position = Vector2(10729, 1585)
+scale = Vector2(5, 0.82)
 
 [node name="Platform18" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(10719.001, 1813)
-scale = Vector2(10, 0.5)
+position = Vector2(10737.001, 1821)
+scale = Vector2(10, 0.7800025)
 
 [node name="Platform19" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(11810, 1951)
-scale = Vector2(5, 0.5)
+position = Vector2(11814, 1957)
+scale = Vector2(5, 0.72011685)
 
 [node name="Platform20" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(12369, 1984)
+position = Vector2(12383, 1992)
 
 [node name="Platform21" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(12594, 1921)
+position = Vector2(12608, 1931)
 
 [node name="Platform22" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(12824, 1872)
+position = Vector2(12812, 1862)
 
 [node name="Platform23" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(13054, 1821)
+position = Vector2(13054, 1842)
 
 [node name="Platform24" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(13301, 1779)
+position = Vector2(13319, 1789)
 
 [node name="Platform25" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(13872, 1671)
+position = Vector2(13878.001, 1653)
 scale = Vector2(5, 0.5)
 
 [node name="Platform26" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(14692.001, 1588)
+position = Vector2(14717, 1535)
 scale = Vector2(5, 0.5)
 
 [node name="Platform27" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(17218.002, 1516)
-scale = Vector2(3.5, 1)
+position = Vector2(17037, 1506)
+scale = Vector2(6.56055, 1)
 
 [node name="Platform28" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(30, 977)
-scale = Vector2(0.5, 5)
+position = Vector2(-21, 977.00006)
+scale = Vector2(0.393638, 31.850443)
 
 [node name="Platform29" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(15455.001, 1655)
+position = Vector2(15467, 1655)
 scale = Vector2(3, 0.5)
 
 [node name="Platform30" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(16095, 1562)
+position = Vector2(16122, 1554)
 scale = Vector2(3, 0.5)
 
-[node name="Platform31" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(16660, 1487)
-scale = Vector2(2, 0.5)
-
 [node name="Platform" parent="Platforms" instance=ExtResource("2_or1io")]
-position = Vector2(1537, 1231.0001)
-scale = Vector2(3.465, 0.225)
+position = Vector2(1505, 1196)
+scale = Vector2(3.254167, 0.6737997)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("2_or1io")]
+position = Vector2(17535, 1305)
+scale = Vector2(-1.3711987, 20.517548)
 
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]

@@ -72,3 +72,7 @@ func _on_tab_container_tab_changed(tab: int) -> void:
 
 func _on_check_button_pressed() -> void:
 	SoundbankManager.event_UI.post(self)
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	access_settings.set_subtitle_time(value)

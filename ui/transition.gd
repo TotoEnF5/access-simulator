@@ -39,10 +39,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	#var canvas_pos = self.get_canvas_transform().origin
-	#self.global_position = -canvas_pos
-	#self.global_scale.x = 1.0 / self.get_canvas_transform().get_scale().x
-	#self.global_scale.y = 1.0 / self.get_canvas_transform().get_scale().y
 	pass
 	
 
@@ -61,6 +57,8 @@ func _set_init_pos() -> void:
 
 
 func _close_curtains() -> void:
+	SubtitleManager.add_subtitle("[Mechanical sounds]")
+
 	event_curtain_in.post(self)
 	self._set_init_pos()
 	
@@ -94,6 +92,8 @@ func _close_curtains() -> void:
 	
 	
 func _open_curtains() -> void:
+	SubtitleManager.add_subtitle("[Mechanical sounds]")
+	
 	event_curtain_out.post(self)
 	var background_tween = get_tree().create_tween().set_trans(Tween.TRANS_BACK)
 	background_tween.tween_property($Layer1BgSky, "position", self._background_init_pos, 0.8)

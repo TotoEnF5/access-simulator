@@ -60,6 +60,23 @@ visible = false
 layout_mode = 2
 metadata/_tab_index = 3
 
+[node name="Label" type="Label" parent="TabContainer/Texts"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Subtitle time"
+
+[node name="HSlider" type="HSlider" parent="TabContainer/Texts"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 6.0
+offset_right = 1125.0
+offset_bottom = 22.0
+min_value = 1.0
+max_value = 20.0
+step = 0.1
+value = 5.0
+
 [node name="Gameplay" type="Button" parent="TabContainer"]
 visible = false
 layout_mode = 2
@@ -313,6 +330,7 @@ value = 9.81
 
 [connection signal="tab_changed" from="TabContainer" to="." method="_on_tab_container_tab_changed"]
 [connection signal="toggled" from="TabContainer/Colorblindness/VBoxContainer/HighContrast" to="." method="_on_high_contrast_toggled"]
+[connection signal="value_changed" from="TabContainer/Texts/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="TabContainer/Gameplay/VBoxContainer/CheckButton" to="." method="_on_check_button_pressed"]
 [connection signal="tab_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer" to="." method="_on_tab_container_tab_changed"]
 [connection signal="value_changed" from="TabContainer/Gameplay/VBoxContainer/TabContainer/Act one/PlayerSpeedSlider" to="." method="_on_player_speed_slider_value_changed"]

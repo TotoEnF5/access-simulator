@@ -20,15 +20,24 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("move_left"):
+		if not SubtitleManager.has_subtitle("blip bloup"):
+			SubtitleManager.add_subtitle("blip bloup")
+		
 		event_rotate.post(self)
 		self.rotation -= self.rotation_speed * delta
 	elif Input.is_action_pressed("move_right"):
+		if not SubtitleManager.has_subtitle("blip bloup"):
+			SubtitleManager.add_subtitle("blip bloup")
+			
 		event_rotate.post(self)
 		self.rotation += self.rotation_speed * delta
 	else:
 		event_rotate.stop(self)
 	
 	if Input.is_action_pressed("move_up"):
+		if not SubtitleManager.has_subtitle("diarhée"):
+			SubtitleManager.add_subtitle("diarhée")
+			
 		var direction = Vector2(cos(self.rotation), sin(self.rotation))
 		self.velocity = direction * self.speed
 		self.move_and_slide()
