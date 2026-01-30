@@ -15,5 +15,4 @@ event_win = ExtResource("8_ppn40")
 
 [node name="AkEvent2D_Music" type="AkEvent2D" parent="."]
 event = ExtResource("4_2co6e")
-trigger_on = 1
-stop_on = 3
+trigger_on = 2

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cokxwf645t4kn"]
+[gd_scene load_steps=8 format=3 uid="uid://cokxwf645t4kn"]
 
 [ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom/vroom.gd" id="1_nu8od"]
 [ext_resource type="PackedScene" uid="uid://cu8b0b78jb0kh" path="res://vroom/player.tscn" id="2_dnmje"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://l2f85mo40g2b" path="res://vroom/goal.tscn" id="3_le7v8"]
 [ext_resource type="WwiseEvent" uid="uid://b8y5kjxcvtvj0" path="res://Wwise/resources/Event/{7982BB74-C78E-4C05-BACB-150010CE9C0F}.tres" id="3_nkxsn"]
 [ext_resource type="WwiseEvent" uid="uid://cqvt2yyji1ufj" path="res://Wwise/resources/Event/{5A78B004-8C4F-4063-86D5-7C77F58B852D}.tres" id="4_g5qmm"]
-[ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
 [ext_resource type="PackedScene" uid="uid://dkmlvk7mwooad" path="res://vroom/wall.tscn" id="7_g5qmm"]
 
 [node name="Vroom" type="Node2D"]
@@ -83,12 +82,9 @@ position = Vector2(-2280.9998, 293)
 rotation = 0.09636893
 scale = Vector2(0.798242, 1.7148793)
 
-[node name="AkBank" parent="." instance=ExtResource("4_nl7gb")]
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
 
-[connection signal="player_won" from="." to="AkBank" method="_on_vroom_player_won"]
 [connection signal="body_entered" from="Goal" to="." method="_on_goal_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
