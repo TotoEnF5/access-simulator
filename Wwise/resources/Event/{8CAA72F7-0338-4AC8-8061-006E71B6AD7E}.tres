@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://dg0w5euo8urwx"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "UI_Click"
+id = 2249769530
+guid = "{8CAA72F7-0338-4AC8-8061-006E71B6AD7E}"
+dummy = true

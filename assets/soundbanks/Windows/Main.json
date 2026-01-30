@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{56802795-13EA-DD31-302A-0FA26565199B}",
+    "Hash": "{67FA0497-6A9F-2A11-3D3D-FB936D0F8326}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -38,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "Grass_LeatherShoes_FullStep_02.wav",
       "CachePath": "7D/{7D682F9C-02A8-E508-5F62-CE0A1F1C3227}.wem"
+     },
+     {
+      "Id": "225094670",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SingleClicks01.wav",
+      "CachePath": "41/{41CDA858-BBD0-C805-97A4-274E2E95842D}.wem"
      },
      {
       "Id": "229950963",
@@ -77,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PHILIPE.wav",
-      "CachePath": "4D/{4D5F826C-3F9D-792F-BB7E-64E234D0ECBD}.wem"
+      "CachePath": "FB/{FBBC342A-E04A-6646-40CF-6F8D52A14719}.wem"
      },
      {
       "Id": "427627507",
@@ -93,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RENDEZ LA COUROOONNNE.wav",
-      "CachePath": "29/{292864C0-B735-585E-67E7-3CD8585C1847}.wem"
+      "CachePath": "3F/{3FFA56DC-93E9-AD34-E0F6-81866F699A61}.wem"
      },
      {
       "Id": "561188402",
@@ -109,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Metal Pipe.wav",
-      "CachePath": "39/{39200D7C-5F8E-8FC3-8E88-0DBA0D3FF161}.wem"
+      "CachePath": "F2/{F2663A80-9B0B-E8BD-53F4-56502460A3DC}.wem"
      },
      {
       "Id": "596604982",
@@ -181,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Je vous ait compris.wav",
-      "CachePath": "1D/{1DD2824E-4F20-932D-1E49-E5D8E6EFB8F2}.wem"
+      "CachePath": "BE/{BE26F7EB-135A-D87D-46FB-05762124D876}.wem"
      },
      {
       "Id": "1035180690",
@@ -415,6 +423,20 @@
       ]
      },
      {
+      "Id": "2249769530",
+      "Name": "UI_Click",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\UI_Click",
+      "GUID": "{8CAA72F7-0338-4AC8-8061-006E71B6AD7E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2531106",
+      "DurationMax": "0.31889936",
+      "MediaRefs": [
+       {
+        "Id": "225094670"
+       }
+      ]
+     },
+     {
       "Id": "2108779966",
       "Name": "Walk",
       "ObjectPath": "\\Events\\Default Work Unit\\Act3 Plateformer\\Walk",
@@ -434,8 +456,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\UI\\Win",
       "GUID": "{39BEB5FF-86DF-47FB-A917-8D37A45DC0C9}",
       "DurationType": "OneShot",
-      "DurationMin": "1.1221875",
-      "DurationMax": "1.1221875",
+      "DurationMin": "1.2742488",
+      "DurationMax": "1.2742488",
       "MediaRefs": [
        {
         "Id": "203960188"
@@ -453,6 +475,6 @@
     ]
    }
   ],
-  "FileHash": "{C6EE2D72-A64A-1B09-8592-36AC70EEA192}"
+  "FileHash": "{B5A5E5AC-9CD4-07D3-FA3D-7F43F3AC8CB4}"
  }
 }

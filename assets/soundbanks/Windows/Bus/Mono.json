@@ -1,0 +1,29 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3145425408",
+    "Type": "Bus",
+    "GUID": "{B0C2D782-599C-4136-948F-B12E9D897618}",
+    "Language": "SFX",
+    "Hash": "{9D507E48-2BC6-1818-1480-289B06D88A53}",
+    "ObjectPath": "Mono",
+    "ShortName": "Mono",
+    "Path": "Bus/Mono.bnk",
+    "AuxBusses": [
+     {
+      "Id": "3145425408",
+      "Name": "Mono",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Mono",
+      "GUID": "{B0C2D782-599C-4136-948F-B12E9D897618}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BFA63705-44BA-B4BD-41EB-D0D57340427E}"
+ }
+}

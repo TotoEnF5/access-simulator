@@ -23,7 +23,6 @@ limit_right = 2880
 limit_bottom = 1620
 
 [node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
-position = Vector2(576, 324)
 rotation = 3.1415927
 
 [node name="Player" parent="." instance=ExtResource("2_dnmje")]
