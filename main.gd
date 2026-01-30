@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 		$CanvasLayer/Transition.start_animation(self.current_level % 3 + 1)
 		
 	if Input.is_action_just_pressed("settings"):
+		SoundbankManager.event_UI.post(self)
 		if not self.paused:
 			$CanvasLayer/Settings.visible = true
 			self.paused = true
