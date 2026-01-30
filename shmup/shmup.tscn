@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcusfrsm1ye7h"]
+[gd_scene load_steps=5 format=3 uid="uid://bcusfrsm1ye7h"]
 
 [ext_resource type="Script" uid="uid://5u0dpbriwvwp" path="res://shmup/shmup.gd" id="1_otwqh"]
 [ext_resource type="PackedScene" uid="uid://c6tk4wbqo154x" path="res://shmup/player.tscn" id="2_h0w4q"]
