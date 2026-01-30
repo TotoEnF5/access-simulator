@@ -121,52 +121,55 @@ name = "Default Work Unit"
 id = 125608783
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_yyrou"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\NPC"
-type = 2
-name = "NPC"
-guid = "{B88E0A3F-4D0E-4B4A-B9AF-105AB789A86E}"
-id = 662417162
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_geu6g"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Movement"
-type = 2
-name = "Movement"
-guid = "{E397A3D4-4E15-4501-B7A4-87BA391C210D}"
-id = 2129636626
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_5n8hf"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Shoot"
-type = 2
-name = "Shoot"
-guid = "{A95A5751-5C6E-4A88-8015-5B5B69078CCE}"
-id = 3038207054
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_tnib1"]
-path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player"
-children = [SubResource("WwiseTreeObject_geu6g"), SubResource("WwiseTreeObject_5n8hf")]
-type = 2
-name = "Player"
-guid = "{6FFE9FCF-DBAC-45A7-9B50-5CA82BD42D9C}"
-id = 1069431850
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_o7sea"]
-children = [SubResource("WwiseTreeObject_yyrou"), SubResource("WwiseTreeObject_tnib1")]
-name = "SFX"
-id = 393239870
-
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_lrto0"]
 path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\Ambiance"
 type = 2
 name = "Ambiance"
 guid = "{88CB39C7-CA3B-45EB-89D6-9988E0828CBC}"
 id = 2981377429
 
-[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_i5cxa"]
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_geu6g"]
 path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\Music"
 type = 2
 name = "Music"
 guid = "{ADBDB7FE-099F-4C08-AD2F-5A3DEB76D735}"
 id = 3991942870
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_5n8hf"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\NPC"
+type = 2
+name = "NPC"
+guid = "{B88E0A3F-4D0E-4B4A-B9AF-105AB789A86E}"
+id = 662417162
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_tnib1"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Movement"
+type = 2
+name = "Movement"
+guid = "{E397A3D4-4E15-4501-B7A4-87BA391C210D}"
+id = 2129636626
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_o7sea"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Shoot"
+type = 2
+name = "Shoot"
+guid = "{A95A5751-5C6E-4A88-8015-5B5B69078CCE}"
+id = 3038207054
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_lrto0"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player"
+children = [SubResource("WwiseTreeObject_tnib1"), SubResource("WwiseTreeObject_o7sea")]
+type = 2
+name = "Player"
+guid = "{6FFE9FCF-DBAC-45A7-9B50-5CA82BD42D9C}"
+id = 1069431850
+
+[sub_resource type="WwiseTreeObject" id="WwiseTreeObject_i5cxa"]
+path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX"
+children = [SubResource("WwiseTreeObject_5n8hf"), SubResource("WwiseTreeObject_lrto0")]
+type = 2
+name = "SFX"
+guid = "{95429670-6F21-46D2-8972-9300A1BD6E7F}"
+id = 393239870
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_ptp8y"]
 path = "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\UI"
@@ -176,7 +179,7 @@ guid = "{B914B6AE-B74C-4F6B-B998-0AB2AC246C56}"
 id = 1551306167
 
 [sub_resource type="WwiseTreeObject" id="WwiseTreeObject_26l8v"]
-children = [SubResource("WwiseTreeObject_o7sea"), SubResource("WwiseTreeObject_lrto0"), SubResource("WwiseTreeObject_i5cxa"), SubResource("WwiseTreeObject_ptp8y")]
+children = [SubResource("WwiseTreeObject_yyrou"), SubResource("WwiseTreeObject_geu6g"), SubResource("WwiseTreeObject_i5cxa"), SubResource("WwiseTreeObject_ptp8y")]
 name = "Master"
 id = 4056684167
 
@@ -253,8 +256,8 @@ guid = "{848D77B8-13CB-47C1-80F3-121DFB5B5480}"
 id = 1018476863
 
 [sub_resource type="WwiseTreeObjectEvent" id="WwiseTreeObjectEvent_0hqp2"]
-max_duration = 0.0
-min_duration = 0.0
+max_duration = 0.798541
+min_duration = 0.798541
 path = "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy"
 type = 3
 name = "Ennemy_Destroy"
@@ -271,8 +274,8 @@ guid = "{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}"
 id = 365677268
 
 [sub_resource type="WwiseTreeObjectEvent" id="WwiseTreeObjectEvent_q407k"]
-max_duration = 0.0
-min_duration = 0.0
+max_duration = 2.3518102
+min_duration = 2.3518102
 path = "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit"
 type = 3
 name = "Player_Hit"

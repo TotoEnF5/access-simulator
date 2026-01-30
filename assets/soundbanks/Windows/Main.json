@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{67FA0497-6A9F-2A11-3D3D-FB936D0F8326}",
+    "Hash": "{94E4ADA0-53D7-AF69-C88B-15955F626150}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "MECHGear_Chain Door Moving_KRTS_MD-005.wav",
-      "CachePath": "14/{148A550F-DE87-B55B-C32A-C48D5FAF06EE}.wem"
+      "CachePath": "D2/{D2C46832-8B0A-425E-8BCB-668A5FCD2B4B}.wem"
      },
      {
       "Id": "221620851",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Foley Bag Fabric Large Trekking-007.wav",
-      "CachePath": "DE/{DE87E6C1-853E-DD7A-07B3-C872C38D1F11}.wem"
+      "CachePath": "97/{9725135F-CE56-0631-B68E-18B57B252F59}.wem"
      },
      {
       "Id": "408376289",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PHILIPE.wav",
-      "CachePath": "FB/{FBBC342A-E04A-6646-40CF-6F8D52A14719}.wem"
+      "CachePath": "7E/{7EE00405-881E-0C17-9440-B01F737041F7}.wem"
      },
      {
       "Id": "427627507",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "RENDEZ LA COUROOONNNE.wav",
-      "CachePath": "3F/{3FFA56DC-93E9-AD34-E0F6-81866F699A61}.wem"
+      "CachePath": "AD/{AD011A25-D89B-2EC6-D453-DA5D9601DFFC}.wem"
      },
      {
       "Id": "561188402",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Metal Pipe.wav",
-      "CachePath": "F2/{F2663A80-9B0B-E8BD-53F4-56502460A3DC}.wem"
+      "CachePath": "A8/{A841ED13-4C2C-F700-48B6-CDB3D303CC8B}.wem"
      },
      {
       "Id": "596604982",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Je vous ait compris.wav",
-      "CachePath": "BE/{BE26F7EB-135A-D87D-46FB-05762124D876}.wem"
+      "CachePath": "CC/{CC4F851D-DCF1-2787-CFF0-9EBF8C331E41}.wem"
      },
      {
       "Id": "1035180690",
@@ -198,6 +198,14 @@
       "Location": "Memory",
       "ShortName": "Foley Bag Fabric Large Trekking-008.wav",
       "CachePath": "BB/{BBF1432E-8844-B23F-FB67-E543A1FBF81A}.wem"
+     },
+     {
+      "Id": "1035269177",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TOONBoing_Boing cartoon 7 (ID 2283)_LS.wav",
+      "CachePath": "90/{90C61DDE-DE98-00E5-2397-C863127B7000}.wem"
      }
     ],
     "Events": [
@@ -270,10 +278,14 @@
       "Name": "Ennemy_Destroy",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy",
       "GUID": "{8E4ED9E8-7A92-4686-9BBF-EB8E1958E0E7}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.798541",
+      "DurationMax": "0.798541",
+      "MediaRefs": [
+       {
+        "Id": "1035269177"
+       }
+      ]
      },
      {
       "Id": "365677268",
@@ -352,10 +364,14 @@
       "Name": "Player_Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit",
       "GUID": "{C9B7E285-A98E-4A7C-A478-3290DC32DAEB}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "2.3518102",
+      "DurationMax": "2.3518102",
+      "MediaRefs": [
+       {
+        "Id": "1035269177"
+       }
+      ]
      },
      {
       "Id": "3359302305",
@@ -475,6 +491,6 @@
     ]
    }
   ],
-  "FileHash": "{B5A5E5AC-9CD4-07D3-FA3D-7F43F3AC8CB4}"
+  "FileHash": "{01082A63-4CD0-B141-77B8-2AA4C2CE23B5}"
  }
 }

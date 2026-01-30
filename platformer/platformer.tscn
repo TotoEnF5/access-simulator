@@ -25,7 +25,6 @@ texture = ExtResource("6_je3qg")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="AkListener2D" type="AkListener2D" parent="Camera2D"]
-position = Vector2(574, 324)
 rotation = 3.1415927
 
 [node name="Player" parent="." instance=ExtResource("2_w1qb0")]
