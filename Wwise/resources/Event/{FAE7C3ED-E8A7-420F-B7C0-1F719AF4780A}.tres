@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://c3xkk67xqwdsb"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Curtain_Out"
+id = 2538128552
+guid = "{FAE7C3ED-E8A7-420F-B7C0-1F719AF4780A}"
+dummy = true

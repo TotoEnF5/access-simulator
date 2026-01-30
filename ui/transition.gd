@@ -23,6 +23,10 @@ const _right_curtain_goal_pos: Vector2 = Vector2(1022.0, 298.25)
 const _stage_goal_pos: Vector2 = Vector2(577.0, 601.0)
 const _up_curtain_goal_pos: Vector2 = Vector2(576.0, 58.099)
 
+@export_group("Sound")
+@export var event_curtain_in: WwiseEvent
+@export var event_curtain_out: WwiseEvent
+
 func start_animation(act: int) -> void:
 	self._act = act
 	self._close_curtains()
@@ -57,6 +61,7 @@ func _set_init_pos() -> void:
 
 
 func _close_curtains() -> void:
+	event_curtain_in.post(self)
 	self._set_init_pos()
 	
 	var background_tween = get_tree().create_tween().set_trans(Tween.TRANS_BACK)
@@ -89,6 +94,7 @@ func _close_curtains() -> void:
 	
 	
 func _open_curtains() -> void:
+	event_curtain_out.post(self)
 	var background_tween = get_tree().create_tween().set_trans(Tween.TRANS_BACK)
 	background_tween.tween_property($Layer1BgSky, "position", self._background_init_pos, 0.8)
 	

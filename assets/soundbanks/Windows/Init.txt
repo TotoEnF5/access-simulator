@@ -1,3 +1,9 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2826916681	Channel_Type			\Default Work Unit\Channel_Type	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Channel_Type			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Mixage\SFX	
 	541470702	Player_Movement			\Default Work Unit\Mixage\Player_Movement	
@@ -5,6 +11,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1069431850	Player			\Default Work Unit\Mixage\Player	
 	1551306167	UI			\Default Work Unit\Mixage\UI	
 	2981377429	Ambiance			\Default Work Unit\Mixage\Ambiance	
+	3991942870	Music			\Default Work Unit\Mixage\Music	
 	4004702906	Player_Shoot			\Default Work Unit\Mixage\Player_Shoot	
 	4056684167	Master			\Default Work Unit\Mixage\Master	
 
@@ -18,6 +25,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2543661333	Sound_Test			\Default Work Unit\Sound_Test	
 	2981377429	Ambiance			\Default Work Unit\Main Audio Bus\Master\Ambiance	
 	3038207054	Shoot			\Default Work Unit\Main Audio Bus\Master\SFX\Player\Shoot	
+	3991942870	Music			\Default Work Unit\Main Audio Bus\Master\Music	
 	4056684167	Master			\Default Work Unit\Main Audio Bus\Master	
 
 Audio Devices	ID	Name	Type				Notes

@@ -16,11 +16,14 @@ namespace AK
         static const AkUniqueID AMB_PLATEFORMER = 3263329277U;
         static const AkUniqueID AMB_SHMUP = 1018476863U;
         static const AkUniqueID COURSE_AMB = 2860608887U;
+        static const AkUniqueID CURTAIN_IN = 1902748681U;
+        static const AkUniqueID CURTAIN_OUT = 2538128552U;
         static const AkUniqueID ENNEMY_DESTROY = 2988140266U;
         static const AkUniqueID ENNEMY_SHOT = 365677268U;
         static const AkUniqueID FLOOR_IMPACT = 471840786U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID MOOVE = 976825339U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYER_HIT = 871813740U;
         static const AkUniqueID PLAYER_SHOT = 3359302305U;
         static const AkUniqueID ROTATE = 1302771492U;
@@ -29,11 +32,26 @@ namespace AK
         static const AkUniqueID WIN = 979765101U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace CHANNEL_TYPE
+        {
+            static const AkUniqueID GROUP = 2826916681U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace CHANNEL_TYPE
+
+    } // namespace STATES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID AMBIANCE = 2981377429U;
         static const AkUniqueID HAUTEUR = 3320209893U;
         static const AkUniqueID MASTER = 4056684167U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NPC = 662417162U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID PLAYER_MOVEMENT = 541470702U;
@@ -65,6 +83,7 @@ namespace AK
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MOVEMENT = 2129636626U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NPC = 662417162U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID SFX = 393239870U;
