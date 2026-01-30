@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://cdcvyl53qhibe"]
 
 [ext_resource type="Script" uid="uid://d0s2a2dggcomb" path="res://shmup/enemy.gd" id="1_4gyqm"]
-[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_7k104"]
+[ext_resource type="Texture2D" uid="uid://bxhc5r4oxs6e1" path="res://assets/sprites/shmup/game 2 dragon - over the clouds.png" id="2_md117"]
 [ext_resource type="WwiseEvent" uid="uid://6w28sd76qlo4" path="res://Wwise/resources/Event/{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}.tres" id="3_md117"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
-size = Vector2(127, 128)
+size = Vector2(223, 161)
 
 [node name="Enemy" type="RigidBody2D"]
 collision_layer = 2
@@ -14,15 +14,15 @@ gravity_scale = 0.0
 script = ExtResource("1_4gyqm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0)
+position = Vector2(0, -11.5)
 shape = SubResource("RectangleShape2D_4gyqm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(1, 0.5019608, 0.5019608, 1)
-texture = ExtResource("1_7k104")
+scale = Vector2(0.20415539, 0.20415536)
+texture = ExtResource("2_md117")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-rect = Rect2(-64, -65, 128, 130)
+rect = Rect2(-114, -93, 225, 161)
 
 [node name="AkEvent2D_Shoot" type="AkEvent2D" parent="."]
 event = ExtResource("3_md117")

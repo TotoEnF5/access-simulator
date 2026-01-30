@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cokxwf645t4kn"]
+[gd_scene load_steps=11 format=3 uid="uid://cokxwf645t4kn"]
 
 [ext_resource type="Script" uid="uid://b1tjf3fkrx23w" path="res://vroom/vroom.gd" id="1_nu8od"]
 [ext_resource type="PackedScene" uid="uid://cu8b0b78jb0kh" path="res://vroom/player.tscn" id="2_dnmje"]
@@ -8,12 +8,25 @@
 [ext_resource type="WwiseEvent" uid="uid://cqvt2yyji1ufj" path="res://Wwise/resources/Event/{5A78B004-8C4F-4063-86D5-7C77F58B852D}.tres" id="4_g5qmm"]
 [ext_resource type="PackedScene" uid="uid://bin2q0q4ie6gc" path="res://Audio/Scenes/Soundbank_Manager.tscn" id="4_nl7gb"]
 [ext_resource type="PackedScene" uid="uid://dkmlvk7mwooad" path="res://vroom/wall.tscn" id="7_g5qmm"]
+[ext_resource type="Texture2D" uid="uid://ci416dq1o220y" path="res://assets/sprites/vroom/map game 1 - black and white.png" id="9_3044j"]
+[ext_resource type="Texture2D" uid="uid://6rd85tujmp6n" path="res://assets/sprites/vroom/map game 1 - road - black and white.png" id="10_8qtn0"]
 
 [node name="Vroom" type="Node2D"]
 script = ExtResource("1_nu8od")
 
 [node name="MapGame1" type="Sprite2D" parent="."]
 texture = ExtResource("2_g5qmm")
+
+[node name="MapGameHighContrast" type="Node2D" parent="."]
+
+[node name="MapGame1BlackAndWhite" type="Sprite2D" parent="MapGameHighContrast"]
+modulate = Color(0.5019608, 0.5019608, 0.5019608, 1)
+position = Vector2(-50, 0)
+texture = ExtResource("9_3044j")
+
+[node name="MapGame1RoadBlackAndWhite" type="Sprite2D" parent="MapGameHighContrast"]
+position = Vector2(44, 0)
+texture = ExtResource("10_8qtn0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.2, 0.2)

@@ -1,20 +1,22 @@
 [gd_scene load_steps=5 format=3 uid="uid://c6tk4wbqo154x"]
 
 [ext_resource type="Script" uid="uid://jn5u3vj7p0po" path="res://shmup/player.gd" id="1_ebd8a"]
-[ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_s2ppa"]
+[ext_resource type="Texture2D" uid="uid://b623hlov0rcsd" path="res://assets/sprites/shmup/game 2 hot air balloon - under the clouds.png" id="2_u7a08"]
 [ext_resource type="WwiseEvent" uid="uid://6w28sd76qlo4" path="res://Wwise/resources/Event/{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}.tres" id="3_u7a08"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ebd8a"]
-size = Vector2(128, 128)
+size = Vector2(128, 102)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ebd8a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19)
 shape = SubResource("RectangleShape2D_ebd8a")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_s2ppa")
+scale = Vector2(0.27705628, 0.27705622)
+texture = ExtResource("2_u7a08")
 
 [node name="AkEvent2D_Shoot" type="AkEvent2D" parent="."]
 event = ExtResource("3_u7a08")

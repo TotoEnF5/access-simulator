@@ -6,6 +6,15 @@ var _do_camera_lerp: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	access_settings.high_contrast_toggled.connect(self._on_high_contrast_changed)
+
+	if access_settings.high_contrast:
+		$MapGameHighContrast.visible = true
+		$MapGame1.visible = false
+	else:
+		$MapGameHighContrast.visible = false
+		$MapGame1.visible = true
+
 	$Player.process_mode = Node.PROCESS_MODE_DISABLED
 	$Player/AnimatedSprite2D.play("default")
 	$Walls.visible = false
@@ -32,3 +41,12 @@ func _on_timer_timeout() -> void:
 		$Player.process_mode = Node.PROCESS_MODE_INHERIT
 		self._do_camera_lerp = true
 	)
+	
+	
+func _on_high_contrast_changed(toggled: bool):
+	if toggled:
+		$MapGameHighContrast.visible = true
+		$MapGame1.visible = false
+	else:
+		$MapGameHighContrast.visible = false
+		$MapGame1.visible = true

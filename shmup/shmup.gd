@@ -9,6 +9,7 @@ signal player_won
 @export var enemy_projectile_speed: float = 30.0
 @export var max_score: int = 3
 
+var _can_spawn_enemies: bool = false
 var _score: int = 0
 var _lastEnemyTime: int = 0
 
@@ -22,8 +23,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	$BgGame2Layer1.position.x -= 80 * delta
+	$BgGame2Layer2.position.x -= 70 * delta
+
 	var now: int = Time.get_ticks_msec()
-	if now > self.enemy_cooldown_ms + self._lastEnemyTime:
+	if self._can_spawn_enemies and now > self.enemy_cooldown_ms + self._lastEnemyTime:
 		# [SOUND] C'est ici qu'on spawne un ennemi
 		self._spawn_enemy()
 		self._lastEnemyTime = now
@@ -51,3 +55,7 @@ func _increment_score() -> void:
 
 func _on_enemy_cooldown_changed(value: float):
 	self.enemy_cooldown_ms = value
+
+
+func _on_timer_timeout() -> void:
+	self._can_spawn_enemies = true

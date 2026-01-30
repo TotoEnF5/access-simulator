@@ -41,11 +41,12 @@ func _on_transition_curtains_closed() -> void:
 		self._load_current_level()
 		self.first_animation = false
 		
-	self.current_level_node.process_mode = Node.PROCESS_MODE_DISABLED
+	# self.current_level_node.process_mode = Node.PROCESS_MODE_DISABLED
 
 
 func _on_transition_curtains_opened() -> void:
-	self.current_level_node.process_mode = Node.PROCESS_MODE_INHERIT
+	# self.current_level_node.process_mode = Node.PROCESS_MODE_INHERIT
+	pass
 	
 	
 func _on_player_won() -> void:
