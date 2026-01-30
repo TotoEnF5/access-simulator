@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{B0F66116-47E3-1A07-702D-C8AC81BA6B31}",
+    "Hash": "{74D7033A-74B3-F4A9-9624-C7E8A486E3ED}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -88,6 +88,12 @@
       "Name": "Shoot",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\SFX\\Player\\Shoot",
       "GUID": "{A95A5751-5C6E-4A88-8015-5B5B69078CCE}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Master\\Music",
+      "GUID": "{ADBDB7FE-099F-4C08-AD2F-5A3DEB76D735}"
      },
      {
       "Id": "4056684167",
@@ -200,6 +206,12 @@
       "GUID": "{E3B7811A-7B2F-490F-B44F-5FE51B468041}"
      },
      {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Music",
+      "GUID": "{EA068462-6172-45AF-A324-FD3592142A79}"
+     },
+     {
       "Id": "4004702906",
       "Name": "Player_Shoot",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\Mixage\\Player_Shoot",
@@ -216,6 +228,22 @@
       "Name": "SS_Air_Turbulence",
       "ObjectPath": "\\Game Parameters\\Factory Soundseed Air Game Syncs\\SS_Air_Turbulence",
       "GUID": "{EDA87B19-73AA-40A0-9F19-2073606DB710}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "2826916681",
+      "Name": "Channel_Type",
+      "ObjectPath": "\\States\\Default Work Unit\\Channel_Type",
+      "GUID": "{84295F2A-36CE-4FC5-A755-5C010B745C7B}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Channel_Type\\None",
+        "GUID": "{FA36982C-56DE-4718-8000-F4B9B0C5A908}"
+       }
+      ]
      }
     ],
     "AcousticTextures": [
@@ -697,6 +725,6 @@
     ]
    }
   ],
-  "FileHash": "{C633FD6B-04B0-8078-F999-E9EBE189CCDA}"
+  "FileHash": "{877CFA1C-E4E2-7084-EF57-BDCFCB78F95B}"
  }
 }

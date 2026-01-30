@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bv7uamh0wlsfa"]
+[gd_scene load_steps=12 format=3 uid="uid://bv7uamh0wlsfa"]
 
 [ext_resource type="Script" uid="uid://dk0g8a66m1vlp" path="res://ui/audio_settings.gd" id="1_qt3sj"]
 [ext_resource type="PackedScene" uid="uid://r05qq2qne0ov" path="res://ui/Sound_Slider.tscn" id="2_2w7xm"]
@@ -10,6 +10,7 @@
 [ext_resource type="WwiseRTPC" uid="uid://r3bxaa7los8u" path="res://Wwise/resources/Game Parameter/{76DDFF8A-86DA-450F-B2DA-745CE8692ECF}.tres" id="8_hjt1l"]
 [ext_resource type="WwiseRTPC" uid="uid://dswsvmvu7q64k" path="res://Wwise/resources/Game Parameter/{64B003C0-0828-410D-919E-605F59AFA625}.tres" id="8_j52qw"]
 [ext_resource type="WwiseRTPC" uid="uid://dkhlehaokoeb4" path="res://Wwise/resources/Game Parameter/{1E9619C2-0FA6-47E0-B5D7-79AD9D741574}.tres" id="9_j52qw"]
+[ext_resource type="WwiseRTPC" uid="uid://2epuqepqrm0f" path="res://Wwise/resources/Game Parameter/{EA068462-6172-45AF-A324-FD3592142A79}.tres" id="11_8l5s2"]
 
 [node name="AudioSettings" type="Control"]
 layout_mode = 3
@@ -26,7 +27,7 @@ offset_left = 300.0
 offset_top = 65.0
 offset_right = 824.0
 offset_bottom = 81.0
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.2, 1.2)
 rtpc = ExtResource("3_g8yqh")
 rtpc_name = "Master"
 
@@ -104,5 +105,15 @@ offset_bottom = 386.0
 scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("7_aujig")
 rtpc_name = "UI"
+
+[node name="Music" parent="Master" instance=ExtResource("2_2w7xm")]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 420.0
+offset_right = 574.0
+offset_bottom = 436.0
+scale = Vector2(0.9, 0.9)
+rtpc = ExtResource("11_8l5s2")
+rtpc_name = "Music"
 
 [node name="AkListener2D" type="AkListener2D" parent="."]

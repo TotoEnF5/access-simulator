@@ -10,19 +10,11 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{BD7ABD49-A208-F683-A910-3AA6C7CD7172}",
+    "Hash": "{56802795-13EA-DD31-302A-0FA26565199B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
-     {
-      "Id": "197692389",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "DE/{DE427221-B37C-5809-05C0-06BBB4452F17}.wem"
-     },
      {
       "Id": "203960188",
       "Language": "SFX",
@@ -32,12 +24,20 @@
       "CachePath": "59/{5917A05C-4A4F-07D1-12F4-B6C36762506A}.wem"
      },
      {
+      "Id": "210326433",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MECHGear_Chain Door Moving_KRTS_MD-005.wav",
+      "CachePath": "14/{148A550F-DE87-B55B-C32A-C48D5FAF06EE}.wem"
+     },
+     {
       "Id": "221620851",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Grass_LeatherShoes_FullStep_02.wav",
-      "CachePath": "23/{230200D0-EA8B-DBE5-E124-8EC5E85310BF}.wem"
+      "CachePath": "7D/{7D682F9C-02A8-E508-5F62-CE0A1F1C3227}.wem"
      },
      {
       "Id": "229950963",
@@ -45,23 +45,31 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_5.wav",
-      "CachePath": "75/{75BF3CCE-2BD2-FEEB-EF7B-333536105C91}.wem"
+      "CachePath": "1B/{1BCBD280-6F44-D9A5-5D66-7EF304D266D0}.wem"
      },
      {
-      "Id": "242359649",
+      "Id": "269808474",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "BB/{BB8D65A0-7AD8-8793-C372-0D2E0F676F8E}.wem"
+      "ShortName": "Foley Bag Fabric Large Trekking-007.wav",
+      "CachePath": "DE/{DE87E6C1-853E-DD7A-07B3-C872C38D1F11}.wem"
      },
      {
-      "Id": "333596638",
+      "Id": "408376289",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "E2/{E237A95B-4362-17B2-4916-B7C10E43291C}.wem"
+      "ShortName": "music_plage_bon.wav",
+      "CachePath": "3D/{3D93E7A2-9497-D651-E2E4-4AC90B90A09A}.wem"
+     },
+     {
+      "Id": "423578466",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "H-Ray_03.wav",
+      "CachePath": "85/{850425A6-8521-C61E-3A37-EA8520F94662}.wem"
      },
      {
       "Id": "427179110",
@@ -77,15 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Water Pouring-016.wav",
-      "CachePath": "E3/{E3E24A95-1174-1A9D-9F77-9A3AF07618E1}.wem"
-     },
-     {
-      "Id": "430378591",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "75/{751AD1B7-6643-2112-ACAA-5C4EAC95FBF5}.wem"
+      "CachePath": "6A/{6AC6B481-BB55-E4D4-EA90-0E67D6A50BE5}.wem"
      },
      {
       "Id": "545109682",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Grass_Boots_FullStep_01.wav",
-      "CachePath": "16/{1616EEF4-EE00-5F8B-065B-9E96AF69DB86}.wem"
+      "CachePath": "94/{94840B6C-F5AE-AEA1-D3E2-999077A968B9}.wem"
      },
      {
       "Id": "563047189",
@@ -112,14 +112,6 @@
       "CachePath": "39/{39200D7C-5F8E-8FC3-8E88-0DBA0D3FF161}.wem"
      },
      {
-      "Id": "572396881",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "BA/{BA769B67-2D17-8BD5-A7D5-19F7E4684E3E}.wem"
-     },
-     {
       "Id": "596604982",
       "Language": "SFX",
       "Streaming": "false",
@@ -128,12 +120,12 @@
       "CachePath": "9A/{9AC7C291-FD5A-0334-8FB1-21051DFEA836}.wem"
      },
      {
-      "Id": "717596717",
+      "Id": "630791502",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "1C/{1CDAF2FA-FDAE-86E1-EF66-D6D8B0436807}.wem"
+      "ShortName": "PowerfulSciFiHandgun_02.wav",
+      "CachePath": "8E/{8EBDA70D-0925-7CDA-4051-AD4E1955CEF1}.wem"
      },
      {
       "Id": "724587790",
@@ -141,31 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_6.wav",
-      "CachePath": "CC/{CC105002-267B-EA6E-066E-86FE4F9542C9}.wem"
-     },
-     {
-      "Id": "757159595",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "6D/{6D162F50-CF9F-80C3-987D-BCCE972E3101}.wem"
-     },
-     {
-      "Id": "819286881",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "BE/{BECE3503-2218-0AD7-28D0-8569F3EB987A}.wem"
-     },
-     {
-      "Id": "851320877",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "DigitalBullets_Burst_02.wav",
-      "CachePath": "CD/{CD35066E-D6A4-8F86-BD86-DE65BD8ADE8B}.wem"
+      "CachePath": "23/{23360AC3-D2C3-9429-7FEE-15F9BFBF9FF9}.wem"
      },
      {
       "Id": "854922456",
@@ -173,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_1.wav",
-      "CachePath": "C0/{C0930DA6-F15F-C9C1-4A3A-AF818709D2EF}.wem"
+      "CachePath": "3E/{3E407E65-FBC9-6528-ADB0-0D4C3C744D74}.wem"
      },
      {
       "Id": "872283841",
@@ -181,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_2.wav",
-      "CachePath": "8F/{8FE0FE66-A86A-5D88-5C4F-A5A9115DDB5D}.wem"
+      "CachePath": "67/{67EE1700-CE03-CC9D-BE74-360506243E53}.wem"
      },
      {
       "Id": "944689952",
@@ -189,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Whoosh Basic Airy Whistle-001.wav",
-      "CachePath": "85/{8574D3ED-E74F-7355-1815-89795C0A7DCE}.wem"
+      "CachePath": "DB/{DBD45343-AB80-DBB0-F122-66DBC1D920B6}.wem"
      },
      {
       "Id": "989709376",
@@ -197,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_3.wav",
-      "CachePath": "FA/{FA2640E6-93D1-B24E-1973-C37FDEDF1F70}.wem"
+      "CachePath": "D0/{D0A128DE-7BD6-06E5-80B3-F0CFF97E3FE9}.wem"
      },
      {
       "Id": "1007535337",
@@ -205,15 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX_Bubbles_4.wav",
-      "CachePath": "65/{65D705A4-F211-C3D8-AE7F-A7F9F19578C4}.wem"
-     },
-     {
-      "Id": "1007816732",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AirPoweredMachinegun_Burst_01.wav",
-      "CachePath": "2C/{2CCE628C-30F5-732A-695F-E338609E8232}.wem"
+      "CachePath": "5C/{5C755477-D8C5-7C78-1547-D878730DE452}.wem"
      },
      {
       "Id": "1025425004",
@@ -222,6 +182,14 @@
       "Location": "Memory",
       "ShortName": "Je vous ait compris.wav",
       "CachePath": "1D/{1DD2824E-4F20-932D-1E49-E5D8E6EFB8F2}.wem"
+     },
+     {
+      "Id": "1035180690",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Bag Fabric Large Trekking-008.wav",
+      "CachePath": "BB/{BBF1432E-8844-B23F-FB67-E543A1FBF81A}.wem"
      }
     ],
     "Events": [
@@ -256,6 +224,40 @@
       "DurationMax": "0"
      },
      {
+      "Id": "1902748681",
+      "Name": "Curtain_In",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Curtain_In",
+      "GUID": "{6C8F7B17-08EF-4B63-9DDF-8E50C7B66662}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.2588708",
+      "DurationMax": "2.2588708",
+      "MediaRefs": [
+       {
+        "Id": "210326433"
+       },
+       {
+        "Id": "269808474"
+       }
+      ]
+     },
+     {
+      "Id": "2538128552",
+      "Name": "Curtain_Out",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Curtain_Out",
+      "GUID": "{FAE7C3ED-E8A7-420F-B7C0-1F719AF4780A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.79741335",
+      "DurationMax": "0.79741335",
+      "MediaRefs": [
+       {
+        "Id": "210326433"
+       },
+       {
+        "Id": "1035180690"
+       }
+      ]
+     },
+     {
       "Id": "2988140266",
       "Name": "Ennemy_Destroy",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy",
@@ -271,23 +273,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Shot",
       "GUID": "{1BA78A3F-A699-47C3-AD68-ADD9D7788D1C}",
       "DurationType": "OneShot",
-      "DurationMin": "0.036363002",
-      "DurationMax": "0.06057128",
+      "DurationMin": "2.3209574",
+      "DurationMax": "3.2823293",
       "MediaRefs": [
        {
-        "Id": "197692389"
-       },
-       {
-        "Id": "572396881"
-       },
-       {
-        "Id": "717596717"
-       },
-       {
-        "Id": "757159595"
-       },
-       {
-        "Id": "1007816732"
+        "Id": "423578466"
        }
       ]
      },
@@ -338,6 +328,18 @@
       ]
      },
      {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\Music",
+      "GUID": "{F6A90912-A955-4360-ADC2-FCEAD1B42EED}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "408376289"
+       }
+      ]
+     },
+     {
       "Id": "871813740",
       "Name": "Player_Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit",
@@ -353,23 +355,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Shot",
       "GUID": "{9370BBED-850A-418D-B115-59792E247674}",
       "DurationType": "OneShot",
-      "DurationMin": "0.09719232",
-      "DurationMax": "0.15035832",
+      "DurationMin": "1.5424231",
+      "DurationMax": "2.1813157",
       "MediaRefs": [
        {
-        "Id": "242359649"
-       },
-       {
-        "Id": "333596638"
-       },
-       {
-        "Id": "430378591"
-       },
-       {
-        "Id": "819286881"
-       },
-       {
-        "Id": "851320877"
+        "Id": "630791502"
        }
       ]
      },
@@ -463,6 +453,6 @@
     ]
    }
   ],
-  "FileHash": "{81944585-665F-A038-CFAF-137CBA604E0B}"
+  "FileHash": "{C6EE2D72-A64A-1B09-8592-36AC70EEA192}"
  }
 }
