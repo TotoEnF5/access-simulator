@@ -22,6 +22,10 @@ SoundbankManager="*res://Audio/Scenes/Soundbank_Manager.tscn"
 access_settings="*res://access_settings.gd"
 SubtitleManager="*res://ui/subtitle_manager.tscn"
 
+[display]
+
+window/size/resizable=false
+
 [input]
 
 move_left={
