@@ -7,6 +7,12 @@ var _last_shoot: int = 0
 
 const _projectile_scene: PackedScene = preload("res://shmup/projectile.tscn")
 
+func _ready() ->void:
+	access_settings.high_contrast_toggled.connect(self._on_high_contrast_toggled)
+	if access_settings.high_contrast:
+		self.modulate = Color(0.0, 0.0, 20.0)
+
+
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("shoot"):
 		var now: int = Time.get_ticks_msec()
@@ -23,3 +29,10 @@ func _physics_process(delta: float):
 	var direction = Input.get_axis("move_up", "move_down")
 	self.velocity.y = direction * self.speed
 	self.move_and_slide()
+		
+		
+func _on_high_contrast_toggled(toggled: bool) -> void:
+	if toggled:
+		self.modulate = Color(0.0, 0.0, 20.0)
+	else:
+		self.modulate = Color(1.0, 1.0, 1.0)

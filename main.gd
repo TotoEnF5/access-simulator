@@ -27,10 +27,10 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("settings"):
 		if not self.paused:
-			$CanvasLayer/InputSettings.visible = true
+			$CanvasLayer/Settings.visible = true
 			self.paused = true
 		else:
-			$CanvasLayer/InputSettings.visible = false
+			$CanvasLayer/Settings.visible = false
 			self.paused = false
 
 

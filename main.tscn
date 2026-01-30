@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://74nogr1b67s0"]
 
 [ext_resource type="Script" uid="uid://byk1i50i3syxf" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://buwsflnumlaxh" path="res://ui/input_settings.tscn" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bw6wr4q21wgbt" path="res://ui/settings.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dhb1fvm22wy81" path="res://ui/transition.tscn" id="2_h2yge"]
 
 [node name="Main" type="Node2D"]
@@ -9,12 +9,11 @@ script = ExtResource("1_0xm2m")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="InputSettings" parent="CanvasLayer" instance=ExtResource("2_7mycd")]
-visible = false
-z_index = 2
-
 [node name="Transition" parent="CanvasLayer" instance=ExtResource("2_h2yge")]
 z_index = 1
+
+[node name="Settings" parent="CanvasLayer" instance=ExtResource("2_1bvp3")]
+visible = false
 
 [connection signal="curtains_closed" from="CanvasLayer/Transition" to="." method="_on_transition_curtains_closed"]
 [connection signal="curtains_opened" from="CanvasLayer/Transition" to="." method="_on_transition_curtains_opened"]

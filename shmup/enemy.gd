@@ -16,7 +16,10 @@ const _projectileScene: PackedScene = preload("res://shmup/projectile.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	access_settings.high_contrast_toggled.connect(self._on_high_contrast_toggled)
+	if access_settings.high_contrast:
+		self.modulate = Color(20.0, 0.0, 0.0)
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -55,4 +58,11 @@ func _shoot():
 	projectile.set_collision_layer_value(1, true)
 	projectile.set_collision_mask_value(1, true)
 	add_child(projectile)
+		
+		
+func _on_high_contrast_toggled(toggled: bool) -> void:
+	if toggled:
+		self.modulate = Color(20.0, 0.0, 0.0)
+	else:
+		self.modulate = Color(1.0, 1.0, 1.0)
 	

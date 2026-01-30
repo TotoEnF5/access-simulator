@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://ccsof7qvs62hs"]
+[gd_scene load_steps=4 format=3 uid="uid://ccsof7qvs62hs"]
 
+[ext_resource type="Script" uid="uid://5ru35xrk8tag" path="res://platformer/platform.gd" id="1_7mdsh"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="1_mi635"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8bxr"]
 size = Vector2(128, 128)
 
 [node name="Platform" type="StaticBody2D"]
+script = ExtResource("1_7mdsh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_s8bxr")

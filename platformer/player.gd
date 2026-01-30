@@ -10,6 +10,12 @@ extends CharacterBody2D
 @export var event_floor_impact: WwiseEvent
 var stored_velocity_y: float
 
+func _ready() -> void:
+	access_settings.high_contrast_toggled.connect(self._on_high_contrast_toggled)
+	if access_settings.high_contrast:
+		self.modulate = Color(0.0, 0.0, 20.0)
+
+
 func _physics_process(delta: float) -> void:
 	# [SOUND] C'est ici qu'on bouge le joueur !
 	# Ce qui serait cool ça serait que tu fasses une fonction à part histoire de bien organiser le code
@@ -30,3 +36,10 @@ func _physics_process(delta: float) -> void:
 	# [SOUND] Son d'impact si le joueur touche le sol avec une vitesse supérieure à un seuil
 	if stored_velocity_y - self.velocity.y >= 100.0 :
 		event_floor_impact.post(self)
+		
+		
+func _on_high_contrast_toggled(toggled: bool) -> void:
+	if toggled:
+		self.modulate = Color(0.0, 0.0, 20.0)
+	else:
+		self.modulate = Color(1.0, 1.0, 1.0)
