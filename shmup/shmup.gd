@@ -16,7 +16,8 @@ const _enemyScene: PackedScene = preload("res://shmup/enemy.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	access_settings.shmup_enemy_cooldown_changed.connect(self._on_enemy_cooldown_changed)
+	self.enemy_cooldown_ms = access_settings.shmup_enemy_cooldown
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -46,3 +47,7 @@ func _increment_score() -> void:
 	self._score += 1
 	if self._score >= self.max_score:
 		self.player_won.emit()
+		
+
+func _on_enemy_cooldown_changed(value: float):
+	self.enemy_cooldown_ms = value

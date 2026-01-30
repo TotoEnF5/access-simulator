@@ -17,6 +17,13 @@ const _projectileScene: PackedScene = preload("res://shmup/projectile.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	access_settings.high_contrast_toggled.connect(self._on_high_contrast_toggled)
+	access_settings.shmup_enemy_speed_changed.connect(self._on_speed_changed)
+	access_settings.shmup_enemy_projectile_speed_changed.connect(self._on_projectile_speed_changed)
+	access_settings.shmup_enemy_projectile_cooldown_changed.connect(self._on_projectile_cooldown_changed)
+	
+	self.speed = access_settings.shmup_enemy_speed
+	self.projectileSpeed = access_settings.shmup_enemy_projectile_speed
+	self.shootCooldownMs = access_settings.shmup_enemy_projectile_cooldown
 	if access_settings.high_contrast:
 		self.modulate = Color(20.0, 0.0, 0.0)
 	
@@ -66,3 +73,13 @@ func _on_high_contrast_toggled(toggled: bool) -> void:
 	else:
 		self.modulate = Color(1.0, 1.0, 1.0)
 	
+func _on_speed_changed(value: float):
+	self.speed = value
+		
+		
+func _on_projectile_speed_changed(value: float):
+	self.projectileSpeed = value
+		
+		
+func _on_projectile_cooldown_changed(value: float):
+	self.shootCooldownMs = value

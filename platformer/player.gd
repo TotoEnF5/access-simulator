@@ -12,6 +12,13 @@ var stored_velocity_y: float
 
 func _ready() -> void:
 	access_settings.high_contrast_toggled.connect(self._on_high_contrast_toggled)
+	access_settings.platformer_player_speed_changed.connect(self._on_speed_changed)
+	access_settings.platformer_player_gravity_changed.connect(self._on_gravity_changed)
+	access_settings.platformer_player_jump_changed.connect(self._on_jump_changed)
+	
+	self.speed = access_settings.platformer_player_speed
+	self.jump_speed = -access_settings.platformer_player_jump
+	self.gravity = access_settings.platformer_player_gravity
 	if access_settings.high_contrast:
 		self.modulate = Color(0.0, 0.0, 20.0)
 
@@ -43,3 +50,15 @@ func _on_high_contrast_toggled(toggled: bool) -> void:
 		self.modulate = Color(0.0, 0.0, 20.0)
 	else:
 		self.modulate = Color(1.0, 1.0, 1.0)
+		
+		
+func _on_speed_changed(value: float):
+	self.speed = value
+		
+		
+func _on_gravity_changed(value: float):
+	self.gravity = value
+		
+		
+func _on_jump_changed(value: float):
+	self.jump_speed = -value
