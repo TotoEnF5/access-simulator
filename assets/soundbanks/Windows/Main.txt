@@ -23,18 +23,18 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	203960188	8bit_CoinPickUp01	.cache\59\{5917A05C-4A4F-07D1-12F4-B6C36762506A}.wem		\Containers\Default Work Unit\UI\8bit_CoinPickUp01		215556
-	210326433	MECHGear_Chain Door Moving_KRTS_MD-005	.cache\14\{148A550F-DE87-B55B-C32A-C48D5FAF06EE}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\Out\MECHGear_Chain Door Moving_KRTS_MD-005		254624
+	210326433	MECHGear_Chain Door Moving_KRTS_MD-005	.cache\D2\{D2C46832-8B0A-425E-8BCB-668A5FCD2B4B}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\Out\MECHGear_Chain Door Moving_KRTS_MD-005		254624
 	221620851	Grass_LeatherShoes_FullStep_02	.cache\7D\{7D682F9C-02A8-E508-5F62-CE0A1F1C3227}.wem		\Containers\Default Work Unit\Plateformer\Jump\Foot\Grass_LeatherShoes_FullStep_02		67180
 	225094670	SingleClicks01	.cache\41\{41CDA858-BBD0-C805-97A4-274E2E95842D}.wem		\Containers\Default Work Unit\UI\Click\SingleClicks01		88200
 	229950963	SFX_Bubbles_5	.cache\1B\{1BCBD280-6F44-D9A5-5D66-7EF304D266D0}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_5		34584
-	269808474	Cuir moustache	.cache\DE\{DE87E6C1-853E-DD7A-07B3-C872C38D1F11}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\In\Cuir moustache		90112
+	269808474	Cuir moustache	.cache\97\{9725135F-CE56-0631-B68E-18B57B252F59}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\In\Cuir moustache		90112
 	408376289	music_plage_bon	.cache\3D\{3D93E7A2-9497-D651-E2E4-4AC90B90A09A}.wem		\Containers\Default Work Unit\Music\music_plage_bon\music_plage_bon		19011680
 	423578466	H-Ray_03	.cache\85\{850425A6-8521-C61E-3A37-EA8520F94662}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Ennemy_Shot\H-Ray_03		605328
-	427179110	PHILIPE	.cache\FB\{FBBC342A-E04A-6646-40CF-6F8D52A14719}.wem		\Containers\Default Work Unit\UI\Sound_Test\PHILIPE		565820
+	427179110	PHILIPE	.cache\7E\{7EE00405-881E-0C17-9440-B01F737041F7}.wem		\Containers\Default Work Unit\UI\Sound_Test\PHILIPE		565820
 	427627507	Water Pouring-016	.cache\6A\{6AC6B481-BB55-E4D4-EA90-0E67D6A50BE5}.wem		\Containers\Default Work Unit\Boat\Moove\Water Pouring-016		773048
-	545109682	RENDEZ LA COUROOONNNE	.cache\3F\{3FFA56DC-93E9-AD34-E0F6-81866F699A61}.wem		\Containers\Default Work Unit\UI\Sound_Test\RENDEZ LA COUROOONNNE		768144
+	545109682	RENDEZ LA COUROOONNNE	.cache\AD\{AD011A25-D89B-2EC6-D453-DA5D9601DFFC}.wem		\Containers\Default Work Unit\UI\Sound_Test\RENDEZ LA COUROOONNNE		768144
 	561188402	Grass_Boots_FullStep_01	.cache\94\{94840B6C-F5AE-AEA1-D3E2-999077A968B9}.wem		\Containers\Default Work Unit\Plateformer\Walk\Grass_Boots_FullStep_01		71584
-	563047189	Metal Pipe	.cache\F2\{F2663A80-9B0B-E8BD-53F4-56502460A3DC}.wem		\Containers\Default Work Unit\UI\Sound_Test\Metal Pipe		640144
+	563047189	Metal Pipe	.cache\A8\{A841ED13-4C2C-F700-48B6-CDB3D303CC8B}.wem		\Containers\Default Work Unit\UI\Sound_Test\Metal Pipe		640144
 	596604982	Punch Clean Boxing Impact-007	.cache\9A\{9AC7C291-FD5A-0334-8FB1-21051DFEA836}.wem		\Containers\Default Work Unit\Plateformer\Floor_Impact\Impact\Punch Clean Boxing Impact-007		272708
 	630791502	PowerfulSciFiHandgun_02	.cache\8E\{8EBDA70D-0925-7CDA-4051-AD4E1955CEF1}.wem		\Containers\Default Work Unit\Shoot_Them_Up\Player_Shot\PowerfulSciFiHandgun_02		438716
 	724587790	SFX_Bubbles_6	.cache\23\{23360AC3-D2C3-9429-7FEE-15F9BFBF9FF9}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_6		30852
@@ -43,6 +43,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	944689952	Whoosh Basic Airy Whistle-001	.cache\DB\{DBD45343-AB80-DBB0-F122-66DBC1D920B6}.wem		\Containers\Default Work Unit\Plateformer\Jump\Whoosh\Whoosh Basic Airy Whistle-001		75808
 	989709376	SFX_Bubbles_3	.cache\D0\{D0A128DE-7BD6-06E5-80B3-F0CFF97E3FE9}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_3		29884
 	1007535337	SFX_Bubbles_4	.cache\5C\{5C755477-D8C5-7C78-1547-D878730DE452}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_4		30712
-	1025425004	Je vous ait compris	.cache\BE\{BE26F7EB-135A-D87D-46FB-05762124D876}.wem		\Containers\Default Work Unit\UI\Sound_Test\Je vous ait compris		768144
+	1025425004	Je vous ait compris	.cache\CC\{CC4F851D-DCF1-2787-CFF0-9EBF8C331E41}.wem		\Containers\Default Work Unit\UI\Sound_Test\Je vous ait compris		768144
 	1035180690	Foley Bag Fabric Large Trekking-008	.cache\BB\{BBF1432E-8844-B23F-FB67-E543A1FBF81A}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\Out\Foley Bag Fabric Large Trekking-008		93264
 
