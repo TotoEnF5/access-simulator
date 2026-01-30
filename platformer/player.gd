@@ -37,6 +37,10 @@ func _physics_process(delta: float) -> void:
 	var direction = Input.get_axis("move_left", "move_right")
 	self.velocity.x = direction * self.speed
 	self.move_and_slide()
+	
+	if direction != 0:
+		$Sprite2D.scale.x = direction
+	
 	# [SOUND] Son de walk si joueur bouge et touche le sol
 	if abs(direction) != 0.0 and self.is_on_floor():
 		event_walk.post(self)

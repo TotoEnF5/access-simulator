@@ -9,7 +9,6 @@ func _ready() -> void:
 	$Camera2D.position = $Player.position
 	
 	if access_settings.high_contrast:
-		$Player.modulate = Color(20.0, 0.0, 0.0)
 		$Goal.visible = true
 		$Goal.modulate = Color(0.0, 20.0, 0.0)
 		$Platforms.visible = true
@@ -30,14 +29,12 @@ func _on_goal_body_entered(body: Node2D) -> void:
 	
 func _on_high_contrast_changed(toggled: bool):
 	if toggled:
-		$Player.modulate = Color(20.0, 0.0, 0.0)
 		$Goal.visible = true
 		$Goal.modulate = Color(0.0, 20.0, 0.0)
 		$Platforms.visible = true
 		$Platforms.modulate = Color(0.0, 0.0, 0.0)
 		$Node2D.modulate = Color(0.5, 0.5, 0.5)
 	else:
-		$Player.modulate = Color(1.0, 1.0, 1.0)
 		$Goal.visible = false
 		$Platforms.visible = false
 		$Node2D.modulate = Color(1.0, 1.0, 1.0)
