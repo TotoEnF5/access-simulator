@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{AF4290CD-C9D5-40A2-8BB1-4D64C3ABE6F7}",
     "Language": "SFX",
-    "Hash": "{97B51344-FA71-A3AE-ABEB-DBC88FC5AB5B}",
+    "Hash": "{94E4ADA0-53D7-AF69-C88B-15955F626150}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -198,6 +198,14 @@
       "Location": "Memory",
       "ShortName": "Foley Bag Fabric Large Trekking-008.wav",
       "CachePath": "BB/{BBF1432E-8844-B23F-FB67-E543A1FBF81A}.wem"
+     },
+     {
+      "Id": "1035269177",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "TOONBoing_Boing cartoon 7 (ID 2283)_LS.wav",
+      "CachePath": "90/{90C61DDE-DE98-00E5-2397-C863127B7000}.wem"
      }
     ],
     "Events": [
@@ -270,10 +278,14 @@
       "Name": "Ennemy_Destroy",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Ennemy_Destroy",
       "GUID": "{8E4ED9E8-7A92-4686-9BBF-EB8E1958E0E7}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "0.798541",
+      "DurationMax": "0.798541",
+      "MediaRefs": [
+       {
+        "Id": "1035269177"
+       }
+      ]
      },
      {
       "Id": "365677268",
@@ -352,10 +364,14 @@
       "Name": "Player_Hit",
       "ObjectPath": "\\Events\\Default Work Unit\\Act2 Shmup\\Player_Hit",
       "GUID": "{C9B7E285-A98E-4A7C-A478-3290DC32DAEB}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "2.3518102",
+      "DurationMax": "2.3518102",
+      "MediaRefs": [
+       {
+        "Id": "1035269177"
+       }
+      ]
      },
      {
       "Id": "3359302305",
@@ -475,6 +491,6 @@
     ]
    }
   ],
-  "FileHash": "{721B2D91-A3B9-E92D-0DC3-B5F76CA75FB4}"
+  "FileHash": "{01082A63-4CD0-B141-77B8-2AA4C2CE23B5}"
  }
 }

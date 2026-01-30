@@ -44,6 +44,7 @@ func _physics_process(delta: float) -> void:
 	if collision:
 		# [SOUND] C'est ici que l'ennmi décède
 		self.killed.emit()
+		SoundbankManager.event_ennemi_death.post(SoundbankManager)
 		self.queue_free()
 
 

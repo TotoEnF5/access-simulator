@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://ci471elwst5mg"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "Ennemy_Destroy"
+id = 2988140266
+guid = "{8E4ED9E8-7A92-4686-9BBF-EB8E1958E0E7}"
+dummy = true

@@ -45,4 +45,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1007535337	SFX_Bubbles_4	.cache\5C\{5C755477-D8C5-7C78-1547-D878730DE452}.wem		\Containers\Default Work Unit\Boat\Rotate\SFX_Bubbles_4		30712
 	1025425004	Je vous ait compris	.cache\CC\{CC4F851D-DCF1-2787-CFF0-9EBF8C331E41}.wem		\Containers\Default Work Unit\UI\Sound_Test\Je vous ait compris		768144
 	1035180690	Foley Bag Fabric Large Trekking-008	.cache\BB\{BBF1432E-8844-B23F-FB67-E543A1FBF81A}.wem		\Containers\Default Work Unit\UI\Rideau_Transi\Out\Foley Bag Fabric Large Trekking-008		93264
+	1035269177	Ennemi_Die	.cache\90\{90C61DDE-DE98-00E5-2397-C863127B7000}.wem		\Containers\Default Work Unit\Plateformer\Ennemi_Die		141506
 
