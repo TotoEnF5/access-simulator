@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://bv7uamh0wlsfa"]
+[gd_scene load_steps=13 format=3 uid="uid://bv7uamh0wlsfa"]
 
 [ext_resource type="Script" uid="uid://dk0g8a66m1vlp" path="res://ui/audio_settings.gd" id="1_qt3sj"]
 [ext_resource type="PackedScene" uid="uid://r05qq2qne0ov" path="res://ui/Sound_Slider.tscn" id="2_2w7xm"]
+[ext_resource type="WwiseRTPC" uid="uid://be6d0auat4ws7" path="res://Wwise/resources/Game Parameter/{BC8335A5-9CF4-4DDD-8862-ED93309E36E4}.tres" id="2_m5hrg"]
 [ext_resource type="WwiseRTPC" uid="uid://b7rdpmj7jjjdx" path="res://Wwise/resources/Game Parameter/{AD47CEEB-959B-4CC1-AF33-800B48E4D0C3}.tres" id="3_g8yqh"]
 [ext_resource type="WwiseRTPC" uid="uid://bt87s10gtsuv2" path="res://Wwise/resources/Game Parameter/{8CDC3B3F-AB0D-4E5A-8D33-49FE41C0BF57}.tres" id="5_3dew3"]
 [ext_resource type="Texture2D" uid="uid://bnmte0rlx6d8l" path="res://icon.svg" id="6_8btxk"]
@@ -20,6 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qt3sj")
+mono_rtpc = ExtResource("2_m5hrg")
 
 [node name="Master" parent="." instance=ExtResource("2_2w7xm")]
 layout_mode = 0
@@ -116,4 +118,12 @@ scale = Vector2(0.9, 0.9)
 rtpc = ExtResource("11_8l5s2")
 rtpc_name = "Music"
 
-[node name="AkListener2D" type="AkListener2D" parent="."]
+[node name="Mono sound" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 57.0
+offset_right = 210.0
+offset_bottom = 88.0
+text = "Mono sound"
+
+[connection signal="toggled" from="Mono sound" to="." method="_on_mono_sound_toggled"]

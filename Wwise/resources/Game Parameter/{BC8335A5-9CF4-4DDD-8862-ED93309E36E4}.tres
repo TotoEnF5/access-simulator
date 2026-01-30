@@ -1,0 +1,7 @@
+[gd_resource type="WwiseRTPC" format=3 uid="uid://be6d0auat4ws7"]
+
+[resource]
+name = "Stereo_Mono"
+id = 531115601
+guid = "{BC8335A5-9CF4-4DDD-8862-ED93309E36E4}"
+dummy = true
